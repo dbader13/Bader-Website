@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guojing Cong | David A. Bader</title>
+    <link>http://localhost:1313/authors/guojing-cong/</link>
+      <atom:link href="http://localhost:1313/authors/guojing-cong/index.xml" rel="self" type="application/rss+xml" />
+    <description>Guojing Cong</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Guojing Cong</title>
+      <link>http://localhost:1313/authors/guojing-cong/</link>
+    </image>
+    
+    <item>
+      <title>Graph Algorithms</title>
+      <link>http://localhost:1313/publications/2011-bc/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Programming With SIMPLE</title>
+      <link>http://localhost:1313/publications/2011-cb/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spanning Tree, Minimum Weight</title>
+      <link>http://localhost:1313/publications/2011-b-ca/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-b-ca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SWARM: A Parallel Programming Framework for Multicore Processors</title>
+      <link>http://localhost:1313/publications/2011-b-cb/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-b-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design of Multithreaded Algorithms for Combinatorial Problems</title>
+      <link>http://localhost:1313/publications/2007-bmcf/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-bmcf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Parallel Graph Algorithms for Shared-memory Multiprocessors</title>
+      <link>http://localhost:1313/publications/2007-bc/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Techniques for Designing Efficient Parallel Graph Algorithms for SMPs and Multicore Processors</title>
+      <link>http://localhost:1313/publications/2007-cb/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing irregular parallel algorithms with mutual exclusion and lock-free protocols</title>
+      <link>http://localhost:1313/publications/2006-cb/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast shared-memory algorithms for computing the minimum spanning forest of sparse graphs</title>
+      <link>http://localhost:1313/publications/2006-bc/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A fast, parallel spanning tree algorithm for symmetric multiprocessors (SMPs)</title>
+      <link>http://localhost:1313/publications/2005-bc/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Empirical Analysis of Parallel Random Permutation Algorithms on SMPs</title>
+      <link>http://localhost:1313/publications/2005-cb/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Experimental Study of Parallel Biconnected Components Algorithms on Symmetric Multiprocessors (SMPs)</title>
+      <link>http://localhost:1313/publications/2005-c-ba/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-c-ba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Architectural Requirements for Efficient Execution of Graph Algorithms</title>
+      <link>http://localhost:1313/publications/2005-bcf/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-bcf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Fast, Parallel Spanning Tree Algorithm for Symmetric Multiprocessors (SMPs)</title>
+      <link>http://localhost:1313/publications/2004-bc/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast Shared-Memory Algorithms for Computing the Minimum Spanning Forest of Sparse Graphs</title>
+      <link>http://localhost:1313/publications/2004-b-ca/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-b-ca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lock-Free Parallel Algorithms: An Experimental Study</title>
+      <link>http://localhost:1313/publications/2004-cb/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-cb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Euler Tour Technique and Parallel Rooted Spanning Tree</title>
+      <link>http://localhost:1313/publications/2004-c-ba/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-c-ba/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

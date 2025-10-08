@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="David A. Bader, Chair of the School - Computational Science and Engineering &amp; Executive Director - HPC, Georgia Institute of Technology
+With the last decade’s rapid advances in computational power and the resulting explosion of available data, two major areas of computational application—business and scientific research—are now converging. And this digitally fluid world of data science and application is providing remarkable value for industry.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20150302-cioreview/" />
+<link rel="canonical" href="http://localhost:1313/blog/20150302-cioreview/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20150302-cioreview/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20150302-cioreview/" />
+<meta property="og:title" content="HPC and Big Data: A View from the Corner of Science and Industry | David A. Bader" />
+<meta property="og:description" content="David A. Bader, Chair of the School - Computational Science and Engineering &amp; Executive Director - HPC, Georgia Institute of Technology
+With the last decade’s rapid advances in computational power and the resulting explosion of available data, two major areas of computational application—business and scientific research—are now converging. And this digitally fluid world of data science and application is providing remarkable value for industry." /><meta property="og:image" content="http://localhost:1313/blog/20150302-cioreview/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2015-03-02T08:03:31-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2015-03-02T08:03:31-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>HPC and Big Data: A View from the Corner of Science and Industry | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="76efb22e554a2e356f8b60e20246ccbf" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>HPC and Big Data: A View from the Corner of Science and Industry</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 2, 2015
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="/blog/20150302-cioreview/20150302-CIOReview.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 234px; max-height: 70px;">
+  <div style="position: relative">
+    <img src="/blog/20150302-cioreview/featured_hu_a0e9a899955170d7.webp" width="234" height="70" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><strong>David A. Bader</strong>, <em>Chair of the School - Computational Science and Engineering &amp; Executive Director - HPC, Georgia Institute of Technology</em></p>
+<p>With the last decade’s rapid advances in computational power and the resulting explosion of available data, two major areas of computational application—business and scientific research—are now converging. And this digitally fluid world of data science and application is providing remarkable value for industry.</p>
+<p>High performance computing, once an area reserved for technical or scientific application, has for some time now affected the realm of business and enterprise computing. What does this mean for business? It means improved knowledge of customers, more efficient operations, and accelerated response to changes or to problems, among other advantages.</p>
+<p>Many businesses have seen the light and are investing in personnel with expertise in analytics and data-specific algorithms like Hadoop. Smaller companies also now have the option of buying <a href="http://www.ciowhitepapersreview.com/bigdata/building-successful-big-data-solutions-5.html?utm_source=clicktrack&amp;utm_medium=hyperlink&amp;utm_campaign=linkinnews" target="_blank" rel="noopener">big data solutions</a> for business intelligence and analytics from third-party companies.</p>
+<p>With a dual career in both industry and scientific research, I enjoy a broad and fascinating view of this ever-changing HPC terrain. Over in the research sciences, we are transforming methods for studying the very complex. This shift affects how scientists approach, for example, studies of genome-wide associations, the interplay of genes, and climate modeling.</p>
+<p>Science has traditionally operated by deciphering time-consuming cause-and-effect relationships. Meaningful associations are now emerging from heaps of various data types that can be merged and analyzed. Trends in large data sets can be searched, scrutinized and visualized—all techniques that dramatically speed up research time and allow us to tackle a huge range of problems at scales from tiny to enormous in terms of physical size, duration and complexity.</p>
+<p>HPC capabilities also permit powerful simulations that speed product development. From detergents to jet engines, products can now be developed without intermediate prototypes or several iterations of laboratory tests. All of these advances for science are also proportional advances for industry.</p>
+<p>Our world today is one of growing torrential streams of information that can provide valuable information to inform decisions related to business intelligence, market analysis and social trends using data from social media and user behaviors. At Georgia Tech, we are forging new ways to combine big data with HPC research to craft solutions to business and social problems.</p>
+<p>Take cybersecurity. Our work in cyberanalytics is an excellent example of applying these techniques at the intersection of HPC, big data, research, and real-world problems. Indeed, the word “cybersecurity” often evokes an image of outsiders trying to hack into our computer systems, particularly those of large corporations. But many incidents that go unreported in the media are insider events, which some reports say comprise up to a third of threats and can be more costly or damaging than those orchestrated by outsiders. We often wonder how these trusted individuals went about their malicious work unnoticed, but the key to detecting and preventing the breach was likely there, buried in data that could not—until recently—be interpreted and quickly acted upon.</p>
+<p>Every time we use a key card to open a door, send an email or invoke any number of computer actions, we leave a digital trace. Security officers analyze this information to determine our patterns and identify potential threats. But the massive scale datasets are often unstructured and challenging to inspect.</p>
+<p>At Georgia Tech, we conduct analytic research on graphs. Graphs are networks with up to trillions of connections, and they help us discover patterns and relationships hidden deep within massive amounts of data. These graphs are comprised of interconnected vertices and edges that change over time. In the realm of cybersecurity, the vertices may represent computers, and the edges represent their interactions. By designing fast theoretic algorithms on large-scale graphs, we can produce insights in near real time.</p>
+<p>Emerging graph technology at Georgia Tech has the potential to quickly sift massive amounts of data and correctly prioritize the most likely short list of results for a fast response. The aim is to develop the best and most efficient way to prevent future malicious activities where we work and live.</p>
+<p>The media notably cover large security breaches, but for each such report, going unnoticed by the public are numerous other data breaches in small companies, which are often less resilient and have a harder time recovering. Many of these companies fold permanently after an attack.</p>
+<p>The new way of thinking calls for businesses both large and small to deeply embed into their cultures the cybersecurity priorities, investments in expertise, and an increasing awareness of emerging technologies like those in use at Georgia Tech.</p>
+<p>Also, our work in graph analytics can lead to a suite of far-ranging and useful applications, such as:</p>
+<ul>
+<li>Unraveling the driving forces in graphs that change as they grow, such as social networks. We are expanding what we know about scientific computing graphs and moving into large social and information networks, whose informatics are much more challenging.</li>
+<li>Analyzing massive streaming complex networks in real-time, with applications in public health, transportation, evacuation, security, drug design, water supplies and full-scale socioeconomic systems.</li>
+<li>Visualizing massive graphs. Growing amounts of data require new methods for meaningful interpretation.</li>
+</ul>
+<p>In addition to advancing data analysis, we are also actively researching computer architectural requirements to maximize the performance of graph analyses across a variety of problem types. How can we integrate across different algorithms, programming models and architectures to address new challenges? The research includes exploring how best to combine cloud computing with in-memory parallel computing. This work lays a foundation to take on some of the most difficult problems in the world today, from computational biology and genomics, massive-scale data analytics with a focus on parallel algorithms, to combinatorial optimization, and vast social networks.</p>
+<p>Georgia Tech is playing its role to build a new computational future, one that includes creative new architectures and software approaches, improved energy efficiency, altered computing paradigms to ingest more information, and reshaped scientific and business workflows. In exchange, we will handle large scale, complex problems more quickly and accurately. We will have more targeted approaches to managing everything from malicious activities to public health and environmental concerns.</p>
+<p>The view from this corner is indeed compelling. Our basic assumptions change almost daily. What will tomorrow bring?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/20150302-cioreview/Bader-CIOReview_hu_fdd088ad53bdcee.webp 400w,
+               /blog/20150302-cioreview/Bader-CIOReview_hu_72d11a6a7f5241ee.webp 760w,
+               /blog/20150302-cioreview/Bader-CIOReview_hu_7799a941a7e0a9f.webp 1200w"
+               src="/blog/20150302-cioreview/Bader-CIOReview_hu_fdd088ad53bdcee.webp"
+               width="300"
+               height="300"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<p><strong>David A Bader</strong> is a Full Professor and Chair of the School of Computational Science and Engineering, College of Computing, at Georgia Institute of Technology, and Executive Director of High Performance Computing. He received his Ph.D. in 1996 from The University of Maryland, and his research is supported through highly-competitive research awards, primarily from NSF, NIH, DARPA, and DOE. Dr. Bader serves as a board member of the Computing Research Association (CRA), on the NSF Advisory Committee on Cyberinfrastructure, on the Council on Competitiveness High Performance Computing Advisory Committee, on the IEEE Computer Society Board of Governors, and on the Steering Committees of the IPDPS and HiPC conferences. He is the editor-in-chief of IEEE Transactions on Parallel and Distributed Systems (TPDS) and Program Chair for IPDPS 2014.</p>
+<p>He is also a leading expert on multicore, manycore, and multithreaded computing for data-intensive applications such as those in massive-scale graph analytics.</p>
+<p>Prof. Bader is a Fellow of the IEEE and AAAS, a National Science Foundation CAREER Award recipient.He has also served as Director of the Sony-Toshiba-IBM Center of Competence for the Cell Broadband Engine Processor. Bader is a co-founder of the Graph500 List for benchmarking &ldquo;Big Data&rdquo; computing platforms.</p>
+<p><a href="https://high-performance-computing.cioreview.com/cxoinsight/hpc-and-big-data-a-view-from-the-corner-of-science-and-industry-nid-5400-cid-84.html" target="_blank" rel="noopener">https://high-performance-computing.cioreview.com/cxoinsight/hpc-and-big-data-a-view-from-the-corner-of-science-and-industry-nid-5400-cid-84.html</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F&amp;text=HPC&#43;and&#43;Big&#43;Data%3A&#43;A&#43;View&#43;from&#43;the&#43;Corner&#43;of&#43;Science&#43;and&#43;Industry" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F&amp;t=HPC&#43;and&#43;Big&#43;Data%3A&#43;A&#43;View&#43;from&#43;the&#43;Corner&#43;of&#43;Science&#43;and&#43;Industry" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=HPC%20and%20Big%20Data%3A%20A%20View%20from%20the%20Corner%20of%20Science%20and%20Industry&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F&amp;title=HPC&#43;and&#43;Big&#43;Data%3A&#43;A&#43;View&#43;from&#43;the&#43;Corner&#43;of&#43;Science&#43;and&#43;Industry" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=HPC&#43;and&#43;Big&#43;Data%3A&#43;A&#43;View&#43;from&#43;the&#43;Corner&#43;of&#43;Science&#43;and&#43;Industry%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20150302-cioreview%2F&amp;title=HPC&#43;and&#43;Big&#43;Data%3A&#43;A&#43;View&#43;from&#43;the&#43;Corner&#43;of&#43;Science&#43;and&#43;Industry" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christian Schulz | David A. Bader</title>
+    <link>http://localhost:1313/authors/christian-schulz/</link>
+      <atom:link href="http://localhost:1313/authors/christian-schulz/index.xml" rel="self" type="application/rss+xml" />
+    <description>Christian Schulz</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Christian Schulz</title>
+      <link>http://localhost:1313/authors/christian-schulz/</link>
+    </image>
+    
+    <item>
+      <title>Benchmarking for Graph Clustering and Partitioning</title>
+      <link>http://localhost:1313/publications/2018-bkm/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-bkm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benchmarking for Graph Clustering and Partitioning</title>
+      <link>http://localhost:1313/publications/2014-bms/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-bms/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

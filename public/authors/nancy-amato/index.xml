@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nancy Amato | David A. Bader</title>
+    <link>http://localhost:1313/authors/nancy-amato/</link>
+      <atom:link href="http://localhost:1313/authors/nancy-amato/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nancy Amato</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2005 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Nancy Amato</title>
+      <link>http://localhost:1313/authors/nancy-amato/</link>
+    </image>
+    
+    <item>
+      <title>Proceedings of the Fourth IEEE International Workshop on High Performance Computational Biology (HiCOMB 2005), Denver, CO, April 2005</title>
+      <link>http://localhost:1313/publications/2005-aba/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-aba/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

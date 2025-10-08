@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wenjie Liu | David A. Bader</title>
+    <link>http://localhost:1313/authors/wenjie-liu/</link>
+      <atom:link href="http://localhost:1313/authors/wenjie-liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wenjie Liu</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Wenjie Liu</title>
+      <link>http://localhost:1313/authors/wenjie-liu/</link>
+    </image>
+    
+    <item>
+      <title>A Waterfall Model to Achieve Energy Efficient Tasks Mapping for Large Scale GPU Clusters</title>
+      <link>http://localhost:1313/publications/2011-ldx/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-ldx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On accelerating iterative algorithms with CUDA: A case study on Conditional Random Fields training algorithm for biological sequence alignment</title>
+      <link>http://localhost:1313/publications/2010-dylb/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-dylb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

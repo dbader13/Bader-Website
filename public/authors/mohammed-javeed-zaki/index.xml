@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohammed Javeed Zaki | David A. Bader</title>
+    <link>http://localhost:1313/authors/mohammed-javeed-zaki/</link>
+      <atom:link href="http://localhost:1313/authors/mohammed-javeed-zaki/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mohammed Javeed Zaki</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Mohammed Javeed Zaki</title>
+      <link>http://localhost:1313/authors/mohammed-javeed-zaki/</link>
+    </image>
+    
+    <item>
+      <title>High Performance Bioinformatics</title>
+      <link>http://localhost:1313/publications/2004-zbmg/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-zbmg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

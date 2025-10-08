@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeremy Kepner | David A. Bader</title>
+    <link>http://localhost:1313/authors/jeremy-kepner/</link>
+      <atom:link href="http://localhost:1313/authors/jeremy-kepner/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jeremy Kepner</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Jeremy Kepner</title>
+      <link>http://localhost:1313/authors/jeremy-kepner/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical foundations of the GraphBLAS</title>
+      <link>http://localhost:1313/publications/2016-kab/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-kab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphs, Matrices, and the GraphBLAS: Seven Good Reasons</title>
+      <link>http://localhost:1313/publications/2015-kbb/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2015-kbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GABB Introduction</title>
+      <link>http://localhost:1313/publications/2014-mbb/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-mbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards for Graph Algorithm Primitives</title>
+      <link>http://localhost:1313/publications/2014-mbba/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-mbba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards for graph algorithm primitives</title>
+      <link>http://localhost:1313/publications/2013-mbb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fundamental Questions in the Analysis of Large Graphs</title>
+      <link>http://localhost:1313/publications/2011-kbbb/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-kbbb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Pothen | David A. Bader</title>
+    <link>http://localhost:1313/authors/alex-pothen/</link>
+      <atom:link href="http://localhost:1313/authors/alex-pothen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Alex Pothen</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Alex Pothen</title>
+      <link>http://localhost:1313/authors/alex-pothen/</link>
+    </image>
+    
+    <item>
+      <title>Proceedings of the Sixteenth IEEE International Workshop on High Performance Computational Biology (HiCOMB 2017), Orlando, FL, May 2017</title>
+      <link>http://localhost:1313/publications/2017-pab/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-pab/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

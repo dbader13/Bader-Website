@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fuhuan Li | David A. Bader</title>
+    <link>http://localhost:1313/authors/fuhuan-li/</link>
+      <atom:link href="http://localhost:1313/authors/fuhuan-li/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fuhuan Li</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Aug 2025 10:27:03 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Fuhuan Li</title>
+      <link>http://localhost:1313/authors/fuhuan-li/</link>
+    </image>
+    
+    <item>
+      <title>Designing Parallel Algorithms for Community Detection using Arachne</title>
+      <link>http://localhost:1313/publications/2025-ldb/</link>
+      <pubDate>Sun, 31 Aug 2025 10:27:03 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-ldb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contour Algorithm for Connectivity</title>
+      <link>http://localhost:1313/publications/2023-drldb2/</link>
+      <pubDate>Sun, 05 Nov 2023 20:06:53 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2023-drldb2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangle Counting Through Cover-Edges (Graph Challenge Student Innovation Award)</title>
+      <link>http://localhost:1313/publications/2023-blgglrd/</link>
+      <pubDate>Mon, 04 Sep 2023 13:42:20 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-blgglrd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minimum-Mapping based Connected Components Algorithm</title>
+      <link>http://localhost:1313/publications/2023-drldb/</link>
+      <pubDate>Wed, 24 May 2023 12:38:41 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-drldb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-Performance Truss Analysis in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-dprb/</link>
+      <pubDate>Sat, 29 Oct 2022 17:14:31 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-dprb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangle Centrality in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-pdlb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:28:32 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-pdlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arachne: An Arkouda Package for Large-Scale Graph Analytics</title>
+      <link>http://localhost:1313/publications/2022-rdplb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:15:56 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-rdplb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A GraphBLAS implementation of Triangle Centrality</title>
+      <link>http://localhost:1313/publications/2021-lb/</link>
+      <pubDate>Tue, 21 Sep 2021 11:37:31 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-lb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

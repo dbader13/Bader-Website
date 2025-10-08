@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tandy J. Warnow | David A. Bader</title>
+    <link>http://localhost:1313/authors/tandy-j.-warnow/</link>
+      <atom:link href="http://localhost:1313/authors/tandy-j.-warnow/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tandy J. Warnow</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2002 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Tandy J. Warnow</title>
+      <link>http://localhost:1313/authors/tandy-j.-warnow/</link>
+    </image>
+    
+    <item>
+      <title>High-Performance Algorithm Engineering for Computational Phylogenetics</title>
+      <link>http://localhost:1313/publications/2002-mbw/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2002-mbw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A New Implmentation and Detailed Study of Breakpoint Analysis</title>
+      <link>http://localhost:1313/publications/2001-mwb/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-mwb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-Performance Algorithm Engineering for Computational Phylogenetics</title>
+      <link>http://localhost:1313/publications/2001-mbw/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-mbw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

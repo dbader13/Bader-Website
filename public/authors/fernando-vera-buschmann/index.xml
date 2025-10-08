@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fernando Vera Buschmann | David A. Bader</title>
+    <link>http://localhost:1313/authors/fernando-vera-buschmann/</link>
+      <atom:link href="http://localhost:1313/authors/fernando-vera-buschmann/index.xml" rel="self" type="application/rss+xml" />
+    <description>Fernando Vera Buschmann</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 13:42:28 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Fernando Vera Buschmann</title>
+      <link>http://localhost:1313/authors/fernando-vera-buschmann/</link>
+    </image>
+    
+    <item>
+      <title>Enhanced Knowledge Graph Attention Networks for Efficient Graph Learning (Outstanding Student Paper Award)</title>
+      <link>http://localhost:1313/publications/2024-vdb/</link>
+      <pubDate>Sun, 25 Aug 2024 13:42:28 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2024-vdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph-Based Profiling of Dependency Vulnerability Remediation</title>
+      <link>http://localhost:1313/publications/2024-bpokdb/</link>
+      <pubDate>Thu, 11 Jul 2024 09:50:06 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2024-bpokdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Property Graphs in Arachne</title>
+      <link>http://localhost:1313/publications/2023-rbdb/</link>
+      <pubDate>Mon, 04 Sep 2023 13:41:35 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-rbdb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

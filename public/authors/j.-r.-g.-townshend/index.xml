@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>J. R. G. Townshend | David A. Bader</title>
+    <link>http://localhost:1313/authors/j.-r.-g.-townshend/</link>
+      <atom:link href="http://localhost:1313/authors/j.-r.-g.-townshend/index.xml" rel="self" type="application/rss+xml" />
+    <description>J. R. G. Townshend</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 1999 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>J. R. G. Townshend</title>
+      <link>http://localhost:1313/authors/j.-r.-g.-townshend/</link>
+    </image>
+    
+    <item>
+      <title>A hierarchical data archiving and processing system to generate custom tailored products from AVHRR data</title>
+      <link>http://localhost:1313/publications/1999-kzj/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1999-kzj/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

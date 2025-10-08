@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bernard M. E. Moret | David A. Bader</title>
+    <link>http://localhost:1313/authors/bernard-m.-e.-moret/</link>
+      <atom:link href="http://localhost:1313/authors/bernard-m.-e.-moret/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bernard M. E. Moret</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2005 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Bernard M. E. Moret</title>
+      <link>http://localhost:1313/authors/bernard-m.-e.-moret/</link>
+    </image>
+    
+    <item>
+      <title>High-Performance Phylogeny Reconstruction Under Maximum Parsimony</title>
+      <link>http://localhost:1313/publications/2005-wbmy/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-wbmy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm Engineering for Parallel Computation</title>
+      <link>http://localhost:1313/publications/2002-bms/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2002-bms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-Performance Algorithm Engineering for Computational Phylogenetics</title>
+      <link>http://localhost:1313/publications/2002-mbw/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2002-mbw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Linear-Time Algorithm for Computing Inversion Distance between Signed Permutations with an Experimental Study</title>
+      <link>http://localhost:1313/publications/2001-bmy/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-bmy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Linear-Time Algorithm for Computing Inversion Distance Between Two Signed Permutations with an Experimental Study</title>
+      <link>http://localhost:1313/publications/2001-bm-ya/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-bm-ya/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A New Implmentation and Detailed Study of Breakpoint Analysis</title>
+      <link>http://localhost:1313/publications/2001-mwb/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-mwb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-Performance Algorithm Engineering for Computational Phylogenetics</title>
+      <link>http://localhost:1313/publications/2001-mbw/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-mbw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Industrial applications of high-performance computing for phylogeny reconstruction</title>
+      <link>http://localhost:1313/publications/2001-bmv/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-bmv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using PRAM Algorithms on a Uniform-Memory-Access Shared-Memory Architecture</title>
+      <link>http://localhost:1313/publications/2001-bimw/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2001-bimw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

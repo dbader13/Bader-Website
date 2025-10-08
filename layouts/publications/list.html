@@ -1,0 +1,128 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+  <div class="row">
+    <div class="col-lg-12">
+
+      {{ with .Content }}
+      <div class="article-style">{{ . }}</div>
+      {{ end }}
+
+{{/* Search and filter controls */}}
+<div class="form-row mb-4">
+  <div class="col-md-4">
+    <input type="search" class="filter-search form-control" placeholder="Search..." autocomplete="off">
+  </div>
+  <div class="col-md-4">
+    <select class="pub-filters pubtype-select form-control" data-filter-group="pubtype">
+      <option value="*">Type</option>
+      <option value=".article-journal">Journal article</option>
+      <option value=".paper-conference">Conference paper</option>
+      <option value=".chapter">Book chapter</option>
+      <option value=".book">Book</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <select class="pub-filters form-control" data-filter-group="year">
+      <option value="*">Date</option>
+      {{ $years := slice }}
+      {{ range .Pages }}
+        {{ $years = $years | append (.Date.Format "2006") }}
+      {{ end }}
+      {{ range sort (uniq $years) "value" "desc" }}
+        <option value=".year-{{ . }}">{{ . }}</option>
+      {{ end }}
+    </select>
+  </div>
+</div>
+
+
+      {{/* Publications list */}}
+      <div id="container-publications">
+        {{ range .Pages }}
+          {{ $pub_type := index .Params.publication_types 0 }}
+          {{ $year := .Date.Format "2006" }}
+          <div class="pub-list-item {{ $pub_type }} year-{{ $year }}" style="margin-bottom: 2rem;">
+            <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+            {{/* Authors */}}
+            {{ with .Params.authors }}
+            <span class="article-metadata li-cite-author">
+              {{- range $index, $author := . -}}
+                {{- if $index }}, {{ end -}}
+                <a href="{{ "/authors/" | relURL }}{{ $author | urlize }}/">{{ $author }}</a>
+              {{- end -}}.
+            </span>
+            {{ end }}
+
+            {{/* Date */}}
+            ({{ .Date.Format "2006" }}).
+
+            {{/* Title */}}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>.
+
+            {{/* Publication venue */}}
+            {{ if .Params.publication }}
+            {{ .Params.publication | markdownify }}.
+            {{ end }}
+
+            {{/* Links */}}
+            <div class="btn-links">
+              {{ partial "page_links" (dict "page" . "is_list" 1) }}
+            </div>
+
+          </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+// State for all filters
+let searchTerm = '';
+let typeFilter = '*';
+let yearFilter = '*';
+
+// Apply all filters together (AND logic)
+function applyFilters() {
+  $('.pub-list-item').each(function() {
+    let item = $(this);
+    let text = item.text().toLowerCase();
+    let matchesSearch = !searchTerm || text.indexOf(searchTerm) > -1;
+    let matchesType = typeFilter === '*' || item.hasClass(typeFilter.substring(1));
+    let matchesYear = yearFilter === '*' || item.hasClass(yearFilter.substring(1));
+    
+    // Show only if ALL filters match (AND logic)
+    if (matchesSearch && matchesType && matchesYear) {
+      item.show();
+    } else {
+      item.hide();
+    }
+  });
+}
+
+// Search filter
+$('.filter-search').on('keyup', function() {
+  searchTerm = $(this).val().toLowerCase();
+  applyFilters();
+});
+
+// Type filter
+$('.pubtype-select').on('change', function() {
+  typeFilter = $(this).val();
+  applyFilters();
+});
+
+// Year filter
+$('select[data-filter-group="year"]').on('change', function() {
+  yearFilter = $(this).val();
+  applyFilters();
+});
+</script>
+
+{{- end -}}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mehmet F. Su | David A. Bader</title>
+    <link>http://localhost:1313/authors/mehmet-f.-su/</link>
+      <atom:link href="http://localhost:1313/authors/mehmet-f.-su/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mehmet F. Su</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2004 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Mehmet F. Su</title>
+      <link>http://localhost:1313/authors/mehmet-f.-su/</link>
+    </image>
+    
+    <item>
+      <title>A Novel FDTD Application Featuring OpenMP-MPI Hybrid Parallelization</title>
+      <link>http://localhost:1313/publications/2004-sebl/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2004-sebl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

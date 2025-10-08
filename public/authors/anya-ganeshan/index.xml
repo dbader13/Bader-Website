@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anya Ganeshan | David A. Bader</title>
+    <link>http://localhost:1313/authors/anya-ganeshan/</link>
+      <atom:link href="http://localhost:1313/authors/anya-ganeshan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Anya Ganeshan</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Sep 2023 13:42:20 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Anya Ganeshan</title>
+      <link>http://localhost:1313/authors/anya-ganeshan/</link>
+    </image>
+    
+    <item>
+      <title>Triangle Counting Through Cover-Edges (Graph Challenge Student Innovation Award)</title>
+      <link>http://localhost:1313/publications/2023-blgglrd/</link>
+      <pubDate>Mon, 04 Sep 2023 13:42:20 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-blgglrd/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

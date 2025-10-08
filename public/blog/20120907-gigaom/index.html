@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="By Derrick Harris
+It’s not easy work turning the Mayberry Police Department into the team from C.S.I., or turning an idea for a new type of social network analysis into something like Klout on steroids, but those types of transformations are becoming increasingly more possible. The world’s universities and research institutions are hard at work figuring out ways to make the mountains of social data generated every day more useful and, hopefully, to make us realize there’s more to social data than just figuring out whose digital voice is the loudest.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20120907-gigaom/" />
+<link rel="canonical" href="http://localhost:1313/blog/20120907-gigaom/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20120907-gigaom/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20120907-gigaom/" />
+<meta property="og:title" content="How researchers are letting us uncover secrets in social data | David A. Bader" />
+<meta property="og:description" content="By Derrick Harris
+It’s not easy work turning the Mayberry Police Department into the team from C.S.I., or turning an idea for a new type of social network analysis into something like Klout on steroids, but those types of transformations are becoming increasingly more possible. The world’s universities and research institutions are hard at work figuring out ways to make the mountains of social data generated every day more useful and, hopefully, to make us realize there’s more to social data than just figuring out whose digital voice is the loudest." /><meta property="og:image" content="http://localhost:1313/blog/20120907-gigaom/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2012-09-07T07:23:24-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2012-09-07T07:23:24-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>How researchers are letting us uncover secrets in social data | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="f7e28c0839ddd63f54479748d240818a" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>How researchers are letting us uncover secrets in social data</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 7, 2012
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 469px; max-height: 156px;">
+  <div style="position: relative">
+    <img src="/blog/20120907-gigaom/featured_hu_45333927a3825bfc.webp" width="469" height="156" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><em>By Derrick Harris</em></p>
+<p>It’s not easy work turning the Mayberry Police Department into the team from <em>C.S.I.</em>, or turning an idea for a new type of social network analysis into something like Klout on steroids, but those types of transformations are becoming increasingly more possible. The world’s universities and research institutions are hard at work figuring out ways to make the mountains of social data generated every day more useful and, hopefully, to make us realize there’s more to social data than <a href="http://gigaom.com/cloud/why-klout-really-matters-money-money-money/" target="_blank" rel="noopener">just figuring out whose digital voice is the loudest</a>.</p>
+<p>Aspiring heirs to the Klout throne, for example, might look to a project called <a href="http://www.cc.gatech.edu/stinger/index.php" target="_blank" rel="noopener">STINGER</a> currently under development at Georgia Tech University. STINGER, which stands for Spatio-Temporal Interaction Networks and Graphs Extensible Representation, is a graph-processing engine that project lead <strong>David Bader</strong> says is bigger, faster and more flexible than anything currently in use for analyzing social media connections. You provide a shared-memory computing system, and it provides an open-source tool that can help detect relationships between billions of people, places and things as those relationships change over time — even in real time.</p>
+<p>Someone using Facebook data, for example, might write an algorithm using where people or pages would be the vertices and actions (likes, shares, wall posts, etc.) would be the graph’s edges. One relatively easy application, Bader explained, would be to analyze how activity around particular people is increasing, decreasing or changing, therefore indicating changes in their importance or the growth of new communities.</p>
+<h3 id="well-do-the-hard-work">We’ll do the hard work</h3>
+<p>Writing an algorithm to perform that kind of analysis isn’t really the problem, though — it’s writing one that can scale into the billions of vertices and edges and <a href="http://highscalability.com/blog/2010/3/30/running-large-graph-algorithms-evaluation-of-current-state-o.html" target="_blank" rel="noopener">still perform quickly enough to be useful</a>. An algorithm that generates one false positive in a million isn’t so bad when you’re dealing with tens of thousands of items, Bader explained, but it gets to be a big problem when you’re talking about billions of items against which it’s running.</p>
+<p>There are <a href="http://en.wikipedia.org/wiki/Graph_database" target="_blank" rel="noopener">dozens of open source graph databases available</a>, including popular offerings <a href="http://gigaom.com/cloud/springsource-links-up-with-neo-technology-on-nosql/" target="_blank" rel="noopener">such as Neo4j</a> and <a href="http://gigaom.com/cloud/twitters-success-pulls-23-year-old-objectivity-into-nosql/" target="_blank" rel="noopener">InfiniteGraph</a>, but he said, “Our lab focuses on algorithms that run fast on massive data sets and that are more accurate than what is traditionally done in social media.”</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-david-bader">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="David Bader" srcset="
+               /blog/20120907-gigaom/dbader2007-small_hu_dc7db990452a4cf4.webp 400w,
+               /blog/20120907-gigaom/dbader2007-small_hu_99001d446291c383.webp 760w,
+               /blog/20120907-gigaom/dbader2007-small_hu_28270e1d9b94ec96.webp 1200w"
+               src="/blog/20120907-gigaom/dbader2007-small_hu_dc7db990452a4cf4.webp"
+               width="186"
+               height="217"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      David Bader
+    </figcaption></figure>
+
+<p>Bader’s team recently presented a paper detailing a social media algorithm running atop STINGER that ran 100 times faster than some previous approaches because the system stores the graph’s previous state and only performs the minimal amount of processing necessary as new edges are inserted. This is in contrast to traditional approaches that re-process the entire graph every time there’s a change.</p>
+<p>That being said, Georgia Tech isn’t entirely alone analyzing massive amounts of social data with graph databases. Google’s (s goog) Pregel had <a href="http://googleresearch.blogspot.com/2009/06/large-scale-graph-computing-at-google.html" target="_blank" rel="noopener">already scaled to billions of vertices and edges</a> as of 2009, and Facebook (s fb) is currently <a href="http://www.slideshare.net/Hadoop_Summit/processing-edges-on-apache-giraph" target="_blank" rel="noopener">analyzing more than a billion edges</a> using <a href="http://incubator.apache.org/giraph/" target="_blank" rel="noopener">Apache Giraph</a> (an open source, Hadoop-based Pregel implementation). But those cases — both companies are loaded with smart engineers, data scientists and powerful infrastructure — just underscore the importance of what researchers like Bader are building and releasing as open source.</p>
+<h3 id="forget-social-media-solve-real-problems">Forget social media, solve real problems</h3>
+<p>But social data isn’t just useful for figuring out who’s influential on Twitter or Facebook — it also can be used to solve some real problems. Bader said he’s already used graph processing with Twitter data to determine who was leading resistance units during Egypt’s recent revolution. “Anywhere I can look at connections between entities,” he said, “these approaches are available.”</p>
+<p>Indeed. On Wednesday afternoon, for example, a group of researchers from the University of Alberta, University of Connecticut and University of California-Merced unveiled a new data-based method that could make it faster, easier and less expensive to root out culprits in fraud cases.</p>
+<p>The technique uses a method called the Steiner tree to analyze the connections –social, business, familial, etc. — between the people involved in a given case of fraud. The algorithm is able to determine the shortest path between two objects, which the researchers posit is especially applicable to fraud investigations — the person with the shortest path between himself and the crime is probably the culprit (or at least a solid suspect).</p>
+<p>The fraud researchers’ paper follows the publication in August of a <a href="http://gigaom.com/data/an-algorithm-for-tracking-viruses-and-twitter-rumors-to-their-source/" target="_blank" rel="noopener">method for determining the source of everything</a> from a disease outbreak to a Twitter rumor by tracking its spread across a complex network over time. Their algorithm, the paper’s authors claim, could be particularly effective for combating cybercrime by tracking computer viruses back to their sources. The more connections (in the case of social data), or observers, a particular point has, the fewer that are needed to track down the source point.</p>
+<p>However, all the algorithms and data frameworks in the world probably won’t make too big a difference until they’re turned into products that actually work on real-world situations. As the University of Alberta’s Ray Patterson pointed out in a <a href="http://www.news.ualberta.ca/article.aspx?id=598C1DAC742446ED84B477CB8FA05324" target="_blank" rel="noopener">press release detailing the fraudster-detection algorithm</a>, “It might take several years or many years before anyone picks it up. But it’s a good thing if we can point people towards what’s useful.”</p>
+<p>Georgia Tech’s Bader said DARPA, Intel (s intc), Sandia National Laboratory and other research institutions have already used STINGER to tackle some complex data sets, and he suspects a strong commercial interest, as well. If a company is willing to take STINGER from a project into a product, it could bring the project’s scale and speed to everything from analyzing customer interactions to monitoring the changing nature of criminal networks, Bader said. Considering the desire from companies of all types to extract some meaning from social data, I have to think someone will give it a shot.</p>
+<p><a href="https://gigaom.com/2012/09/07/as-social-data-grows-researchers-want-to-uncover-its-secrets/" target="_blank" rel="noopener">https://gigaom.com/2012/09/07/as-social-data-grows-researchers-want-to-uncover-its-secrets/</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F&amp;text=How&#43;researchers&#43;are&#43;letting&#43;us&#43;uncover&#43;secrets&#43;in&#43;social&#43;data" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F&amp;t=How&#43;researchers&#43;are&#43;letting&#43;us&#43;uncover&#43;secrets&#43;in&#43;social&#43;data" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=How%20researchers%20are%20letting%20us%20uncover%20secrets%20in%20social%20data&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F&amp;title=How&#43;researchers&#43;are&#43;letting&#43;us&#43;uncover&#43;secrets&#43;in&#43;social&#43;data" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=How&#43;researchers&#43;are&#43;letting&#43;us&#43;uncover&#43;secrets&#43;in&#43;social&#43;data%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20120907-gigaom%2F&amp;title=How&#43;researchers&#43;are&#43;letting&#43;us&#43;uncover&#43;secrets&#43;in&#43;social&#43;data" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

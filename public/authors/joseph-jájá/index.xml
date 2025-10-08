@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joseph Jájá | David A. Bader</title>
+    <link>http://localhost:1313/authors/joseph-j%C3%A1j%C3%A1/</link>
+      <atom:link href="http://localhost:1313/authors/joseph-j%C3%A1j%C3%A1/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joseph Jájá</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2000 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Joseph Jájá</title>
+      <link>http://localhost:1313/authors/joseph-j%C3%A1j%C3%A1/</link>
+    </image>
+    
+    <item>
+      <title>High performance computing algorithms for land cover dynamics using remote sensing data</title>
+      <link>http://localhost:1313/publications/2000-kjb/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2000-kjb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SIMPLE: A Methodology for Programming High Performance Algorithms on Clusters of Symmetric Multiprocessors (SMPs)</title>
+      <link>http://localhost:1313/publications/1999-bj/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1999-bj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A New Deterministic Parallel Sorting Algorithm with an Experimental Evaluation</title>
+      <link>http://localhost:1313/publications/1998-hjb/</link>
+      <pubDate>Thu, 01 Jan 1998 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1998-hjb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Randomized Parallel Sorting Algorithm with an Experimental Study</title>
+      <link>http://localhost:1313/publications/1998-hbj/</link>
+      <pubDate>Thu, 01 Jan 1998 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1998-hbj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Algorithms for Image Enhancement and Segmentation by Region Growing with an Experimental Study</title>
+      <link>http://localhost:1313/publications/1996-bjhd/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bjhd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel algorithms for image enhancement and segmentation by region growing, with an experimental study</title>
+      <link>http://localhost:1313/publications/1996-bjh-da/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bjh-da/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Algorithms for Image Histogramming and Connected Components with an Experimental Study</title>
+      <link>http://localhost:1313/publications/1996-b-ja/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-b-ja/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Algorithms for Personalized Communication and Sorting with an Experimental Study (Extended Abstract)</title>
+      <link>http://localhost:1313/publications/1996-hbj/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-hbj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Parallel Algorithms for Dynamic Data Redistribution, Median Finding, and Selection</title>
+      <link>http://localhost:1313/publications/1996-bj/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Parallel Algorithms for Personalized Communication and Integer Sorting</title>
+      <link>http://localhost:1313/publications/1996-bhj/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bhj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Algorithms for Image Histogramming and Connected Components with an Experimental Study</title>
+      <link>http://localhost:1313/publications/1995-bj/</link>
+      <pubDate>Sun, 01 Jan 1995 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1995-bj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable data parallel algorithms for texture synthesis using Gibbs random fields</title>
+      <link>http://localhost:1313/publications/1995-bjc/</link>
+      <pubDate>Sun, 01 Jan 1995 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1995-bjc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

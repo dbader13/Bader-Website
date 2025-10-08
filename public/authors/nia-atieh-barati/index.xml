@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atieh Barati Nia | David A. Bader</title>
+    <link>http://localhost:1313/authors/nia-atieh-barati/</link>
+      <atom:link href="http://localhost:1313/authors/nia-atieh-barati/index.xml" rel="self" type="application/rss+xml" />
+    <description>Atieh Barati Nia</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Sep 2025 10:27:03 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/nia-atieh-barati/avatar_hu_51b363c3eda6dcad.jpg</url>
+      <title>Atieh Barati Nia</title>
+      <link>http://localhost:1313/authors/nia-atieh-barati/</link>
+    </image>
+    
+    <item>
+      <title>Evaluating Efficiency and Novelty of LLM-Generated Code for Graph Analysis (Outstanding Student Paper Award)</title>
+      <link>http://localhost:1313/publications/2025-ndb/</link>
+      <pubDate>Mon, 01 Sep 2025 10:27:03 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-ndb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

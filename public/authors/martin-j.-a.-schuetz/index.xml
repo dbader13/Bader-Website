@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Martin J. A. Schuetz | David A. Bader</title>
+    <link>http://localhost:1313/authors/martin-j.-a.-schuetz/</link>
+      <atom:link href="http://localhost:1313/authors/martin-j.-a.-schuetz/index.xml" rel="self" type="application/rss+xml" />
+    <description>Martin J. A. Schuetz</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Aug 2023 13:40:21 -0500</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Martin J. A. Schuetz</title>
+      <link>http://localhost:1313/authors/martin-j.-a.-schuetz/</link>
+    </image>
+    
+    <item>
+      <title>End-to-end resource analysis for quantum interior point methods and portfolio optimization</title>
+      <link>http://localhost:1313/publications/2023-dcsblbssbkz/</link>
+      <pubDate>Mon, 28 Aug 2023 13:40:21 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2023-dcsblbssbkz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-end resource analysis for quantum interior point methods and portfolio optimization</title>
+      <link>http://localhost:1313/publications/2022-dcsblbssbkz/</link>
+      <pubDate>Tue, 22 Nov 2022 13:40:21 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2022-dcsblbssbkz/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

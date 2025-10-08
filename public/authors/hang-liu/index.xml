@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hang Liu | David A. Bader</title>
+    <link>http://localhost:1313/authors/hang-liu/</link>
+      <atom:link href="http://localhost:1313/authors/hang-liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hang Liu</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Dec 2021 18:35:00 -0500</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Hang Liu</title>
+      <link>http://localhost:1313/authors/hang-liu/</link>
+    </image>
+    
+    <item>
+      <title>Anti-Section Transitive Closure</title>
+      <link>http://localhost:1313/publications/2021-gdpxlb/</link>
+      <pubDate>Fri, 17 Dec 2021 18:35:00 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2021-gdpxlb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

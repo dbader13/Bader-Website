@@ -1,0 +1,186 @@
+# baseURL = "https://dbader13.github.io/Bader-Website/"
+# baseURL = "/"
+baseURL = "https://davidbader.net/"
+languageCode = 'en-us'
+title = "David A. Bader"
+
+enableGitInfo = false
+summaryLength = 30
+pagination.pagerSize = 2000
+enableEmoji = true
+enableRobotsTXT = true
+footnotereturnlinkcontents = "<sup>^</sup>"
+
+[module]
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5"
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-core"
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-seo"
+    
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+  authors = "authors"
+
+[security]
+  enableInlineShortcodes = false
+
+  [security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^WC_']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
+
+[[menu.main]]
+  name = "Home"
+  url = "#about"
+  weight = 10
+
+[[menu.main]]
+  name = "People"
+  url = "#people"
+  weight = 15
+
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 20
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 30
+
+[[menu.main]]
+  name = "Books"
+  url = "#books"
+  weight = 35
+
+[[menu.main]]
+  name = "Publications"
+  url = "#featured"
+  weight = 40
+
+[[menu.main]]
+  name = "Talks"
+  url = "#talks"
+  weight = 50
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 60
+
+[[menu.main]]
+  name = "CV"
+  url = "files/resume.pdf"
+  weight = 70
+
+[params]
+  # Appearance
+  [params.appearance]
+    theme_day = "minimal"
+    theme_night = "minimal"
+    font = "minimal"
+    font_size = "M"
+
+  # SEO
+  [params.marketing.seo]
+    site_type = "Person"
+    local_business_type = ""
+    org_name = ""
+    description = ""
+    twitter = "Prof_DavidBader"
+
+  [params.marketing.analytics]
+    google_analytics = "UA-109174963-2"
+    baidu_tongji = ""
+    google_tag_manager = ""
+    microsoft_clarity = ""
+
+  [params.marketing.verification]
+    google = ""
+    baidu = ""
+
+  # Site header
+  [params.header.navbar]
+    enable = true
+    align = "l"
+    show_logo = true
+    show_language = false
+    show_day_night = true
+    show_search = true
+    highlight_active_link = true
+
+  # Site footer
+  [params.footer.copyright]
+    notice = "© {year} Me. This work is licensed under {license}"
+    
+  [params.footer.copyright.license]
+    enable = true
+    allow_derivatives = false
+    share_alike = true
+    allow_commercial = false
+
+  # Localization
+  [params.locale]
+    date_format = "Jan 2, 2006"
+    time_format = "3:04 PM"
+    address_format = "en-us"
+
+  # Site features
+  [params.features.syntax_highlighter]
+    theme_light = "github-light"
+    theme_dark = "dracula"
+
+  [params.features.math]
+    enable = false
+
+  [params.features.privacy_pack]
+    enable = false
+
+  [params.features.repository]
+    url = "https://github.com/<username>/<repository>"
+    content_dir = "content"
+    branch = "main"
+
+  [params.features.avatar]
+    gravatar = false
+    shape = "circle"
+
+  [params.features.comment]
+    provider = ""
+
+  [params.features.search]
+    provider = "wowchemy"
+
+  [params.features.map]
+    provider = "mapnik"
+    api_key = ""
+    zoom = 15
+
+  # Extensions
+  [params.extensions.cms]
+    branch = "main"
+    local_backend = false
+
+  [params.extensions.academicons]
+    enable = true
+
+  # Security
+  [params.security]
+    allow_frame = true
+   

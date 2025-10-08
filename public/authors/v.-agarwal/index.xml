@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>V. Agarwal | David A. Bader</title>
+    <link>http://localhost:1313/authors/v.-agarwal/</link>
+      <atom:link href="http://localhost:1313/authors/v.-agarwal/index.xml" rel="self" type="application/rss+xml" />
+    <description>V. Agarwal</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>V. Agarwal</title>
+      <link>http://localhost:1313/authors/v.-agarwal/</link>
+    </image>
+    
+    <item>
+      <title>Efficient Implementation of Irregular Algorithms on Cell Multi-core Architecture. Poster Session</title>
+      <link>http://localhost:1313/publications/2006-bam/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-bam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BioSPLASH: A sample workload from bioinformatics and computational biology for optimizing next-generation high-performance computer systems. Poster Session</title>
+      <link>http://localhost:1313/publications/2005-bst/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-bst/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

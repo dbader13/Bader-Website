@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jingkun Hu | David A. Bader</title>
+    <link>http://localhost:1313/authors/jingkun-hu/</link>
+      <atom:link href="http://localhost:1313/authors/jingkun-hu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jingkun Hu</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Sep 2020 15:29:50 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Jingkun Hu</title>
+      <link>http://localhost:1313/authors/jingkun-hu/</link>
+    </image>
+    
+    <item>
+      <title>An Efficient LP Rounding Scheme for Replica Placement</title>
+      <link>http://localhost:1313/publications/2020-dzbh/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:50 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-dzbh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

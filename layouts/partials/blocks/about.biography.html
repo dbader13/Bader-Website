@@ -1,0 +1,102 @@
+{{ $block := .block }}
+{{ $username := $block.content.username | default "admin" }}
+{{ $person_page := site.GetPage (printf "/authors/%s" $username) }}
+
+{{ if $person_page }}
+  {{ $person := $person_page.Params }}
+
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div id="profile">
+        {{ if $person.avatar }}
+          {{ $avatar := ($person_page.Resources.ByType "image").GetMatch $person.avatar }}
+          {{ if $avatar }}
+            {{ $avatar_image := $avatar.Fill "270x270 Center" }}
+            <img class="avatar {{if site.Params.features.avatar.shape}}avatar-{{site.Params.features.avatar.shape}}{{else}}avatar-circle{{end}}" 
+                 width="{{ $avatar_image.Width }}" height="{{ $avatar_image.Height }}"
+                 src="{{ $avatar_image.RelPermalink }}" alt="{{$person_page.Title}}">
+          {{ end }}
+        {{ end }}
+
+        <div class="portrait-title">
+          <h2>{{ $person_page.Title }}</h2>
+
+          {{ with $person.role }}
+          <h3>{{ . }}</h3>
+          {{ end }}
+
+          {{ with $person.organizations }}
+          <h3>
+            {{ range . }}
+              {{ if .url }}<a href="{{.url}}" target="_blank" rel="noopener">{{ end }}
+              <span>{{ .name }}</span>
+              {{ if .url }}</a>{{ end }}
+            {{ end }}
+          </h3>
+          {{ end }}
+        </div>
+
+        <ul class="network-icon" aria-hidden="true">
+          {{ range $person.social }}
+          <li>
+            <a href="{{.link}}" target="_blank" rel="noopener" 
+               {{ with .label }}aria-label="{{.}}"{{ else }}aria-label="{{.icon}}"{{ end }}>
+              {{ if eq .icon_pack "ai" }}
+                <i class="ai ai-{{.icon}} big-icon"></i>
+              {{ else if or (eq .icon_pack "fab") (eq .icon_pack "fas") (eq .icon_pack "far") (eq .icon_pack "fal") }}
+                <i class="{{.icon_pack}} fa-{{.icon}} big-icon"></i>
+              {{ else }}
+                <i class="{{.icon_pack}} {{.icon}} big-icon"></i>
+              {{ end }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8">
+
+      {{ with $block.content.title }}
+      <h1>{{ . | markdownify | emojify }}</h1>
+      {{ end }}
+
+      <div class="article-style">
+        {{ $person_page.Content }}
+      </div>
+
+      <div class="row">
+
+        {{ with $person.interests }}
+        <div class="col-md-5">
+          <h3>{{ i18n "interests" | default "Interests" }}</h3>
+          <ul class="ul-interests">
+            {{ range . }}
+            <li>{{ . | markdownify | emojify }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+        {{ with $person.education }}
+        <div class="col-md-7">
+          <h3>{{ i18n "education" | default "Education" }}</h3>
+          <ul class="ul-edu fa-ul">
+            {{ range .courses }}
+            <li>
+              <i class="fa-li fas fa-graduation-cap"></i>
+              <div class="description">
+                <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
+                <p class="institution">{{ .institution }}</p>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+{{ end }}

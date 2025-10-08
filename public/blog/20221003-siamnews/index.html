@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="By Jeremy Kepner, David A. Bader, Tim Davis, Roger Pearce, and Michael M. Wolf
+Many factors inspire interest in networks and graphs. The Internet is just as important to modern-day civilization as land, sea, air, and space; it connects billions of humans and is heading towards trillions of devices. Deep neural networks (DNNs)—which are also graphs—are key to artificial intelligence, and biological networks underpin life on Earth. In addition, graph algorithms have served as a foundation of computer science since its inception [3]. One can represent and operate on graphs in many different ways. A particularly attractive approach exploits the well-known duality between a graph as a collection of vertices and edges and its representation as a sparse adjacency matrix.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20221003-siamnews/" />
+<link rel="canonical" href="http://localhost:1313/blog/20221003-siamnews/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20221003-siamnews/featured.jpg" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20221003-siamnews/" />
+<meta property="og:title" content="GraphBLAS and GraphChallenge Advance Network Frontiers | David A. Bader" />
+<meta property="og:description" content="By Jeremy Kepner, David A. Bader, Tim Davis, Roger Pearce, and Michael M. Wolf
+Many factors inspire interest in networks and graphs. The Internet is just as important to modern-day civilization as land, sea, air, and space; it connects billions of humans and is heading towards trillions of devices. Deep neural networks (DNNs)—which are also graphs—are key to artificial intelligence, and biological networks underpin life on Earth. In addition, graph algorithms have served as a foundation of computer science since its inception [3]. One can represent and operate on graphs in many different ways. A particularly attractive approach exploits the well-known duality between a graph as a collection of vertices and edges and its representation as a sparse adjacency matrix." /><meta property="og:image" content="http://localhost:1313/blog/20221003-siamnews/featured.jpg" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2022-10-03T21:43:29-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2022-10-03T21:43:29-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>GraphBLAS and GraphChallenge Advance Network Frontiers | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="cf2cad7362741c852dd2813e01151c0d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>GraphBLAS and GraphChallenge Advance Network Frontiers</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 3, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 676px; max-height: 270px;">
+  <div style="position: relative">
+    <img src="/blog/20221003-siamnews/featured_hu_eed668881a337953.webp" width="676" height="270" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><em>By Jeremy Kepner, <strong>David A. Bader</strong>, Tim Davis, Roger Pearce, and Michael M. Wolf</em></p>
+<p>Many factors inspire interest in networks and graphs. The Internet is just as important to modern-day civilization as land, sea, air, and space; it connects billions of humans and is heading towards trillions of devices. Deep neural networks (DNNs)—which are also graphs—are key to artificial intelligence, and biological networks underpin life on Earth. In addition, graph algorithms have served as a foundation of computer science since its inception [3]. One can represent and operate on graphs in many different ways. A particularly attractive approach exploits the well-known duality between a graph as a collection of vertices and edges and its representation as a sparse adjacency matrix.</p>
+<p>Graph Algorithms in the Language of Linear Algebra, which was published by SIAM in 2011 [6], provides an applied mathematical introduction to graphs by addressing the foundations of graph/matrix duality (see Figure 1). This fundamental connection between the core operations of graph algorithms and matrix mathematics is quite powerful and represents a primary viewpoint for DNNs. Yet despite its widespread use in graph analysis, basic graph/matrix duality is still only a starting point. For instance, the final chapter of Graph Algorithms in the Language of Linear Algebra posed several fundamental questions about the analysis of large graphs in ontology/data modeling; time evolution (or streaming); detection theory (or graph modeling in general); and algorithm scaling [6]. These questions—along with the emergence of important applications in privacy, health, and cyber contexts—set the stage for the subsequent decade of work.</p>
+<p>Since 2011, researchers have written thousands of papers that explore the aforementioned topics from a graph/matrix perspective. Interestingly, previous prototyping efforts that began in the mid-2000s recognized that existing computer architectures were not a good match for a variety of graph and sparse matrix problems [10]. The prototypes introduced several innovations: high-bandwidth three-dimensional networks, cacheless memory, accelerator-based processors, custom low-power circuits, and—perhaps most importantly—a sparse matrix-based graph instruction set. Today, many of these innovations are present in commercially available systems like Cerebras, Graphcore, Lucata, and NVIDIA.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-figure-1-graphmatrix-duality-as-depicted-via-a-breadth-first-search-from-starting-point-alice-to-neighbors-bob-and-carl-and-its-adjacency-matrix-multiplication-equivalent-here-aij0-implies-an-edge-between-vertices-i-and-j-figure-courtesy-of-jeremy-kepner">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Figure 1. Graph/matrix duality as depicted via a breadth-first search from starting point Alice to neighbors Bob and Carl and its adjacency matrix multiplication equivalent. Here, **A**(*i*,*j*)&gt;0 implies an edge between vertices *i* and *j*. Figure courtesy of Jeremy Kepner." srcset="
+               /blog/20221003-siamnews/11028Figure1_hu_1a2023395fe0fd9b.webp 400w,
+               /blog/20221003-siamnews/11028Figure1_hu_f0f1c59c09afd5db.webp 760w,
+               /blog/20221003-siamnews/11028Figure1_hu_5273038e005e2971.webp 1200w"
+               src="/blog/20221003-siamnews/11028Figure1_hu_1a2023395fe0fd9b.webp"
+               width="600"
+               height="229"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Figure 1. Graph/matrix duality as depicted via a breadth-first search from starting point Alice to neighbors Bob and Carl and its adjacency matrix multiplication equivalent. Here, <strong>A</strong>(<em>i</em>,<em>j</em>)&gt;0 implies an edge between vertices <em>i</em> and <em>j</em>. Figure courtesy of Jeremy Kepner.
+    </figcaption></figure>
+
+<p>The challenges associated with graph algorithm scaling led multiple scientists to identify the need for an abstraction layer that would allow algorithm specialists to write high-performance, matrix-based graph algorithms that hardware specialists could then design to without having to manage the complexities of every type of graph algorithm. With this philosophy in mind, a number of researchers (including two Turing Award winners) came together and proposed the idea that “the state of the art in constructing a large collection of graph algorithms in terms of linear algebraic operations is mature enough to support the emergence of a standard set of primitive building blocks” [8]. The centerpiece of this abstraction is the extension of traditional matrix multiplication to semirings<br>
+<strong>C</strong>=<strong>AB</strong>=<strong>A</strong>⊕.⊗<strong>B</strong><br>
+where <strong>A</strong>, <strong>B</strong>, and <strong>C</strong> are (usually sparse) matrices over a semiring with corresponding scalar addition ⊕ and scalar multiplication ⊗. Particularly interesting combinations include standard matrices over real or complex numbers (+.x), tropical algebras (max.+) that are important for neural networks, and set operations (∪.∩) that form the foundation of relational databases like SQL. One can build countless graph algorithms with these combinations of operations, and the Graph Basic Linear Algebra Subprograms (GraphBLAS) mathematical specification, C specification, and high-performance implementation subsequently emerged [1, 4, 5]. These programs are now part of some of the world’s most popular mathematical software environments.</p>
+<p>Many innovations in graph processing occurred during this time, inspiring new venues to highlight these developments. MIT, DARPA, Amazon, IEEE, and SIAM collaborated to establish <a href="https://graphchallenge.mit.edu/" target="_blank" rel="noopener">GraphChallenge</a>, which consists of several hundred data sets and well-defined mathematical graph problems in the areas of triangle counting, clustering of streaming graphs, and sparse DNNs. Since its debut in 2017, GraphChallenge has seen an abundance of submissions — contestants have even integrated parts of their work into a wide range of research programs and system procurements.</p>
+<p>GraphChallenge has revealed that due to resulting improvements in graph analysis systems, many graph problems are now fundamentally bound by computer memory bandwidth (as opposed to processor speed or memory latency) [9]. It has also provided clear targets for those who are trying to advance computing systems scaling for the solution of graph problems. Additionally, innovations to improve the performance of graph algorithms have fed back into sparse linear algebra libraries to benefit scientific computing applications like Kokkos Kernels [11].</p>
+<p>Questions in ontology/data modeling pertain to the way in which researchers handle more diverse data. The data that we want to manage with graphs involve more than just simple vertices and edges; they often include a large variety of very diverse metadata that are stored in SQL and NoSQL databases. Unsurprisingly, many folks in the database community have also been working on graph databases. To mathematically encompass these concepts, we must generalize the idea of a matrix into something called an associative array. For example, one can view a matrix as a mapping<br>
+<strong>A</strong>:<em>I</em>×<em>J</em>→<em>V</em><br>
+where <em>I</em>={1,&hellip;,<em>M</em>}, <em>J</em>={1,&hellip;,<em>N</em>}, and <em>V</em> is complex. In an associative array, <em>I</em> and <em>J</em> are now any strict totally ordered set (e.g., a set of strings) and <em>V</em> is a semiring [7]. This concept was first implemented in the D4M software system, which links matrix mathematics and databases. It is now present in a number of database systems that utilize GraphBLAS as their underlying mathematical engine [2].</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-figure-2-streaming-multi-hyper-edge-graph-edge-or-incidence-matrices-assign-a-row-to-each-edge-and-naturally-handle-the-dynamic-addition-of-identical-edges-multi-edges-and-edges-that-connect-more-than-two-vertices-hyper-edges-eoutei0-and-einej0-imply-an-edge-e-between-vertex-i-and-vertex-j-figure-courtesy-of-jeremy-kepner">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Figure 2. Streaming multi-hyper-edge graph. Edge (or incidence) matrices assign a row to each edge and naturally handle the dynamic addition of identical edges (multi-edges) and edges that connect more than two vertices (hyper-edges). Eout(*e*,*i*)&gt;0 and Ein(*e*,*j*)&gt;0 imply an edge e between vertex *i* and vertex *j*. Figure courtesy of Jeremy Kepner." srcset="
+               /blog/20221003-siamnews/11029Figure2_hu_1ef49addbc52a834.webp 400w,
+               /blog/20221003-siamnews/11029Figure2_hu_ec4e5671014b713c.webp 760w,
+               /blog/20221003-siamnews/11029Figure2_hu_f2792ea5b5559bcc.webp 1200w"
+               src="/blog/20221003-siamnews/11029Figure2_hu_1ef49addbc52a834.webp"
+               width="649"
+               height="334"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Figure 2. Streaming multi-hyper-edge graph. Edge (or incidence) matrices assign a row to each edge and naturally handle the dynamic addition of identical edges (multi-edges) and edges that connect more than two vertices (hyper-edges). E<sub>out</sub>(<em>e</em>,<em>i</em>)&gt;0 and E<sub>in</sub>(<em>e</em>,<em>j</em>)&gt;0 imply an edge e between vertex <em>i</em> and vertex <em>j</em>. Figure courtesy of Jeremy Kepner.
+    </figcaption></figure>
+
+<p>Time-evolving or streaming graphs have become one of the most important problems in graph analysis, and GraphBLAS has a natural way of addressing streaming graphs with diverse data via edge (or incidence) matrices (see Figure 2). Traditional adjacency matrices are limited in the types of graphs that they can represent. Adjacency matrices typically represent directed weighted graphs—which are a very important class of problems—but real data tend to be much more dynamic and diverse, with multiple edges and hyper-edges (edges that are connected to multiple vertices). In an edge matrix representation, one can easily adjust for this type of graph by simply adding rows to the end of the matrix. Furthermore, researchers can compute the corresponding adjacency matrix via<br>
+<strong>A</strong>=<strong>E</strong><sub>out</sub><sup>T</sup><strong>E</strong><sub>in</sub><br>
+where <sup>T</sup> denotes the matrix transpose.</p>
+<p>Ultimately, the aforementioned capabilities—enabled by GraphBLAS along with other graph innovations that are highlighted by GraphChallenge—have yielded new tools for tackling some of the most difficult and important problems in health data, privacy-preserving analytics, cybersecurity, and DNNs.</p>
+<h3 id="references">References</h3>
+<p>[1] Buluç, A., Mattson, T., McMillan, S., Moreira, J., &amp; Yang, C. (2017). Design of the GraphBLAS API for C. In 2017 IEEE international parallel and distributed processing symposium workshops (IPDPSW). Lake Buena Vista, FL: IEEE.<br>
+[2] Cailliau, P., Davis, T., Gadepally, V., Kepner, J., Lipman, R., Lovitz, J., &amp; Ouaknine, K. (2019). RedisGraph GraphBLAS enabled graph database. In 2019 IEEE international parallel and distributed processing symposium workshops (IPDPSW). Rio de Janeiro, Brazil: IEEE.<br>
+[3] Cormen, T.H., Leiserson, C.E., Rivest, R.L., &amp; Stein, C. (2022). Introduction to algorithms (4th ed). Cambridge, MA: MIT Press.<br>
+[4] Davis, T.A. (2019). Algorithm 1000: SuiteSparse:GraphBLAS: Graph algorithms in the language of sparse linear algebra. ACM Transact. Math. Software, 45(4), 1-25.<br>
+[5] Kepner, J., Aaltonen, P., Bader, D., Buluç, A., Franchetti, F., Gilbert, J., … Moreira, J. (2016). Mathematical foundations of the GraphBLAS. In 2016 IEEE high performance extreme computing conference (HPEC). Waltham, MA: IEEE.<br>
+[6] Kepner, J., &amp; Gilbert, J. (Eds.) (2011). Graph algorithms in the language of linear algebra. Philadelphia, PA: Society for Industrial and Applied Mathematics.<br>
+[7] Kepner, J., &amp; Jananthan, H. (2018). Mathematics of big data: Spreadsheets, databases, matrices, and graphs. In MIT Lincoln Laboratory Series. Cambridge, MA: MIT Press.<br>
+[8] Mattson, T., Bader, D., Berry, J., Buluç, A., Dongarra, J., Faloutsos, C., … Yoo, A. (2013). Standards for graph algorithm primitives. In 2013 IEEE high performance extreme computing conference (HPEC). Waltham, MA: IEEE.<br>
+[9] Samsi, S., Kepner, J., Gadepally, V., Hurley, M., Jones, M., Kao, E., … Monticciolo, P. (2020). GraphChallenge.org triangle counting performance. In 2020 IEEE high performance extreme computing conference (HPEC). Waltham, MA: IEEE.<br>
+[10] Song, W.S., Kepner, J., Nguyen, H.T., Kramer, J.I., Gleyzer, V., Mann, J.R., … Mullen, J. (2010). 3-D graph processor. Presented at the fourteenth annual high performance embedded computing workshop (HPEC 2010). Lexington, MA: MIT Lincoln Laboratory.<br>
+[11] Trott, C., Berger-Vergiat, L., Poliakof, D., Rajamanickam, S., Lebrun-Grandie, D., Madsen, J., … Womeldorff, G. (2021). The Kokkos EcoSystem: Comprehensive performance portability for high performance computing. Comput. Sci. Eng., 23(5), 10-18.</p>
+<p>Jeremy Kepner is head and founder of the Massachusetts Institute of Technology (MIT) Lincoln Laboratory’s Supercomputing Center, a founder of the MIT-Air Force AI Accelerator, and a founder of the Massachusetts Green High Performance Computing Center, with appointments in MIT’s Department of Mathematics and MIT Connection Science. He is a SIAM Fellow. <strong>David A. Bader</strong> is a distinguished professor and founder of the Department of Data Science in the Ying Wu College of Computing, as well as director of the Institute for Data Science at the New Jersey Institute of Technology. He is a SIAM Fellow. Tim Davis is a professor of computer science and engineering at Texas A&amp;M University. He is also a SIAM Fellow. Roger Pearce is a computer scientist in the Center for Applied Scientific Computing at Lawrence Livermore National Laboratory and an adjunct Computer Science and Engineering Associate Professor of Practice at Texas A&amp;M University. Michael M. Wolf manages the Scalable Algorithms Department at Sandia National Laboratories.</p>
+<p><a href="https://sinews.siam.org/Details-Page/graphblas-and-graphchallenge-advance-network-frontiers" target="_blank" rel="noopener">https://sinews.siam.org/Details-Page/graphblas-and-graphchallenge-advance-network-frontiers</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F&amp;text=GraphBLAS&#43;and&#43;GraphChallenge&#43;Advance&#43;Network&#43;Frontiers" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F&amp;t=GraphBLAS&#43;and&#43;GraphChallenge&#43;Advance&#43;Network&#43;Frontiers" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=GraphBLAS%20and%20GraphChallenge%20Advance%20Network%20Frontiers&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F&amp;title=GraphBLAS&#43;and&#43;GraphChallenge&#43;Advance&#43;Network&#43;Frontiers" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=GraphBLAS&#43;and&#43;GraphChallenge&#43;Advance&#43;Network&#43;Frontiers%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221003-siamnews%2F&amp;title=GraphBLAS&#43;and&#43;GraphChallenge&#43;Advance&#43;Network&#43;Frontiers" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

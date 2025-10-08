@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Harwood | David A. Bader</title>
+    <link>http://localhost:1313/authors/david-harwood/</link>
+      <atom:link href="http://localhost:1313/authors/david-harwood/index.xml" rel="self" type="application/rss+xml" />
+    <description>David Harwood</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 1996 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>David Harwood</title>
+      <link>http://localhost:1313/authors/david-harwood/</link>
+    </image>
+    
+    <item>
+      <title>Parallel Algorithms for Image Enhancement and Segmentation by Region Growing with an Experimental Study</title>
+      <link>http://localhost:1313/publications/1996-bjhd/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bjhd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel algorithms for image enhancement and segmentation by region growing, with an experimental study</title>
+      <link>http://localhost:1313/publications/1996-bjh-da/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/1996-bjh-da/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

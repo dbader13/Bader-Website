@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="By J. William Bell, NCSA Senior Science Writer
+Gene data allow researchers to recover the evolutionary history of plants, but even the smallest dataset can require impossibly large computations. Using an Alliance Linux cluster and newly designed software, a team from the University of New Mexico and the University of Texas have increased the speed of the process millionfold for one family of plants.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20010302-hpcwire/" />
+<link rel="canonical" href="http://localhost:1313/blog/20010302-hpcwire/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20010302-hpcwire/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20010302-hpcwire/" />
+<meta property="og:title" content="A Flower&#39;s Family Tree | David A. Bader" />
+<meta property="og:description" content="By J. William Bell, NCSA Senior Science Writer
+Gene data allow researchers to recover the evolutionary history of plants, but
+even the smallest dataset can require impossibly large computations. Using an
+Alliance Linux cluster and newly designed software, a team from the University
+of New Mexico and the University of Texas have increased the speed of the
+process millionfold for one family of plants." /><meta property="og:image" content="http://localhost:1313/blog/20010302-hpcwire/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2001-03-02T22:15:47-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2001-03-02T22:15:47-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>A Flower&#39;s Family Tree | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="96cf17f9de5d822bdf33f816b4ca89a3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>A Flower&#39;s Family Tree</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 2, 2001
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="/blog/20010302-hpcwire/20010302-HPCwire.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 407px; max-height: 124px;">
+  <div style="position: relative">
+    <img src="/blog/20010302-hpcwire/featured_hu_8f261b1655c72f7f.webp" width="407" height="124" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><em>By J. William Bell, NCSA Senior Science Writer</em></p>
+<p>Gene data allow researchers to recover the evolutionary history of plants, but
+even the smallest dataset can require impossibly large computations. Using an
+Alliance Linux cluster and newly designed software, a team from the University
+of New Mexico and the University of Texas have increased the speed of the
+process millionfold for one family of plants.</p>
+<p>If you&rsquo;re looking for extreme diversity, consider bluebells, officially the
+Campanulaceae family. The 2,000 species of these plants with bell-shaped
+flowers show amazing variety. They live everywhere on Earth except the Sahara,
+Antarctica, and the northern extremes of Greenland. Some are annuals, and
+others are perennials. Despite their common name, the flowers can be blue,
+purple, red, or yellow. The bluebells of North America typically grow close to
+the ground, while Asian species can grow as tall as eight feet.</p>
+<p>As fascinating as that diversity is, it&rsquo;s not the sort of thing that
+computational scientists usually get excited about. Uncovering how that
+diversity came to be has captured the attention of a team of researchers at
+Alliance partner University of New Mexico and the University of Texas, though.
+Using the 512-processor LosLobos Linux Pentium III supercomputing cluster at
+the Albuquerque High Performance Computing Center, the team has created a
+phylogeny reconstruction &ndash; or evolutionary history &ndash; of 12 bluebell species,
+predicting all of the steps that take these species back to a single common
+ancestor. To meet the challenge, they created a whole new piece of software
+known as GRAPPA.</p>
+<p>&ldquo;In our context, we can answer the question of why we do this work by saying,
+&lsquo;We just want to know, and we like a challenge.&rsquo; But phylogeny reconstruction
+has very significant implications to pharmaceutical design and in other
+industries,&rdquo; says Bernard Moret, a computer science professor at the
+University of New Mexico.</p>
+<p>Before beginning to reconstruct the species&rsquo; evolutionary history, the team
+had to decide which model of evolution would inform their project. &ldquo;There are
+a number of models out there that talk about how evolution occurs. They
+represent the different general principles that evolution might have
+followed,&rdquo; says <strong>David A. Bader</strong>, an electrical and computer engineering
+professor at the University of New Mexico.</p>
+<p>Some models figure the likelihood of given events within the species&rsquo; history,
+such as duplications, deletions, and insertions of genes, and use that
+information to create possible histories. These methods are computationally
+expensive, and gathering the data necessary to run them is difficult.</p>
+<p>Rather than taking a statistical approach, however, the model used by Bader
+and Moret&rsquo;s team was built on an idea known as parsimony. &ldquo;By saying
+parsimony, we&rsquo;re basically saying that nature is efficient,&rdquo; says Moret. &ldquo;It
+gives rise to new species through the least amount of change. Parsimony is
+founded on the same principle as Occam&rsquo;s razor: the simplest explanation is
+the best. Here, the shortest evolutionary path is the best.&rdquo;</p>
+<p>The team arrived at this theory by following the lead of biologists like their
+colleague Robert Jansen, chairman of the University of Texas at Austin&rsquo;s
+Section of Integrative Biology, who studies evolution and collects the gene
+data used by the team. The gene data are taken from the chloroplast of each
+species of Campanulaceae. Chloroplasts provide energy for the plant cells and
+do not occur independently outside of cells. They also make excellent
+candidates for phylogenic reconstruction because each chloroplast has a single
+chromosome. The genes on the chloroplasts&rsquo; chromosomes have been sequenced,
+and biologists like Jansen hypothesize that evolution occurs through a
+mechanism known as inversion. Inversion contributes to evolution by changing
+the order and orientation of a sequence of genes within a genome. At times
+inversions may even undo themselves, returning the order of genes on the
+chloroplast chromosome to its former state.</p>
+<p>Parsimony may imply efficiency, but, the efforts necessary to actually build
+reconstructions, clearly leave simplicity far behind.</p>
+<p>Each phylogenetic reconstruction, called a tree, represents one possible
+history of the species. The Campanulaceae project begins with 12 modern
+species of bluebell and a single species of tobacco. Tobacco is used as an
+outgroup, a species that is clearly very distant from the others, and is used
+to identify the root of the tree. To predict the evolutionary history, almost
+14 billion trees must be built and compared to one another. Bader, Moret and
+their colleague Tandy Warnow of the computer science department at the
+University of Texas at Austin go far beyond constructing the underlying tree
+and its eventual outcome, also calculating gene order for each predicted
+ancestor within the trees. That means a whopping 100 billion genomes must be
+reconstructed.</p>
+<p>&ldquo;We need to build as complete a picture of the ancestry as possible,&rdquo; says
+Moret. &ldquo;Computing ancestral gene orders also enables us to put differing
+evolutionary models to the test.&rdquo;</p>
+<p>For these computer scientists, the reconstructions amount to a massive
+optimization problem &ndash; a game of creating all the possible evolutionary
+scenarios that could have occurred and then narrowing down those billions of
+options to a single best solution. The process begins with the raw gene data
+taken from the chloroplast of each species of Campanulaceae. The bluebell
+chloroplasts&rsquo; single chromosomes are each made up of 105 gene segments. The
+genes within the individual genomes are always the same. That is, all 13
+genomes have identical genes and identical lengths, but in different species
+the genes appear along the chromosome in a different order or orientation.</p>
+<p>The team&rsquo;s code generates trees one at a time. Once a tree is generated, its
+internal nodes &ndash; the intervening ancestors that come between the individual
+species and their final common ancestor &ndash; are labeled by the software.
+Labels, which consist of the gene order data for a given node, are derived
+through a complex optimization process based on the notion of breakpoints.</p>
+<p>A breakpoint occurs any time two genes are adjacent in one genome but are not
+adjacent in a genome to which the first is compared. An internal node&rsquo;s label
+is derived by finding the gene order that minimizes the number of breakpoints
+between a node and its three closest neighbors. &ldquo;This is where the parsimony
+criterion comes in,&rdquo; say Moret. &ldquo;We find a label that minimizes the amount of
+change at this place in the tree.&rdquo; A travelling salesperson problem solver &ndash;
+a common, if expensive, mathematical method of solving optimization problems
+&ndash; is used to find the median, calculating the hypothesized gene order data
+for each node.</p>
+<p>In the initial labeling of the tree, nodes that represent known data are
+separated by many intervening nodes. As a result, a great deal of
+approximation is used in the early stages. Multiple passes at a tree refine
+the approximation. Once the initial labels are assigned, each node has closer
+neighbors that can be used to find the breakpoint median. The code
+recalculates the nodes&rsquo; labels based on these new data, repeating this process
+again and again and recalculating any node that saw changes in one of its
+neighbors in the previous pass, until the tree stabilizes.</p>
+<p>Labeling and refining the trees is by far the most challenging step.
+&ldquo;Computing a single median is intractable in itself, and we solve these over
+and over. It&rsquo;s a very computationally intensive procedure,&rdquo; Moret says. With
+this step complete, each tree is scored, using inversions as the metric. These
+scores show researchers which trees are most parsimonious. Thus, the scores
+also show which evolutionary history best fits the model and give a plausible
+snapshot of each genome within that history.</p>
+<p>&ldquo;In completing so many trees, you see very good and very bad ones. Ones that
+match up very closely and ones that don&rsquo;t,&rdquo; says Bader. &ldquo;What we look for is
+commonality. A consensus tree that we can dig in deep on and that will give us
+a foothold to larger phylogenies.&rdquo;</p>
+<p>But mostly, the team lets biologists who use their data look for commonality,
+consensus, and the like. Bader, Moret, Warnow, and their students are in it
+for the computational challenge. And the Campanulaceae phylogeny
+reconstruction certainly gives them that.</p>
+<p>At the beginning of the project, they wanted nothing more than to improve
+BPAnalysis, a code used for breakpoint phylogeny research. BPAnalysis would
+have required over 200 years to generate, label, and score the nearly 14
+billion trees represented in the Campanulaceae problem.</p>
+<p>&ldquo;We started with the goal of reimplementing BPAnalysis from the ground up. It
+was simply much too slow. We wanted to gain efficiency and speed by improving
+the algorithm and by parallelizing the code. Just focusing on one of those
+wouldn&rsquo;t have given us the kinds of improvements we&rsquo;ve seen,&rdquo; says Moret.</p>
+<p>BPAnalysis relabels every internal node each time it refines a tree; GRAPPA
+recalculates labels for only those nodes that could possibly show a change.
+BPAnalysis looks at identical strings of genes over and over again, even those
+matching other gene fragments that have already been analyzed; GRAPPA
+identifies common subsequences and condenses them, leaving fewer genes to be
+considered. BPAnalysis runs on only one processor; GRAPPA scales linearly to
+hundreds of processors running in parallel. GRAPPA leaves a scant memory
+footprint of only 1.6 megabytes and can work almost entirely in a computer&rsquo;s
+cache memory thanks to a working set of less than 0.5 megabytes. GRAPPA is
+also modular, allowing different methods of calculating the nodes&rsquo; labels to
+be swapped in and out easily.</p>
+<p>When recently tested on the Campanulaceae problem on Albuquerque&rsquo;s LosLobos
+computing cluster, GRAPPA showed incredible results. The massive
+reconstruction was completed in one hour and 40 minutes on the machine&rsquo;s 512
+733-MHz Pentium III processors &ndash; a 1,000,000-fold speedup over BPAnalysis.</p>
+<p>Now that&rsquo;s the sort of thing a computational scientist can get excited about
+&ndash; an example of cluster computing in full bloom.</p>
+<p>Relevant URLs:</p>
+<p>&ndash;Access story:
+<a href="http://access.ncsa.uiuc.edu/CoverStories/phylogeny/" target="_blank" rel="noopener">http://access.ncsa.uiuc.edu/CoverStories/phylogeny/</a></p>
+<p>&ndash;GRAPPA homepage:
+<a href="http://thelma.cs.unm.edu/~moret/GRAPPA/" target="_blank" rel="noopener">http://thelma.cs.unm.edu/~moret/GRAPPA/</a></p>
+<p>&ndash;David A. Bader&rsquo;s homepage:
+<a href="http://www.eece.unm.edu/~dbader/" target="_blank" rel="noopener">http://www.eece.unm.edu/~dbader/</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F&amp;text=A&#43;Flower%27s&#43;Family&#43;Tree" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F&amp;t=A&#43;Flower%27s&#43;Family&#43;Tree" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=A%20Flower%27s%20Family%20Tree&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F&amp;title=A&#43;Flower%27s&#43;Family&#43;Tree" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=A&#43;Flower%27s&#43;Family&#43;Tree%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20010302-hpcwire%2F&amp;title=A&#43;Flower%27s&#43;Family&#43;Tree" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

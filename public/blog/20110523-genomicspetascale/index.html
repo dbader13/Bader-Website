@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="As a new era centered on human health dawns around the world, the life sciences — accelerated by the tremendous bloom of genomics — are poised to open new horizons. And, in this relatively new, interdisciplinary branch of biology called genomics, computing plays a critical role, particularly in such areas as genome assembly, analysis and interpretation.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20110523-genomicspetascale/" />
+<link rel="canonical" href="http://localhost:1313/blog/20110523-genomicspetascale/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20110523-genomicspetascale/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20110523-genomicspetascale/" />
+<meta property="og:title" content="Genomics on the Petascale | David A. Bader" />
+<meta property="og:description" content="As a new era centered on human health dawns around the world, the life sciences — accelerated by the tremendous bloom of genomics — are poised to open new horizons. And, in this relatively new, interdisciplinary branch of biology called genomics, computing plays a critical role, particularly in such areas as genome assembly, analysis and interpretation." /><meta property="og:image" content="http://localhost:1313/blog/20110523-genomicspetascale/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2011-05-23T08:10:11-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2011-05-23T08:10:11-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Genomics on the Petascale | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="d2868bf4a3a04e93c48f4516ccaf2306" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Genomics on the Petascale</h1>
+
+  
+  <p class="page-subtitle">How HPC is transforming biological research</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 23, 2011
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 248px; max-height: 139px;">
+  <div style="position: relative">
+    <img src="/blog/20110523-genomicspetascale/featured_hu_bc18b19148b350ed.webp" width="248" height="139" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>As a new era centered on human health dawns around the world, the life sciences — accelerated by the tremendous bloom of genomics — are poised to open new horizons. And, in this relatively new, interdisciplinary branch of biology called genomics, computing plays a critical role, particularly in such areas as genome assembly, analysis and interpretation.</p>
+<p>Genome sequences are available for many organisms, but making biological sense of the genomic data requires high performance computing methods and an evolutionary perspective, whether one is trying to understand how genes of new functions arise, why genes are organized as they are in chromosomes, or why these arrangements are subject to change.</p>
+<p>In the last five years, next-generation sequencing technologies, pioneered by 454 Life Sciences, Solexa/Illumina, SOLiD/ABI and other industry beacons, have produced an acceleration of sequencing speed three orders faster than the best Sanger machines renowned for their use in the Human Genome Project. Today, with the genomes of more than 5,000 biological species sequenced or well in progress, the complexity of algorithms applied for genome decoding, gene identification, comparison and inference of biological function and evolution grows fast.</p>
+<p>In any normally equipped bioinformatics lab, one will find computers whose running times of bioinformatics applications are simply too slow for effective workflow. Hence, genomics becomes a research area where high performance computing applications are perhaps in the highest demand.</p>
+<h3 id="decoding-fragaria-vesca">Decoding Fragaria vesca</h3>
+<p>Consider as one example the success of an international consortium working on the genome of the woodland strawberry, an endeavor that depended heavily on the accuracy and speed of two new gene-prediction algorithms developed in the lab of Mark Borodovsky at Georgia Tech, one of the authors of this article.</p>
+<p>The first algorithm, GeneMark.hmm-ES, takes as input an anonymous genomic sequence, then works in iterations to converge on algorithm parameters that deliver probabilistic (Hidden Markov) models of genomic regions that carry and do not carry the genetic code. Afterward, the thus-defined models are used in Viterbi algorithms that parse the genomic sequence into coding and non-coding regions. The second algorithm, GeneMark-ES+,“pre-processes” the transcriptome sequence data that provide additional evidence for protein coding genes and integrates this evidence as a restriction into the Viterbi optimal parse.</p>
+<p>Working on a strawberry genome of some 240 million nucleotides, and 11 million long sequences from the expressed transcripts, it would take two weeks for each full run of these algorithms on conventional computers. And, to repeat these runs on several genome assemblies and transcriptome versions would add another four or five months to the project.</p>
+<p>Fortunately, the Borodovsky lab had access to a teraflop cluster sponsored by NIH with the ability to perform parallel computations on 300 processors. This computer reduced the time of a full run of the two algorithms to just four hours, and the results of all necessary runs were obtained within a total of 48 hours. The algorithms confidently — and quickly! — identified 34,809 strawberry genes encoding strawberry proteins.</p>
+<p>A paper on the strawberry genome was published in the journal Nature Genetics in December 2010. From a genetic standpoint, the woodland strawberry, formally known as Fragaria vesca, is similar to the cultivated strawberry, but less complex, making it easier to study, breed and improve.</p>
+<h3 id="supercomputing-toward-phylogenies">Supercomputing toward phylogenies</h3>
+<p>Still, decoding of larger and more complex genomes, such as the 20 GB genome of Norway spruce (otherwise known as a Christmas tree), is posing even larger challenges. Borodovsky and his fellow Georgia Tech researchers are hoping to address these open problems by developing new algorithms that will delineate large swaths of surely non-coding regions, prior to pinpointing exact locations of protein-coding genes.</p>
+<p>Given the ready availability of sequenced genomes, a natural question arises: How are these sequences related in evolutionary terms? And how can we use those similarities to reconstruct their phylogenetic history? A phylogeny is an evolutionary tree reconstructed from its leaves (each of which represents a different species) by comparing DNA sequences or gene data with a plausible model of evolution. Because phylogenies are crucial to answering many fundamental open questions in biomolecular evolution, biologists have a strong interest in algorithms that enable resolution of such ancient relationships.</p>
+<p>A considerable body of applied research depends on these algorithms as well. Pharmaceutical companies use phylogenetic analysis in drug discovery — for instance, in discovering biochemical pathways unique to target organisms. Health organizations study the phylogenies of such organisms as HIV to understand their epidemiologies and to aid in predicting the course of disease over time within an individual. Government laboratories work to develop improved strains of basic foodstuffs, such as rice, wheat and potatoes, using an understanding of the phylogenetic distribution of variation in wild populations. Finally, the reconstruction of large phylogenies could yield fundamental new insights into the process of evolution itself.</p>
+<p>Technological advances in high-throughput DNA sequencing have opened up the possibility of determining how living things are related by analyzing the ways in which their genes have been rearranged on chromosomes. However, inferring such evolutionary relationships from rearrangement events is computationally intensive even on the most advanced computing systems available today.</p>
+<h3 id="grappa-ling-with-genomes">GRAPPA-ling with genomes</h3>
+<p>Georgia Tech computational scientist <strong>David A. Bader</strong>, one of the authors of this article, leads a research group that has developed the software package GRAPPA for reconstructing evolutionary histories using gene-order data. GRAPPA was first implemented to use breakpoint distance between genomes. Bader’s research took a new approach: using the inversion distance between genomes, which is a more biologically accurate measure. His team designed new techniques for reconstructing large-scale phylogenies with hundreds to thousands of taxa. For example, on a dataset of a dozen bellflower genomes, the latest version of GRAPPA determined the flowers’ evolutionary relatedness a billion times faster than the original implementation, which did not utilize parallel processing or optimization.</p>
+<p>Research recently funded by the American Recovery and Reinvestment Act of 2009 aims to develop computational tools that will utilize next-generation petascale computers to understand genomic evolution. The four-year $1 million project, supported by the National Science Foundation’s PetaApps program, was awarded to a team of universities that includes Georgia Tech, University of South Carolina (USC) and Pennsylvania State University.</p>
+<p>Even on today’s fastest parallel computers, it could take centuries to analyze genome rearrangements for large, complex organisms. That is why the research team — led by Bader at Georgia Tech and also including Jijun Tang, an associate professor of computer science and engineering at USC; and Stephen Schaeffer, an associate professor of biology at Penn State — is focusing on future generations of petascale machines, which will be able to process more than a thousand trillion (or 1015) calculations per second. Today, most personal computers can only process a few hundred thousand calculations per second.</p>
+<p>The researchers are developing a new high performance software package called COGNAC (Comparing Orders of Genes using Novel Algorithms and high-performance Computers) and will test the performance of their new algorithms by analyzing a collection of fruit fly (Drosophilia) genomes. The analysis of genome rearrangements in Drosophila will provide a relatively simple system to understand the mechanisms that underlie gene order diversity, which can later be extended to more complex mammalian genomes, such as primates.</p>
+<p>These new algorithms, the researchers believe, will make genome rearrangement analysis more reliable and efficient, while potentially revealing new evolutionary patterns. Armed with this understanding, scientists in fields from drug discovery to food production and dozens of others will be better equipped to address many of the grand challenges facing humanity today.</p>
+<h3 id="references">References</h3>
+<ol>
+<li>Strawberry genome paper: <a href="http://opal.biology.gatech.edu/GeneMark/PAPERS/Strawberry_NG.pdf" target="_blank" rel="noopener">http://opal.biology.gatech.edu/GeneMark/PAPERS/Strawberry_NG.pdf</a></li>
+<li>GeneMark-ES: <a href="http://nar.oxfordjournals.org/content/33/20/6494.full" target="_blank" rel="noopener">http://nar.oxfordjournals.org/content/33/20/6494.full</a></li>
+<li>GRAPPA: “Industrial Applications of High-Performance Computing for Phylogeny Reconstruction,” D.A. Bader, B. M.E. Moret, and L. Vawter, SPIE ITCom: Commercial Applications for High-Performance Computing (SPIE ITCom2001), Denver, CO, SPIE Vol. 4528, pp. 159-168, August 21-22, 2001.</li>
+<li>COGNAC: “Rec-DCM-Eigen: Reconstructing a Less Parsimoniousbut More Accurate Tree in Shorter Time,” Seunghwa Kang, Jijun Tang, Stephen W. Schaeffer, and David A. Bader. Technical Report, Georgia Institute of Technology, February 2011.</li>
+<li>COGNAC: “On the Design of Architecture-Aware Algorithms for Emerging Applications,” Seunghwa Kang, Ph.D. Dissertation, School of Electrical and Computer Engineering, Georgia Institute of Technology, January 2011.</li>
+</ol>
+<p><em>Mark Borodovsky is Regents’ Professor in the Wallace H. Coulter Department of Biomedical Engineering and the School of Computational Science &amp; Engineering, as well as Director of the Center of Bioinformatics and Computational Genomics at the Georgia Institute of Technology. David A. Bader is Professor in the School of Computational Science &amp; Engineering and Executive Director of High Performance Computing at the Georgia Institute of Technology. They may be reached at <a href="mailto:editor@ScientificComputing.com">editor@ScientificComputing.com</a>.</em></p>
+<p>by Mark Borodovsky and <strong>David A. Bader</strong></p>
+<p><a href="https://www.rdmag.com/article/2011/05/genomics-petascale" target="_blank" rel="noopener">https://www.rdmag.com/article/2011/05/genomics-petascale</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F&amp;text=Genomics&#43;on&#43;the&#43;Petascale" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F&amp;t=Genomics&#43;on&#43;the&#43;Petascale" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Genomics%20on%20the%20Petascale&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F&amp;title=Genomics&#43;on&#43;the&#43;Petascale" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Genomics&#43;on&#43;the&#43;Petascale%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20110523-genomicspetascale%2F&amp;title=Genomics&#43;on&#43;the&#43;Petascale" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

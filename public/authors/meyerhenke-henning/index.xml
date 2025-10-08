@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Henning Meyerhenke | David A. Bader</title>
+    <link>http://localhost:1313/authors/meyerhenke-henning/</link>
+      <atom:link href="http://localhost:1313/authors/meyerhenke-henning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Henning Meyerhenke</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 23 Mar 2022 10:42:09 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/meyerhenke-henning/avatar_hu_59c35b7c7549188f.jpg</url>
+      <title>Henning Meyerhenke</title>
+      <link>http://localhost:1313/authors/meyerhenke-henning/</link>
+    </image>
+    
+    <item>
+      <title>Scalable Katz Ranking Computation in Large Static and Dynamic Graphs</title>
+      <link>http://localhost:1313/publications/2022-vbgbm/</link>
+      <pubDate>Wed, 23 Mar 2022 10:42:09 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-vbgbm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benchmarking for Graph Clustering and Partitioning</title>
+      <link>http://localhost:1313/publications/2018-bkm/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-bkm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Katz Ranking Computation in Large Static and Dynamic Graphs</title>
+      <link>http://localhost:1313/publications/2018-vd-gbg/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-vd-gbg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematical foundations of the GraphBLAS</title>
+      <link>http://localhost:1313/publications/2016-kab/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-kab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphs, Matrices, and the GraphBLAS: Seven Good Reasons</title>
+      <link>http://localhost:1313/publications/2015-kbb/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2015-kbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Benchmarking for Graph Clustering and Partitioning</title>
+      <link>http://localhost:1313/publications/2014-bms/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-bms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Partitioning and Graph Clustering</title>
+      <link>http://localhost:1313/publications/2013-bmsw/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-bmsw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel community detection for massive graphs</title>
+      <link>http://localhost:1313/publications/2013-rmeb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-rmeb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Community Detection for Massive Graphs</title>
+      <link>http://localhost:1313/publications/2013-rme-ba/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-rme-ba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PASQUAL: Parallel Techniques for Next Generation Genome Sequence Assembly</title>
+      <link>http://localhost:1313/publications/2013-lpmb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-lpmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of streaming social networks and graphs on multicore architectures</title>
+      <link>http://localhost:1313/publications/2012-rmb/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-rmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Multi-threaded Community Detection in Social Networks</title>
+      <link>http://localhost:1313/publications/2012-rbm/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-rbm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Community Detection for Massive Graphs</title>
+      <link>http://localhost:1313/publications/2011-rmeb/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-rmeb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tracking Structure of Streaming Social Networks</title>
+      <link>http://localhost:1313/publications/2011-erbm/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-erbm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

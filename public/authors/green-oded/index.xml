@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oded Green | David A. Bader</title>
+    <link>http://localhost:1313/authors/green-oded/</link>
+      <atom:link href="http://localhost:1313/authors/green-oded/index.xml" rel="self" type="application/rss+xml" />
+    <description>Oded Green</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 04 Jul 2023 10:48:23 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/green-oded/avatar_hu_ff8584a7eedfeeed.jpg</url>
+      <title>Oded Green</title>
+      <link>http://localhost:1313/authors/green-oded/</link>
+    </image>
+    
+    <item>
+      <title>Parallel Triangles and Squares Count for Multigraphs Using Vertex Covers</title>
+      <link>http://localhost:1313/publications/2023-cfgb/</link>
+      <pubDate>Tue, 04 Jul 2023 10:48:23 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-cfgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Katz Ranking Computation in Large Static and Dynamic Graphs</title>
+      <link>http://localhost:1313/publications/2022-vbgbm/</link>
+      <pubDate>Wed, 23 Mar 2022 10:42:09 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-vbgbm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anti-Section Transitive Closure</title>
+      <link>http://localhost:1313/publications/2021-gdpxlb/</link>
+      <pubDate>Fri, 17 Dec 2021 18:35:00 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2021-gdpxlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using RAPIDS AI to Accelerate Graph Data Science Workflows</title>
+      <link>http://localhost:1313/publications/2020-hbg/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:20 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-hbg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance Impact of Memory Channels on Sparse and Irregular Algorithms</title>
+      <link>http://localhost:1313/publications/2019-gfyb/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2019-gfyb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skip the Intersection: Quickly Counting Common Neighbors on Shared-Memory Systems</title>
+      <link>http://localhost:1313/publications/2019-xab/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2019-xab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fast and Adaptive List Intersections on the GPU</title>
+      <link>http://localhost:1313/publications/2018-fgg/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-fgg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hornet: An Efficient Data Structure for Dynamic Sparse Graphs and Matrices on GPUs</title>
+      <link>http://localhost:1313/publications/2018-bgbb/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-bgbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logarithmic Radix Binning and Vectorized Triangle Counting</title>
+      <link>http://localhost:1313/publications/2018-gfw/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-gfw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Katz Ranking Computation in Large Static and Dynamic Graphs</title>
+      <link>http://localhost:1313/publications/2018-vd-gbg/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-vd-gbg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design and implementation of parallel PageRank on multicore platforms</title>
+      <link>http://localhost:1313/publications/2017-zls/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-zls/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publications/2017-zls/certificate_hu_458586d582539542.webp 400w,
+               /publications/2017-zls/certificate_hu_a64848bfce63e9a7.webp 760w,
+               /publications/2017-zls/certificate_hu_e5496128844a0cc5.webp 1200w&#34;
+               src=&#34;http://localhost:1313/publications/2017-zls/certificate_hu_458586d582539542.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;580&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Exact and Parallel Triangle Counting in Dynamic Graphs</title>
+      <link>http://localhost:1313/publications/2017-mbg/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-mbg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quickly finding a truss in a haystack</title>
+      <link>http://localhost:1313/publications/2017-gfk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-gfk/</guid>
+      <description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publications/2017-gfk/certificate_hu_d3ab147914716cd2.webp 400w,
+               /publications/2017-gfk/certificate_hu_358bbabf01adbde2.webp 760w,
+               /publications/2017-gfk/certificate_hu_ab8a7595369420d2.webp 1200w&#34;
+               src=&#34;http://localhost:1313/publications/2017-gfk/certificate_hu_d3ab147914716cd2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;585&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>cuSTINGER: Supporting dynamic graph algorithms for GPUs</title>
+      <link>http://localhost:1313/publications/2016-gb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-gb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic database applications at the Samtavro Cemetery, Georgia</title>
+      <link>http://localhost:1313/publications/2016-bmg/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-bmg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Load balanced clustering coefficients</title>
+      <link>http://localhost:1313/publications/2014-gmb/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-gmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new parallel algorithm for connected components in dynamic graphs</title>
+      <link>http://localhost:1313/publications/2013-mgb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting insider threats in a real corporate database of computer usage activity</title>
+      <link>http://localhost:1313/publications/2013-sgm/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-sgm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster Betweenness Centrality Based on Data Structure Experimentation</title>
+      <link>http://localhost:1313/publications/2013-gb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-gb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster Clustering Coefficient Using Vertex Covers</title>
+      <link>http://localhost:1313/publications/2013-g-ba/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-g-ba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Fast Algorithm for Streaming Betweenness Centrality</title>
+      <link>http://localhost:1313/publications/2012-gmb/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-gmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU Merge Path: A GPU Merging Algorithm</title>
+      <link>http://localhost:1313/publications/2012-gm-ba/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-gm-ba/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

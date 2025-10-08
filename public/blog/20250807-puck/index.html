@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="By Ian Krietzberg
+In the demo, Sam Altman hinted that OpenAI is “discovering new paradigms,” but it’s unclear what those are, or whether they are in some way present in GPT-5. Photo: Justin Sullivan/Getty Images For all the feverish excitement surrounding today’s release of GPT-5, the latest and most advanced OpenAI model seems to represent more of an incremental update than a paradigm-shifting breakthrough. At a press briefing, C.E.O. Sam Altman called GPT-5 a “major upgrade” that serves as a “significant step along the path to A.G.I.,” or artificial general intelligence, an entirely hypothetical technology. At another point he referred to it as “very A.G.I.-like.” Obviously, we’re not quite there—and it’s not clear that we ever will be.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20250807-puck/" />
+<link rel="canonical" href="http://localhost:1313/blog/20250807-puck/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20250807-puck/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20250807-puck/" />
+<meta property="og:title" content="Slaughterhouse GPT-5 | David A. Bader" />
+<meta property="og:description" content="By Ian Krietzberg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+      In the demo, Sam Altman hinted that OpenAI is “discovering new paradigms,” but it’s unclear what those are, or whether they are in some way present in GPT-5. Photo: Justin Sullivan/Getty Images
+    
+
+For all the feverish excitement surrounding today’s release of GPT-5, the latest and most advanced OpenAI model seems to represent more of an incremental update than a paradigm-shifting breakthrough. At a press briefing, C.E.O. Sam Altman called GPT-5 a “major upgrade” that serves as a “significant step along the path to A.G.I.,” or artificial general intelligence, an entirely hypothetical technology. At another point he referred to it as “very A.G.I.-like.” Obviously, we’re not quite there—and it’s not clear that we ever will be." /><meta property="og:image" content="http://localhost:1313/blog/20250807-puck/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2025-08-07T10:21:55-04:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2025-08-07T10:21:55-04:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Slaughterhouse GPT-5 | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="bd56e27df7d411746bb4bd3649902180" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Slaughterhouse GPT-5</h1>
+
+  
+  <p class="page-subtitle">Silicon Valley is adjusting its expectations yet again, after OpenAI’s latest model turned out to be more of an upgrade than a great leap forward. “It’s not a disappointment in the sense that it won’t actually be better,” said one A.I. researcher. “But a disappointment relative to what people were expecting.”</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 7, 2025
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 189px;">
+  <div style="position: relative">
+    <img src="/blog/20250807-puck/featured_hu_1e17025d1af638aa.webp" width="720" height="189" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><em>By Ian Krietzberg</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-in-the-demo-sam-altman-hinted-that-openai-is-discovering-new-paradigms-but-its-unclear-what-those-are-or-whether-they-are-in-some-way-present-in-gpt-5-photo-justin-sullivangetty-images">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="In the demo, Sam Altman hinted that OpenAI is “discovering new paradigms,” but it’s unclear what those are, or whether they are in some way present in GPT-5. *Photo: Justin Sullivan/Getty Images*" srcset="
+               /blog/20250807-puck/GettyImages-2218344193-scaled-e1754599600977-1088x612_hu_8e536853096411a1.webp 400w,
+               /blog/20250807-puck/GettyImages-2218344193-scaled-e1754599600977-1088x612_hu_f8b83e47b15b02c9.webp 760w,
+               /blog/20250807-puck/GettyImages-2218344193-scaled-e1754599600977-1088x612_hu_d3a427a5850b0ffa.webp 1200w"
+               src="/blog/20250807-puck/GettyImages-2218344193-scaled-e1754599600977-1088x612_hu_8e536853096411a1.webp"
+               width="760"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      In the demo, Sam Altman hinted that OpenAI is “discovering new paradigms,” but it’s unclear what those are, or whether they are in some way present in GPT-5. <em>Photo: Justin Sullivan/Getty Images</em>
+    </figcaption></figure>
+
+<p>For all the feverish excitement surrounding today’s release of GPT-5, the latest and most advanced OpenAI model seems to represent more of an incremental update than a paradigm-shifting breakthrough. At a press briefing, C.E.O. <strong>Sam Altman</strong> called GPT-5 a “major upgrade” that serves as a “significant step along the path to A.G.I.,” or artificial general intelligence, an entirely hypothetical technology. At another point he referred to it as “very A.G.I.-like.” Obviously, we’re not quite there—and it’s not clear that we ever will be.</p>
+<p>Nevertheless, GPT-5, which comes in pro, standard, “mini,” and “nano” flavors, is a pretty impressive upgrade—<a href="https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff?triedRedirect=true" target="_blank" rel="noopener">particularly to the folks</a> who got to test it out before the release. The system offers better coding and software development capabilities than previous models—it scored a 74.9 percent on SWE-bench, the popular software engineering benchmark—which could make it more competitive with Anthropic models. According to Altman, GPT-5 can “instantaneously create an entire piece of computer software … on demand.” In a demo at the briefing, an OpenAI researcher created a seemingly functional web app with a two-paragraph prompt in less than a minute. It’s also on par with the competition on a series of other benchmarks, although it’s not a knockout; on ARC-AGI-2, for instance, <strong>Elon Musk</strong>’s Grok 4 maintains <a href="https://x.com/fchollet/status/1953511631054680085" target="_blank" rel="noopener">a significant lead</a>.</p>
+<p>But what most distinguishes GPT-5 from past iterations is its two-model architecture, which combines a “high-throughput model” to handle ordinary questions with a “reasoning” model to answer thornier ones. A “real-time router” decides which of the two models to use based on each prompt. “This idea that we can use more compute, higher-quality data, better environments, whatever, to make smarter and smarter models, we see orders of magnitude more gains in front of us,” Altman said, with the addendum, of course, that he’ll have to invest in the compute side “at an eye-watering rate” to get there (surely good news for Nvidia, whose stock hit a new 52-week high today).</p>
+<p>GPT-5 also hallucinates less than previous OpenAI models, at least according to the company’s own internal evaluations. The improvements point to the possibility of new or hybrid architectures (or lots of engineering scaffolding), which OpenAI didn’t clarify when I asked about it. In the demo, Altman hinted that OpenAI is “discovering new paradigms,” but it’s unclear what those are, or whether they are in some way present in GPT-5. Meanwhile, the model’s context window—which refers to the amount of text, in tokens, that a model can “remember” at one time—is 400,000 tokens (in the A.P.I.), significantly less than the million-token-strong context window of GPT-4.1.</p>
+<p>Perhaps most notably for the average user, OpenAI says that GPT-5 just “feels more human”—although what that means is anyone’s guess. “In which ways is it more human than it was before?” asked Dr. <strong>David Bader</strong>, the director of the Institute for Data Science at the New Jersey Institute of Technology, when I asked for his first impression. “Does it talk in one’s vernacular? Does it make more mistakes, since to err is human?” As even Altman conceded, we’re not quite through the looking glass yet.</p>
+<h2 id="baby-steps">Baby Steps</h2>
+<p>The road to GPT-5 has been longer than originally anticipated. Many thought it would <a href="https://arstechnica.com/information-technology/2024/03/openais-gpt-5-may-launch-this-summer-upgrading-chatgpt-along-the-way/" target="_blank" rel="noopener">launch</a> last year, about a year after Altman debuted GPT-4 in March 2023. Instead, OpenAI released a series of incremental updates and new models: 4o and 4o-mini, o1, o3, and GPT-4.5 (which was <a href="https://venturebeat.com/ai/openai-moves-forward-with-gpt-4-5-deprecation-in-api-triggering-developer-anguish-and-confusion/" target="_blank" rel="noopener">later scrapped</a>) and 4.1, none of which were apparently worthy of the lofty GPT-5 title.</p>
+<p>In fact, a downshift in the pace of innovation from giant leaps to incremental gains has become a defining feature of the A.I. industry. That’s not to say that many of these new products aren’t impressive. It’s just getting harder to achieve something that could be considered legitimately groundbreaking. In the meantime, increased competition between A.I. companies has pushed them to release smaller upgrades—on an accelerated time frame, no less—in order to stay one step ahead of their rivals. Earlier this week, Anthropic released <a href="https://x.com/AnthropicAI/status/1952768432027431127" target="_blank" rel="noopener">Claude Opus 4.1</a>, which is supposedly better at coding than Opus 4 (funny timing, OpenAI), and Google debuted <a href="https://x.com/agrimgupta92/status/1952735042029105392" target="_blank" rel="noopener">DeepMind’s Genie 3</a>, a “world model” with enhanced memory. OpenAI also released its long-awaited <a href="https://openai.com/index/introducing-gpt-oss/" target="_blank" rel="noopener">GPT-oss series</a>, a handful of smallish, partially open models.</p>
+<p>According to Dr. <strong>John Licato</strong>, the director of the Advancing Machine and Human Reasoning Lab at the University of South Florida, this is just how science works. “There’s this kind of popular misconception of scientific advancement where it’s a lone genius in a room who creates something and it emerges from their mind fully baked,” he told me. “That’s not really how it works. Everybody keeps building off of each other, and they make a minor change, then when you’ve had enough of those minor changes, you call it a major release. This is no different.”</p>
+<p>Even at this incremental pace, Licato and Bader explained, genuine model improvements are becoming more difficult to squeeze out. Several <a href="https://www.reuters.com/business/retail-consumer/openais-long-awaited-gpt-5-model-nears-release-2025-08-06/" target="_blank" rel="noopener">reports</a> have detailed OpenAI’s hard journey to GPT-5, and asserted that the leap between GPT-4 and GPT-5 is significantly smaller than the leap between GPT-3 and GPT-4. “The improvements are slowing down,” Bader told me. “They’re not as dramatic as those first couple of releases.”</p>
+<p>Bader wasn’t really surprised by anything in the GPT-5 release, and called the coding improvements “low-hanging fruit”—especially since Anthropic’s Claude has generally been considered a much better coding assistant than anything OpenAI has been able to produce thus far. And when it comes to OpenAI’s claim that GPT-5 will feature less user deception, less hallucination, and instantaneous software generation, he’ll believe it when he sees it. “I tend to discount statements like that as potentially more marketing- or publicity-related,” Bader said, noting that prerelease testing rarely captures the full breadth of a model’s performance; it takes millions of real-world users to find their actual limits. (Also, as with pretty much every A.I. model release since 2022, non-peer-reviewed demos always look fantastic—but the reality tends to be a little less rosy.)</p>
+<p>For Licato, who was expecting to see a significant hardware integration, or leveled-up video processing, a model that’s merely “better” probably won’t meet most people’s expectations. “It’s not a disappointment in the sense that it won’t actually be better,” he told me. “But a disappointment relative to what people are expecting, given that it’s the big version number.” The model, he later added, shouldn’t even be called GPT-5. “This is GPT-4.2. Absolutely nothing groundbreaking here, and honestly, even the presenters seemed underprepared,” he said. “They let Google and Anthropic dictate their release schedule, and it shows.”</p>
+<p>Indeed, many of the most impactful advances going forward will likely revolve around more prosaic concerns: product-market fit, user interface, customer experience, etcetera. (GPT-5 allows users to select a personality and choose different colors for their chats.) As Licato told me, for the big players, it’s all about “that attention-economy win.”</p>
+<p>Bader agreed that “we need to distinguish between genuine advances and marketing narratives designed to attract talent and investment.” Technically, he noted, we’ve seen plenty of impressive model advancements over the last few years, including enhanced planning, reasoning, and multimodal understanding. OpenAI, in particular, has pioneered key innovations in chain-of-thought reasoning, reinforcement learning, and improved tokenization strategies, but it’s not a significant step toward A.G.I., or manna from heaven for some of the <a href="https://firstmonday.org/ojs/index.php/fm/article/view/13636" target="_blank" rel="noopener">A.I. pseudo-religions</a> that have permeated across Silicon Valley.</p>
+<p>“When companies suggest they’re on the verge of achieving artificial general intelligence, it creates unrealistic expectations and potentially diverts attention from more immediate A.I. challenges around bias, reliability, and transparency,” Bader said. He added that we should recognize OpenAI’s technical, incremental advancements as “engineering achievements within the current paradigm—not evidence of an imminent leap to A.G.I.”</p>
+<p><a href="https://puck.news/gpt5s-underwhelming-launch-and-the-limits-of-ai-hype/" target="_blank" rel="noopener">https://puck.news/gpt5s-underwhelming-launch-and-the-limits-of-ai-hype/</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F&amp;text=Slaughterhouse&#43;GPT-5" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F&amp;t=Slaughterhouse&#43;GPT-5" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Slaughterhouse%20GPT-5&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F&amp;title=Slaughterhouse&#43;GPT-5" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Slaughterhouse&#43;GPT-5%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20250807-puck%2F&amp;title=Slaughterhouse&#43;GPT-5" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

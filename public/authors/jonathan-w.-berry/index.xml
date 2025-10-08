@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jonathan W. Berry | David A. Bader</title>
+    <link>http://localhost:1313/authors/jonathan-w.-berry/</link>
+      <atom:link href="http://localhost:1313/authors/jonathan-w.-berry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jonathan W. Berry</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Jonathan W. Berry</title>
+      <link>http://localhost:1313/authors/jonathan-w.-berry/</link>
+    </image>
+    
+    <item>
+      <title>Standards for Graph Algorithm Primitives</title>
+      <link>http://localhost:1313/publications/2014-mbba/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-mbba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards for graph algorithm primitives</title>
+      <link>http://localhost:1313/publications/2013-mbb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced Shortest Paths Algorithms on a Massively-Multithreaded Architecture</title>
+      <link>http://localhost:1313/publications/2007-cbmb/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-cbmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Experimental Study of A Parallel Shortest Path Algorithm for Solving Large-Scale Graph Instances</title>
+      <link>http://localhost:1313/publications/2007-mbbc/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-mbbc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multithreaded Algorithms for Processing Massive Graphs</title>
+      <link>http://localhost:1313/publications/2007-mc-bc/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-mc-bc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Shortest Path Algorithms for Solving Large-Scale Instances</title>
+      <link>http://localhost:1313/publications/2006-mbbc/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-mbbc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

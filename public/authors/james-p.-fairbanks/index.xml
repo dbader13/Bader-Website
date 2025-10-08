@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>James P. Fairbanks | David A. Bader</title>
+    <link>http://localhost:1313/authors/james-p.-fairbanks/</link>
+      <atom:link href="http://localhost:1313/authors/james-p.-fairbanks/index.xml" rel="self" type="application/rss+xml" />
+    <description>James P. Fairbanks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>James P. Fairbanks</title>
+      <link>http://localhost:1313/authors/james-p.-fairbanks/</link>
+    </image>
+    
+    <item>
+      <title>Spectral partitioning with blends of eigenvectors</title>
+      <link>http://localhost:1313/publications/2017-fbs/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-fbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A local measure of community change in dynamic graphs</title>
+      <link>http://localhost:1313/publications/2016-znfb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-znfb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New stopping criteria for spectral partitioning</title>
+      <link>http://localhost:1313/publications/2016-fzb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-fzb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Behavioral clusters in dynamic graphs</title>
+      <link>http://localhost:1313/publications/2015-fkpb/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2015-fkpb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spectral Partitioning with Blends of Eigenvectors</title>
+      <link>http://localhost:1313/publications/2015-fsb/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2015-fsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A statistical framework for streaming graph analysis</title>
+      <link>http://localhost:1313/publications/2013-fem/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-fem/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

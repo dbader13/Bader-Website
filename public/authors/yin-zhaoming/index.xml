@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhaoming Yin | David A. Bader</title>
+    <link>http://localhost:1313/authors/yin-zhaoming/</link>
+      <atom:link href="http://localhost:1313/authors/yin-zhaoming/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zhaoming Yin</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/yin-zhaoming/avatar_hu_78db3ca0d64515a0.jpg</url>
+      <title>Zhaoming Yin</title>
+      <link>http://localhost:1313/authors/yin-zhaoming/</link>
+    </image>
+    
+    <item>
+      <title>Exemplar or Matching: Modeling DCJ Problems with Unequal Content Genome Data</title>
+      <link>http://localhost:1313/publications/2017-ytsb/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-ytsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exemplar or matching: modeling DCJ problems with unequal content genome data</title>
+      <link>http://localhost:1313/publications/2016-ytsb/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-ytsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Lin-Kernighan Heuristic for the DCJ Median Problem of Genomes with Unequal Contents</title>
+      <link>http://localhost:1313/publications/2014-ytsb/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-ytsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming Breakpoint Graph Analytics for Accelerating and Parallelizing the Computation of DCJ Median of Three Genomes</title>
+      <link>http://localhost:1313/publications/2013-ytsb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-ytsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On accelerating iterative algorithms with CUDA: A case study on Conditional Random Fields training algorithm for biological sequence alignment</title>
+      <link>http://localhost:1313/publications/2010-dylb/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-dylb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

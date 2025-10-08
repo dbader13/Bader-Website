@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hassan Fallah-Adl | David A. Bader</title>
+    <link>http://localhost:1313/authors/hassan-fallah-adl/</link>
+      <atom:link href="http://localhost:1313/authors/hassan-fallah-adl/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hassan Fallah-Adl</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2000 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Hassan Fallah-Adl</title>
+      <link>http://localhost:1313/authors/hassan-fallah-adl/</link>
+    </image>
+    
+    <item>
+      <title>High performance computing algorithms for land cover dynamics using remote sensing data</title>
+      <link>http://localhost:1313/publications/2000-kjb/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2000-kjb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

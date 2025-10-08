@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tandy Warnow | David A. Bader</title>
+    <link>http://localhost:1313/authors/tandy-warnow/</link>
+      <atom:link href="http://localhost:1313/authors/tandy-warnow/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tandy Warnow</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 07 Oct 2025 07:54:39 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Tandy Warnow</title>
+      <link>http://localhost:1313/authors/tandy-warnow/</link>
+    </image>
+    
+    <item>
+      <title>On the Optimization of Methods for Establishing Well-Connected Communities</title>
+      <link>http://localhost:1313/publications/2025-drbpcwb/</link>
+      <pubDate>Tue, 07 Oct 2025 07:54:39 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-drbpcwb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New approaches for using gene order data in phylogeny reconstruction</title>
+      <link>http://localhost:1313/publications/2001-jbmr/</link>
+      <pubDate>Sun, 12 Aug 2001 21:24:52 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2001-jbmr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

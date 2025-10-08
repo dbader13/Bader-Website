@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: October 8, 2025 --><html lang="en-us" >
+
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="David A. Bader" />
+
+
+
+
+
+  
+
+<meta name="description" content="By Alex Woodie
+(Matej Kastelic/Shutterstock) Universities looking for resources to build their data science curriculums and degree programs have a new resource at their disposal in the form of the Academic Data Science Alliance. Founded just prior to the pandemic, the ADSA survived COVID and now it’s working to foster a community of data science leaders at universities across North America and Europe.
+" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="http://localhost:1313/blog/20221122-datanami/" />
+<link rel="canonical" href="http://localhost:1313/blog/20221122-datanami/" />
+
+
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu_17e9a6122551a9eb.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_b914b33f8e933fd7.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@Prof_DavidBader" />
+  <meta property="twitter:creator" content="@Prof_DavidBader" />
+<meta property="twitter:image" content="http://localhost:1313/blog/20221122-datanami/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="David A. Bader" />
+<meta property="og:url" content="http://localhost:1313/blog/20221122-datanami/" />
+<meta property="og:title" content="Academic Data Science Alliance Picks Up Steam | David A. Bader" />
+<meta property="og:description" content="By Alex Woodie
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+      (Matej Kastelic/Shutterstock)
+    
+
+Universities looking for resources to build their data science curriculums and degree programs have a new resource at their disposal in the form of the Academic Data Science Alliance. Founded just prior to the pandemic, the ADSA survived COVID and now it’s working to foster a community of data science leaders at universities across North America and Europe." /><meta property="og:image" content="http://localhost:1313/blog/20221122-datanami/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2022-11-22T21:03:35-05:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2022-11-22T21:03:35-05:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Academic Data Science Alliance Picks Up Steam | David A. Bader</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="28a88e76f981d9684d3e4f9b55130013" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">David A. Bader</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#books"><span>Books</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/resume.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://www.facebook.com/ProfDavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Facebook" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/Prof_DavidBader" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>Academic Data Science Alliance Picks Up Steam</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 22, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 361px; max-height: 159px;">
+  <div style="position: relative">
+    <img src="/blog/20221122-datanami/featured_hu_abd6e21246d831fe.webp" width="361" height="159" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p><em>By Alex Woodie</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-matej-kastelicshutterstock">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="(Matej Kastelic/Shutterstock)" srcset="
+               /blog/20221122-datanami/college_shutterstock_Matej-Kastelic-300x200_hu_ba708a07e8a37c51.webp 400w,
+               /blog/20221122-datanami/college_shutterstock_Matej-Kastelic-300x200_hu_4f3407b4f420ce40.webp 760w,
+               /blog/20221122-datanami/college_shutterstock_Matej-Kastelic-300x200_hu_bdd4e5849537d9bb.webp 1200w"
+               src="/blog/20221122-datanami/college_shutterstock_Matej-Kastelic-300x200_hu_ba708a07e8a37c51.webp"
+               width="300"
+               height="200"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      (Matej Kastelic/Shutterstock)
+    </figcaption></figure>
+
+<p>Universities looking for resources to build their data science curriculums and degree programs have a new resource at their disposal in the form of the Academic Data Science Alliance. Founded just prior to the pandemic, the ADSA survived COVID and now it’s working to foster a community of data science leaders at universities across North America and Europe.</p>
+<p>The roots of <a href="https://academicdatascience.org/" target="_blank" rel="noopener">Academic Data Science Alliance</a> go back to 2014 at the University of Washington, one of three schools selected by the <a href="https://sloan.org/" target="_blank" rel="noopener">Alfred P Sloan Foundation</a> and the <a href="https://www.moore.org/" target="_blank" rel="noopener">Gordon and Betty Moore Foundation</a> to foster and enhance data-intensive discovery in university settings. UC Berkeley and NYU were the other schools to participate in the Moore-Sloan Data Science Environments.</p>
+<p>As an executive director of University of Washington’s <a href="https://escience.washington.edu/" target="_blank" rel="noopener">eScience Institute</a>, Micaela Parker worked with the foundations on this academic data science experiment. An oceanographer by training, Parker struggled with big data and statistics early in her academic career and realized there was a large need to use data science concepts and techniques across different academic disciplines.</p>
+<p>After the fifth and final year of the MSDSEs, it was clear the program was a success at the eScience Institute and other universities. In addition to achieving critical mass and becoming self-sustaining, the faculty and students benefited from the “rich intellectual” environment of the institute and kickstarted a data science career track, <a href="https://escience.washington.edu/reflections-on-five-years-of-the-moore-sloan-data-science-environments/" target="_blank" rel="noopener">among other findings</a> of the program at the eScience Institute.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/20221122-datanami/academic-data-science-alliance_logo-300x144_hu_5d86d75ae747c0b9.webp 400w,
+               /blog/20221122-datanami/academic-data-science-alliance_logo-300x144_hu_a3825e015cc040b.webp 760w,
+               /blog/20221122-datanami/academic-data-science-alliance_logo-300x144_hu_884a978631b794fe.webp 1200w"
+               src="/blog/20221122-datanami/academic-data-science-alliance_logo-300x144_hu_5d86d75ae747c0b9.webp"
+               width="300"
+               height="144"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<p>But that success triggered another problem, Parker says. “The two foundations recognized they couldn’t afford to invest to that extent in all of the universities nationwide,” she tells <em>Datanami</em> in an interview. “So they approached me…and asked me to put together a proposal for a national organization that would do some of the same things.”</p>
+<h2 id="data-science-education">Data Science Education</h2>
+<p>Thus was the beginning of the ADSA. Backed by the same two foundations, Parker founded the organization in the spring of 2019, and she has led the program as its executive director ever since.</p>
+<p>The group’s charter has several items. First and foremost, it serves as a clearinghouse of information for heads of data science departments or university-wide institutes  and deans of related colleges at universities around the country.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-micaela-parker-founder-and-executive-director-of-the-academic-data-science-alliance">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Micaela Parker, founder and executive director of the Academic Data Science Alliance" srcset="
+               /blog/20221122-datanami/micaela-parker_hu_9255592716b4bf6a.webp 400w,
+               /blog/20221122-datanami/micaela-parker_hu_1a6f17b97fd90c0.webp 760w,
+               /blog/20221122-datanami/micaela-parker_hu_8299e2fd66cebaa6.webp 1200w"
+               src="/blog/20221122-datanami/micaela-parker_hu_9255592716b4bf6a.webp"
+               width="300"
+               height="300"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      Micaela Parker, founder and executive director of the Academic Data Science Alliance
+    </figcaption></figure>
+
+<p>Micaela Parker, founder and executive director of the Academic Data Science Alliance</p>
+<p>In addition to helping to establish relevant data science curricula for bachelors, Master’s and PhD programs, the ADSA helps universities think about how to attract professors and build a staff for their data science programs, which is a major challenge.</p>
+<p>“It’s like the chicken and the egg,” Parker says. “There hasn’t been a PhD in data science to hire into your faculty for data science. You have to kind of say, okay, what fields would I hire from, what qualifications am I looking for? And then on top of that, everybody is hiring.”</p>
+<p>The ADSA also hosts a variety of events and workshops, including an annual meeting and the <a href="https://academicdatascience.org/adsa-meetings" target="_blank" rel="noopener">Data Science Leadership Summit</a>, which is held every spring (next year’s summit is scheduled for May 8-10 at Boston University).</p>
+<p>The group also caters to data science students, and posts ads for data science jobs, both in industry and in academia. It doesn’t have a formal journal, but it does publish the ADSA Monthly newsletter as well as the <a href="https://academicdatascience.org/resources/newsletter" target="_blank" rel="noopener">Data Science Community Newsletter</a>, which was originally started at NYU and has nearly 9,000 readers. It has an active Slack channel with more than 900 members. In general, it seeks to act as the glue keeping the academic data science community together.</p>
+<p>“Our mission is to connect any data science researchers, educators, or practitioners in academia to help them to do better data science,” Parker says.</p>
+<h2 id="adsa-finds-growth">ADSA Finds Growth</h2>
+<p>Parker had just finished standing up the ADSA and hosting the first round of events in early 2020 when COVID hit. Like other groups, the ADSA pivoted to virtual conferences and Zoom meetings. Parker and her staff used the downtime to build up the group’s resources, and after the lockdowns ended, the group went back to hosting in-person events, which are a critical aspect of its charter.</p>
+<p>ADSA has more than 45 paying academic members (Image courtesy ADSA)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-adsa-has-more-than-45-paying-academic-members-image-courtesy-adsa">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ADSA has more than 45 paying academic members (Image courtesy ADSA)" srcset="
+               /blog/20221122-datanami/ADSA_Institution-members-725x410_hu_8761eff1097d1db7.webp 400w,
+               /blog/20221122-datanami/ADSA_Institution-members-725x410_hu_49bb55e769e24613.webp 760w,
+               /blog/20221122-datanami/ADSA_Institution-members-725x410_hu_43a264b293f53b9f.webp 1200w"
+               src="/blog/20221122-datanami/ADSA_Institution-members-725x410_hu_8761eff1097d1db7.webp"
+               width="725"
+               height="410"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      ADSA has more than 45 paying academic members (Image courtesy ADSA)
+    </figcaption></figure>
+
+<p>So far, the group has attracted 45 universities to its ranks of dues-paying members, although it has many more universities participating in programs. The organization is approaching critical mass, and is on a path to becoming self-sustaining, just like the eScience Institute did before it.</p>
+<p>The ADSA has filled a need for many heads of data science programs, including <strong>David Bader</strong>, a distinguished professor and the inaugural director of the Institute for Data Science at the New Jersey Institute of Technology (NJIT).</p>
+<p>“It’s a fantastic group,” Bader says. “The Academic Data Science Alliance is a gathering valuable point for schools that are in the process of creating data science programs, departments, centers, and institutes.”</p>
+<p>Bader, who was recruited to NJIT in 2019 as the founding director of the <a href="https://datascience.njit.edu/" target="_blank" rel="noopener">Institute for Data Science</a>, tapped the collective knowledge of the ADSA earlier this year when his department created two new degree programs, one for a bachelor’s and another for PhD in data science. (NJIT has had a MS in data science running since 2017.) The ADSA was instrumental in providing guidance for developing new degree programs.</p>
+<p>“We needed outside experts to review our curriculum, to give feedback to our university leadership and the state, and we were able to rely on members of the Academic Data Science Alliance to help us improve our offerings,” Bader tells <em>Datanami</em>.</p>
+<h2 id="a-professional-society">A Professional Society?</h2>
+<p>While Parker initially tried to keep ADSA a more informal group with a close, grass-roots connection to its members, the ADSA has gradually come to resemble a professional society.</p>
+<p>According to Bader, the ADSA serves the need for a professional data science society in the same way that the <a href="https://www.acm.org/" target="_blank" rel="noopener">Association for Computing Machinery</a> (ACM) serves the computer science community.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-david-bader-distinguished-professor-and-founding-director-of-the-institute-for-data-science-at-the-new-jersey-institute-for-technology">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="David Bader, distinguished professor and founding director of the Institute for Data Science at the New Jersey Institute for Technology" srcset="
+               /blog/20221122-datanami/Bader-2022-square-300x300_hu_62be3b8db4440b63.webp 400w,
+               /blog/20221122-datanami/Bader-2022-square-300x300_hu_8c76cb056e198305.webp 760w,
+               /blog/20221122-datanami/Bader-2022-square-300x300_hu_aed10b295e923710.webp 1200w"
+               src="/blog/20221122-datanami/Bader-2022-square-300x300_hu_62be3b8db4440b63.webp"
+               width="300"
+               height="300"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      David Bader, distinguished professor and founding director of the Institute for Data Science at the New Jersey Institute for Technology
+    </figcaption></figure>
+
+<p>David Bader, distinguished professor and founding director of the Institute for Data Science at the New Jersey Institute for Technology</p>
+<p>“<em>Computing</em> has about 70 years on us,” Bader says. “But data science is somewhat unique. For instance, in computer science, most of the members come from computer science and computer engineering departments. For data science we have a far greater breadth. In some universities, data science is part of library and information science. In other places, it’s part of computer science or computing, as it is at NJIT, and other places it comes out of the math department or business school.”</p>
+<p>At NJIT, the Institute of Data Science touches four different colleges and involves 40 faculty members. Bader sees the ADSA as being instrumental in helping fledgling data science programs chart a path through these issues and identify which faculty members and topics belong in their program and which ones to avoid.</p>
+<p>“It’s very important that we have a professional society for discussing many of the issues with creating a new academic discipline, that we think about accreditation for academic degree programs, that we think about the university hiring and professional development tracks for promotion, for instance, for research data scientists at the university and then for sharing the best practices for everything data science between these top universities,” Bader says. “There are many types of data scientists and the Academic Data Science Alliance is recognizing that diversity and allowing a meeting point that really brings together these various constituents across many academic disciplines.”</p>
+<p>From her early struggles with bioinformatics as an oceanographer, it was clear that data science touches many different academic disciplines, which is one of the reasons that data science needs its own group. While the ACM and the <a href="https://www.amstat.org/" target="_blank" rel="noopener">American Statistical Association</a> (ASA) did some work in the field of data science, Parker realized that data science deserved its own organization.</p>
+<p>“The debate had been raging, especially in those early days, is data science just applied statistics? And computer science is saying, no it’s an arm of computer science,” Parker says. “So they each tried to create their footprint on data science by creating working groups, and that I think is maybe part of the reason that no one entity emerged until I started this.”</p>
+<p>Parker initially resisted it, but she says that the ADSA is becoming more of a professional association, like the ACM. That’s a good thing for the data science community.</p>
+<p>“I’ve started to realize that that is kind of what we’re becoming, an emerging professional society,” she says. “But we’re still very much focused on those relationships that people have. That’s how we build trust, and that’s how we move the field forward.”</p>
+<h3 id="related-items">Related Items:</h3>
+<p><a href="https://www.datanami.com/2021/08/27/shrinking-the-education-gap-in-data-science/" target="_blank" rel="noopener">Shrinking the Education Gap in Data Science</a></p>
+<p><a href="https://www.datanami.com/2021/08/27/shrinking-the-education-gap-in-data-science/" target="_blank" rel="noopener">In Search of Data Science Talent with Dr. Kirk Borne</a></p>
+<p><a href="https://www.datanami.com/2018/08/23/universities-get-creative-with-data-science-education/" target="_blank" rel="noopener">Universities Get Creative with Data Science Education</a></p>
+<p><a href="https://www.datanami.com/2022/11/22/academic-data-science-alliance-picks-up-steam/" target="_blank" rel="noopener">https://www.datanami.com/2022/11/22/academic-data-science-alliance-picks-up-steam/</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F&amp;text=Academic&#43;Data&#43;Science&#43;Alliance&#43;Picks&#43;Up&#43;Steam" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F&amp;t=Academic&#43;Data&#43;Science&#43;Alliance&#43;Picks&#43;Up&#43;Steam" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook-f">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Academic%20Data%20Science%20Alliance%20Picks%20Up%20Steam&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F&amp;title=Academic&#43;Data&#43;Science&#43;Alliance&#43;Picks&#43;Up&#43;Steam" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Academic&#43;Data&#43;Science&#43;Alliance&#43;Picks&#43;Up&#43;Steam%20http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Flocalhost%3A1313%2Fblog%2F20221122-datanami%2F&amp;title=Academic&#43;Data&#43;Science&#43;Alliance&#43;Picks&#43;Up&#43;Steam" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://localhost:1313/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu_ec4abccdeaf958c0.jpg" alt="David A. Bader"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://localhost:1313/">David A. Bader</a></h5>
+      <h6 class="card-subtitle">Distinguished Professor and Director of the Institute for Data Science</h6>
+      <p class="card-text">David A. Bader is a Distinguished Professor in the Department of Computer Science at New Jersey Institute of Technology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/dbader13/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.facebook.com/ProfDavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Prof_DavidBader" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://ieeexplore.ieee.org/author/37089403015" target="_blank" rel="noopener">
+        <i class="ai ai-ieee"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://dl.acm.org/profile/81100165442" target="_blank" rel="noopener">
+        <i class="ai ai-acmdl"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://scholar.google.com/citations?user=uXUA1pgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-7380-5876" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/David_Bader2" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.scopus.com/authid/detail.uri?authorId=7102450485" target="_blank" rel="noopener">
+        <i class="ai ai-scopus"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.webofscience.com/wos/author/record/AAI-4029-2021" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/dbader13" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

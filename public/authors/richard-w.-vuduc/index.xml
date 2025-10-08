@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Richard W. Vuduc | David A. Bader</title>
+    <link>http://localhost:1313/authors/richard-w.-vuduc/</link>
+      <atom:link href="http://localhost:1313/authors/richard-w.-vuduc/index.xml" rel="self" type="application/rss+xml" />
+    <description>Richard W. Vuduc</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Richard W. Vuduc</title>
+      <link>http://localhost:1313/authors/richard-w.-vuduc/</link>
+    </image>
+    
+    <item>
+      <title>Modeling the Power Variability of Core Speed Scaling on Homogeneous Multicore Systems</title>
+      <link>http://localhost:1313/publications/2017-dgl/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-dgl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating Multicore Processors and Accelerators for Dense Numerical Computations</title>
+      <link>http://localhost:1313/publications/2013-kas/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-kas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sustainable Software Development for Next-Gen Sequencing (NGS) Bioinformatics on Emerging Platforms</title>
+      <link>http://localhost:1313/publications/2013-ssp/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-ssp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding the design trade-offs among current multicore systems for numerical computations</title>
+      <link>http://localhost:1313/publications/2009-kbv/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2009-kbv/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

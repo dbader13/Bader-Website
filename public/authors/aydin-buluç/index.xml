@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aydin Buluç | David A. Bader</title>
+    <link>http://localhost:1313/authors/aydin-bulu%C3%A7/</link>
+      <atom:link href="http://localhost:1313/authors/aydin-bulu%C3%A7/index.xml" rel="self" type="application/rss+xml" />
+    <description>Aydin Buluç</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Aydin Buluç</title>
+      <link>http://localhost:1313/authors/aydin-bulu%C3%A7/</link>
+    </image>
+    
+    <item>
+      <title>Mathematical foundations of the GraphBLAS</title>
+      <link>http://localhost:1313/publications/2016-kab/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-kab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GABB Introduction</title>
+      <link>http://localhost:1313/publications/2014-mbb/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-mbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards for Graph Algorithm Primitives</title>
+      <link>http://localhost:1313/publications/2014-mbba/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2014-mbba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Standards for graph algorithm primitives</title>
+      <link>http://localhost:1313/publications/2013-mbb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mbb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

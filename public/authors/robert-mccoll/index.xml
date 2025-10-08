@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robert McColl | David A. Bader</title>
+    <link>http://localhost:1313/authors/robert-mccoll/</link>
+      <atom:link href="http://localhost:1313/authors/robert-mccoll/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robert McColl</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Robert McColl</title>
+      <link>http://localhost:1313/authors/robert-mccoll/</link>
+    </image>
+    
+    <item>
+      <title>A Brief Study of Open Source Graph Databases</title>
+      <link>http://localhost:1313/publications/2013-mep/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A new parallel algorithm for connected components in dynamic graphs</title>
+      <link>http://localhost:1313/publications/2013-mgb/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-mgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A statistical framework for streaming graph analysis</title>
+      <link>http://localhost:1313/publications/2013-fem/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-fem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting insider threats in a real corporate database of computer usage activity</title>
+      <link>http://localhost:1313/publications/2013-sgm/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-sgm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Fast Algorithm for Streaming Betweenness Centrality</title>
+      <link>http://localhost:1313/publications/2012-gmb/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-gmb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU Merge Path: A GPU Merging Algorithm</title>
+      <link>http://localhost:1313/publications/2012-gm-ba/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-gm-ba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STINGER: High performance data structure for streaming graphs (Best Paper Award)</title>
+      <link>http://localhost:1313/publications/2012-emrb/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-emrb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

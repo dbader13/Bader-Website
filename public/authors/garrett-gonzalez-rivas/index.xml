@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garrett Gonzalez-Rivas | David A. Bader</title>
+    <link>http://localhost:1313/authors/garrett-gonzalez-rivas/</link>
+      <atom:link href="http://localhost:1313/authors/garrett-gonzalez-rivas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Garrett Gonzalez-Rivas</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 25 Aug 2024 13:42:28 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Garrett Gonzalez-Rivas</title>
+      <link>http://localhost:1313/authors/garrett-gonzalez-rivas/</link>
+    </image>
+    
+    <item>
+      <title>A Deployment Tool for Large Scale Graph Analytics Framework Arachne</title>
+      <link>http://localhost:1313/publications/2024-gdb/</link>
+      <pubDate>Sun, 25 Aug 2024 13:42:28 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2024-gdb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

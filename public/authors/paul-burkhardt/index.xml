@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paul Burkhardt | David A. Bader</title>
+    <link>http://localhost:1313/authors/paul-burkhardt/</link>
+      <atom:link href="http://localhost:1313/authors/paul-burkhardt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Paul Burkhardt</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 Dec 2022 10:51:51 +0530</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Paul Burkhardt</title>
+      <link>http://localhost:1313/authors/paul-burkhardt/</link>
+    </image>
+    
+    <item>
+      <title>A Simple and Efficient Algorithm for Finding Minimum Spanning Tree Replacement Edges</title>
+      <link>http://localhost:1313/publications/2022-bb/</link>
+      <pubDate>Tue, 20 Dec 2022 10:51:51 +0530</pubDate>
+      <guid>http://localhost:1313/publications/2022-bb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

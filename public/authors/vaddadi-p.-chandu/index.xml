@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vaddadi P. Chandu | David A. Bader</title>
+    <link>http://localhost:1313/authors/vaddadi-p.-chandu/</link>
+      <atom:link href="http://localhost:1313/authors/vaddadi-p.-chandu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Vaddadi P. Chandu</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Vaddadi P. Chandu</title>
+      <link>http://localhost:1313/authors/vaddadi-p.-chandu/</link>
+    </image>
+    
+    <item>
+      <title>ExactMP: An Efficient Parallel Exact Solver for Phylogenetic Tree Reconstruction Using Maximum Parsimony</title>
+      <link>http://localhost:1313/publications/2006-bcy/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-bcy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance analysis of parallel programs via message-passing graph traversal</title>
+      <link>http://localhost:1313/publications/2006-scb/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-scb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

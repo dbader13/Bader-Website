@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timothy G. Mattson | David A. Bader</title>
+    <link>http://localhost:1313/authors/timothy-g.-mattson/</link>
+      <atom:link href="http://localhost:1313/authors/timothy-g.-mattson/index.xml" rel="self" type="application/rss+xml" />
+    <description>Timothy G. Mattson</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Apr 2021 18:58:56 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Timothy G. Mattson</title>
+      <link>http://localhost:1313/authors/timothy-g.-mattson/</link>
+    </image>
+    
+    <item>
+      <title>LAGraph: Linear Algebra, Network Analysis Libraries, and the Study of Graph Algorithms</title>
+      <link>http://localhost:1313/publications/2021-sbdkmmw/</link>
+      <pubDate>Sun, 11 Apr 2021 18:58:56 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-sbdkmmw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mathematical foundations of the GraphBLAS</title>
+      <link>http://localhost:1313/publications/2016-kab/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-kab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of streaming social networks and graphs on multicore architectures</title>
+      <link>http://localhost:1313/publications/2012-rmb/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-rmb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

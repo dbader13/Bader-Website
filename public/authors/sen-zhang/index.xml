@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sen Zhang | David A. Bader</title>
+    <link>http://localhost:1313/authors/sen-zhang/</link>
+      <atom:link href="http://localhost:1313/authors/sen-zhang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sen Zhang</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 11 Aug 2023 12:37:19 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Sen Zhang</title>
+      <link>http://localhost:1313/authors/sen-zhang/</link>
+    </image>
+    
+    <item>
+      <title>Tunnel: Parallel-inducing sort for large string analytics</title>
+      <link>http://localhost:1313/publications/2023-dzb/</link>
+      <pubDate>Fri, 11 Aug 2023 12:37:19 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-dzb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Suffix Sorting for Large String Analytics</title>
+      <link>http://localhost:1313/publications/2022-dzb/</link>
+      <pubDate>Tue, 13 Sep 2022 18:48:25 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-dzb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Efficient LP Rounding Scheme for Replica Placement</title>
+      <link>http://localhost:1313/publications/2020-dzbh/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:50 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-dzbh/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

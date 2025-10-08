@@ -1,0 +1,68 @@
+{{- define "main" -}}
+
+<article class="article article-event">
+  <div class="article-container">
+    
+    {{/* Title */}}
+    <h1 itemprop="name">{{ .Title }}</h1>
+
+    {{/* Event logo/image - centered */}}
+    {{ $featured := (.Resources.ByType "image").GetMatch "*featured*" }}
+    {{ with $featured }}
+    <div class="article-header" style="text-align: center; margin: 2rem 0;">
+      {{ $image := .Resize "500x" }}
+      <img src="{{ $image.RelPermalink }}" alt="" style="display: inline-block;">
+    </div>
+    {{ end }}
+
+    {{/* Abstract */}}
+    {{ with .Params.abstract }}
+    <h3>Abstract</h3>
+    <p class="pub-abstract" style="text-align: justify;">{{ . | markdownify }}</p>
+    {{ end }}
+
+    {{/* Date/Event/Location - indented table with larger font */}}
+    <table style="margin: 2rem 0 2rem 3rem; border-collapse: collapse; border: none; width: auto; font-size: 1.1rem;">
+      {{ with .Date }}
+      <tr style="border: none;">
+        <td style="padding: 0.2rem 2rem 0.2rem 0; font-weight: bold; vertical-align: top; white-space: nowrap; border: none;">Date</td>
+        <td style="padding: 0.2rem 0; border: none;">
+          {{ .Format "Jan 2, 2006 3:04 PM" }}
+          {{ with $.Params.date_end }}
+            {{ $end_time := time . }}
+            &ndash; {{ $end_time.Format "3:04 PM" }}
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+      
+      {{ with .Params.event }}
+      <tr style="border: none;">
+        <td style="padding: 0.2rem 2rem 0.2rem 0; font-weight: bold; vertical-align: top; white-space: nowrap; border: none;">Event</td>
+        <td style="padding: 0.2rem 0; border: none;">
+          {{ if $.Params.event_url }}
+            <a href="{{ $.Params.event_url }}" target="_blank" rel="noopener">{{ . }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+      
+      {{ with .Params.location }}
+      <tr style="border: none;">
+        <td style="padding: 0.2rem 2rem 0.2rem 0; font-weight: bold; vertical-align: top; white-space: nowrap; border: none;">Location</td>
+        <td style="padding: 0.2rem 0; border: none;">{{ . }}</td>
+      </tr>
+      {{ end }}
+    </table>
+
+    {{/* Content / Biography */}}
+    <div class="article-style">
+      {{ .Content }}
+    </div>
+
+  </div>
+</article>
+
+{{- end -}}

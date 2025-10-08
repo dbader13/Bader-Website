@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gert-Jan Both | David A. Bader</title>
+    <link>http://localhost:1313/authors/gert-jan-both/</link>
+      <atom:link href="http://localhost:1313/authors/gert-jan-both/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gert-Jan Both</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 28 Jun 2025 15:47:27 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Gert-Jan Both</title>
+      <link>http://localhost:1313/authors/gert-jan-both/</link>
+    </image>
+    
+    <item>
+      <title>Rocket-Crane Algorithm for the Feedback Arc Set Problem</title>
+      <link>http://localhost:1313/publications/2025-bebtscd/</link>
+      <pubDate>Sat, 28 Jun 2025 15:47:27 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-bebtscd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rocket-Crane Algorithm for the Feedback Arc Set Problem</title>
+      <link>http://localhost:1313/publications/2025-bebtscdj/</link>
+      <pubDate>Sat, 28 Jun 2025 15:47:27 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-bebtscdj/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

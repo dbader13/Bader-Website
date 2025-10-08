@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matthew Sottile | David A. Bader</title>
+    <link>http://localhost:1313/authors/sottile-matthew/</link>
+      <atom:link href="http://localhost:1313/authors/sottile-matthew/index.xml" rel="self" type="application/rss+xml" />
+    <description>Matthew Sottile</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/sottile-matthew/avatar_hu_28bede688f2f5822.jpg</url>
+      <title>Matthew Sottile</title>
+      <link>http://localhost:1313/authors/sottile-matthew/</link>
+    </image>
+    
+    <item>
+      <title>Performance analysis of parallel programs via message-passing graph traversal</title>
+      <link>http://localhost:1313/publications/2006-scb/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-scb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

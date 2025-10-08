@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virat Agarwal | David A. Bader</title>
+    <link>http://localhost:1313/authors/virat-agarwal/</link>
+      <atom:link href="http://localhost:1313/authors/virat-agarwal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Virat Agarwal</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Virat Agarwal</title>
+      <link>http://localhost:1313/authors/virat-agarwal/</link>
+    </image>
+    
+    <item>
+      <title>Combinatorial Algorithm Design on the Cell/B.E. Processor</title>
+      <link>http://localhost:1313/publications/2010-bamp/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-bamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing Fast Fourier Transform for the IBM Cell Broadband Engine</title>
+      <link>http://localhost:1313/publications/2010-ab/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Graph Exploration on Multicore Processors</title>
+      <link>http://localhost:1313/publications/2010-appb/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-appb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Case of the Fast Financial Feed</title>
+      <link>http://localhost:1313/publications/2010-adl/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-adl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing discrete transforms on the Cell Broadband Engine</title>
+      <link>http://localhost:1313/publications/2009-bak/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2009-bak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster FAST: multicore acceleration of streaming financial data</title>
+      <link>http://localhost:1313/publications/2009-abd/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2009-abd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster FAST: Multicore Acceleration of Streaming Financial Data (Best Paper Award)</title>
+      <link>http://localhost:1313/publications/2009-abda/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2009-abda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Financial modeling on the Cell Broadband Engine</title>
+      <link>http://localhost:1313/publications/2008-alb/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2008-alb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Design of Fast Pseudo-Random Number Generators for the Cell Broadband Engine and an Application to Risk Analysis</title>
+      <link>http://localhost:1313/publications/2008-bca/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2008-bca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FFTC: Fastest Fourier Transform for the IBM Cell Broadband Engine</title>
+      <link>http://localhost:1313/publications/2007-ba/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-ba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High performance combinatorial algorithm design on the Cell Broadband Engine processor</title>
+      <link>http://localhost:1313/publications/2007-bamk/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-bamk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Design and Analysis of Irregular Algorithms on the Cell Processor: A Case Study of List Ranking</title>
+      <link>http://localhost:1313/publications/2007-bam/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-bam/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

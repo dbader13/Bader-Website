@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joseph Patchett | David A. Bader</title>
+    <link>http://localhost:1313/authors/joseph-patchett/</link>
+      <atom:link href="http://localhost:1313/authors/joseph-patchett/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joseph Patchett</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 29 Oct 2022 17:14:31 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Joseph Patchett</title>
+      <link>http://localhost:1313/authors/joseph-patchett/</link>
+    </image>
+    
+    <item>
+      <title>High-Performance Truss Analysis in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-dprb/</link>
+      <pubDate>Sat, 29 Oct 2022 17:14:31 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-dprb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangle Centrality in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-pdlb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:28:32 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-pdlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arachne: An Arkouda Package for Large-Scale Graph Analytics</title>
+      <link>http://localhost:1313/publications/2022-rdplb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:15:56 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-rdplb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactive Graph Analytics at Scale in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-drpb/</link>
+      <pubDate>Wed, 20 Jul 2022 10:12:39 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2022-drpb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Truss Analytics Algorithms and Integration in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-dprb-chiuw/</link>
+      <pubDate>Fri, 10 Jun 2022 20:46:27 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2022-dprb-chiuw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K-Truss Implementation in Arkouda (Extended Abstract)</title>
+      <link>http://localhost:1313/publications/2021-pdb/</link>
+      <pubDate>Tue, 21 Sep 2021 11:37:15 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-pdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactive Graph Stream Analytics in Arkouda</title>
+      <link>http://localhost:1313/publications/2021-drpb/</link>
+      <pubDate>Wed, 21 Jul 2021 11:50:49 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-drpb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

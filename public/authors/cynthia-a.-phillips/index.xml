@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cynthia A. Phillips | David A. Bader</title>
+    <link>http://localhost:1313/authors/cynthia-a.-phillips/</link>
+      <atom:link href="http://localhost:1313/authors/cynthia-a.-phillips/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cynthia A. Phillips</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2005 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Cynthia A. Phillips</title>
+      <link>http://localhost:1313/authors/cynthia-a.-phillips/</link>
+    </image>
+    
+    <item>
+      <title>Parallel Algorithm Design for Branch and Bound</title>
+      <link>http://localhost:1313/publications/2005-bhp/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-bhp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

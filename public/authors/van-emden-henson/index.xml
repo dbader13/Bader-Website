@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Van Emden Henson | David A. Bader</title>
+    <link>http://localhost:1313/authors/van-emden-henson/</link>
+      <atom:link href="http://localhost:1313/authors/van-emden-henson/index.xml" rel="self" type="application/rss+xml" />
+    <description>Van Emden Henson</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Van Emden Henson</title>
+      <link>http://localhost:1313/authors/van-emden-henson/</link>
+    </image>
+    
+    <item>
+      <title>Numerically approximating centrality for graph ranking guarantees</title>
+      <link>http://localhost:1313/publications/2018-nshb/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2018-nshb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graph Ranking Guarantees for Numerical Approximations to Katz Centrality</title>
+      <link>http://localhost:1313/publications/2017-nsf/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-nsf/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

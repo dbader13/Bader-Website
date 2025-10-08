@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zhihui Du | David A. Bader</title>
+    <link>http://localhost:1313/authors/du-zhihui/</link>
+      <atom:link href="http://localhost:1313/authors/du-zhihui/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zhihui Du</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Aug 2025 10:27:03 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/authors/du-zhihui/avatar_hu_4827feeeef00a8aa.jpg</url>
+      <title>Zhihui Du</title>
+      <link>http://localhost:1313/authors/du-zhihui/</link>
+    </image>
+    
+    <item>
+      <title>Designing Parallel Algorithms for Community Detection using Arachne</title>
+      <link>http://localhost:1313/publications/2025-ldb/</link>
+      <pubDate>Sun, 31 Aug 2025 10:27:03 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-ldb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rocket-Crane Algorithm for the Feedback Arc Set Problem</title>
+      <link>http://localhost:1313/publications/2025-bebtscd/</link>
+      <pubDate>Sat, 28 Jun 2025 15:47:27 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-bebtscd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rocket-Crane Algorithm for the Feedback Arc Set Problem</title>
+      <link>http://localhost:1313/publications/2025-bebtscdj/</link>
+      <pubDate>Sat, 28 Jun 2025 15:47:27 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2025-bebtscdj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Deployment Tool for Large Scale Graph Analytics Framework Arachne</title>
+      <link>http://localhost:1313/publications/2024-gdb/</link>
+      <pubDate>Sun, 25 Aug 2024 13:42:28 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2024-gdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhanced Knowledge Graph Attention Networks for Efficient Graph Learning (Outstanding Student Paper Award)</title>
+      <link>http://localhost:1313/publications/2024-vdb/</link>
+      <pubDate>Sun, 25 Aug 2024 13:42:28 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2024-vdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VF2-PS: Parallel and Scalable Subgraph Monomorphism in Arachne</title>
+      <link>http://localhost:1313/publications/2024-drbpdb/</link>
+      <pubDate>Sun, 25 Aug 2024 13:42:28 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2024-drbpdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contour Algorithm for Connectivity</title>
+      <link>http://localhost:1313/publications/2023-drldb2/</link>
+      <pubDate>Sun, 05 Nov 2023 20:06:53 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2023-drldb2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangle Counting Through Cover-Edges (Graph Challenge Student Innovation Award)</title>
+      <link>http://localhost:1313/publications/2023-blgglrd/</link>
+      <pubDate>Mon, 04 Sep 2023 13:42:20 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-blgglrd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Property Graphs in Arachne</title>
+      <link>http://localhost:1313/publications/2023-rbdb/</link>
+      <pubDate>Mon, 04 Sep 2023 13:41:35 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-rbdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Longest Common SubSequence Analysis In Chapel</title>
+      <link>http://localhost:1313/publications/2023-vsdb/</link>
+      <pubDate>Mon, 04 Sep 2023 13:41:23 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-vsdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tunnel: Parallel-inducing sort for large string analytics</title>
+      <link>http://localhost:1313/publications/2023-dzb/</link>
+      <pubDate>Fri, 11 Aug 2023 12:37:19 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-dzb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minimum-Mapping based Connected Components Algorithm</title>
+      <link>http://localhost:1313/publications/2023-drldb/</link>
+      <pubDate>Wed, 24 May 2023 12:38:41 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-drldb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-Performance Truss Analysis in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-dprb/</link>
+      <pubDate>Sat, 29 Oct 2022 17:14:31 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-dprb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parallel Suffix Sorting for Large String Analytics</title>
+      <link>http://localhost:1313/publications/2022-dzb/</link>
+      <pubDate>Tue, 13 Sep 2022 18:48:25 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-dzb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Triangle Centrality in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-pdlb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:28:32 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-pdlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arachne: An Arkouda Package for Large-Scale Graph Analytics</title>
+      <link>http://localhost:1313/publications/2022-rdplb/</link>
+      <pubDate>Fri, 02 Sep 2022 15:15:56 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-rdplb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactive Graph Analytics at Scale in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-drpb/</link>
+      <pubDate>Wed, 20 Jul 2022 10:12:39 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2022-drpb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Truss Analytics Algorithms and Integration in Arkouda</title>
+      <link>http://localhost:1313/publications/2022-dprb-chiuw/</link>
+      <pubDate>Fri, 10 Jun 2022 20:46:27 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2022-dprb-chiuw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anomaly Detection in Catalog Streams</title>
+      <link>http://localhost:1313/publications/2022-ydmzhb/</link>
+      <pubDate>Wed, 23 Mar 2022 10:37:37 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2022-ydmzhb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anti-Section Transitive Closure</title>
+      <link>http://localhost:1313/publications/2021-gdpxlb/</link>
+      <pubDate>Fri, 17 Dec 2021 18:35:00 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2021-gdpxlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamics signature based anomaly detection</title>
+      <link>http://localhost:1313/publications/2021-gdw/</link>
+      <pubDate>Mon, 15 Nov 2021 12:34:23 -0500</pubDate>
+      <guid>http://localhost:1313/publications/2021-gdw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large Scale String Analytics In Arkouda</title>
+      <link>http://localhost:1313/publications/2021-drb2/</link>
+      <pubDate>Tue, 21 Sep 2021 11:38:01 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-drb2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enabling Exploratory Large Scale Graph Analytics through Arkouda</title>
+      <link>http://localhost:1313/publications/2021-drb/</link>
+      <pubDate>Tue, 21 Sep 2021 11:37:49 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-drb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K-Truss Implementation in Arkouda (Extended Abstract)</title>
+      <link>http://localhost:1313/publications/2021-pdb/</link>
+      <pubDate>Tue, 21 Sep 2021 11:37:15 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-pdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interactive Graph Stream Analytics in Arkouda</title>
+      <link>http://localhost:1313/publications/2021-drpb/</link>
+      <pubDate>Wed, 21 Jul 2021 11:50:49 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-drpb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploratory Large Scale Graph Analytics in Arkouda</title>
+      <link>http://localhost:1313/publications/2021-drbmr/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2021-drbmr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Efficient LP Rounding Scheme for Replica Placement</title>
+      <link>http://localhost:1313/publications/2020-dzbh/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:50 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-dzbh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPU Accelerated Anomaly Detection of Large Scale Light Curves</title>
+      <link>http://localhost:1313/publications/2020-mdsbww/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:35 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-mdsbww/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling the Power Variability of Core Speed Scaling on Homogeneous Multicore Systems</title>
+      <link>http://localhost:1313/publications/2017-dgl/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-dgl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When Good Enough Is Better: Energy-Aware Scheduling for Multicore Servers</title>
+      <link>http://localhost:1313/publications/2017-hdl/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2017-hdl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A New Parallel Method for Binary Black Hole Simulations</title>
+      <link>http://localhost:1313/publications/2016-ydc/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2016-ydc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WEC: Improving Durability of SSD Cache Drives by Caching Write-Efficient Data</title>
+      <link>http://localhost:1313/publications/2015-cdqb/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2015-cdqb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy-Efficient Scheduling for Best-Effort Interactive Services to Achieve High Response Quality</title>
+      <link>http://localhost:1313/publications/2013-dsh/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-dsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Data Migration to Conserve Energy in Streaming Media Storage Systems</title>
+      <link>http://localhost:1313/publications/2012-cdbq/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2012-cdbq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Waterfall Model to Achieve Energy Efficient Tasks Mapping for Large Scale GPU Clusters</title>
+      <link>http://localhost:1313/publications/2011-ldx/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-ldx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPUMemSort: A High Performance Graphic Co-processors Sorting Algorithm for Large Scale In-Memory Data</title>
+      <link>http://localhost:1313/publications/2011-ydb/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2011-ydb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPUMemSort: A High Performance Graphic Co-processors Sorting Algorithm for Large Scale In-Memory Data</title>
+      <link>http://localhost:1313/publications/2010-ydb/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2010-ydb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Partition-Merge Based Cache-Conscious Parallel Sorting Algorithm for CMP with Shared Cache</title>
+      <link>http://localhost:1313/publications/2009-hdby/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2009-hdby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Prediction Based CMP Cache Migration Policy</title>
+      <link>http://localhost:1313/publications/2008-hdbw/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2008-hdbw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

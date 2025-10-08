@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manish Parashar | David A. Bader</title>
+    <link>http://localhost:1313/authors/manish-parashar/</link>
+      <atom:link href="http://localhost:1313/authors/manish-parashar/index.xml" rel="self" type="application/rss+xml" />
+    <description>Manish Parashar</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Manish Parashar</title>
+      <link>http://localhost:1313/authors/manish-parashar/</link>
+    </image>
+    
+    <item>
+      <title>Sustainable Software Development for Next-Gen Sequencing (NGS) Bioinformatics on Emerging Platforms</title>
+      <link>http://localhost:1313/publications/2013-ssp/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2013-ssp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High Performance Computing - HiPC 2005, 12th International Conference, Goa, India, December 18-21, 2005, Proceedings</title>
+      <link>http://localhost:1313/publications/2005-bpvp/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2005-bpvp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

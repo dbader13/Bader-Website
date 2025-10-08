@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Justin Reese | David A. Bader</title>
+    <link>http://localhost:1313/authors/justin-reese/</link>
+      <atom:link href="http://localhost:1313/authors/justin-reese/index.xml" rel="self" type="application/rss+xml" />
+    <description>Justin Reese</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 15 May 2023 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Justin Reese</title>
+      <link>http://localhost:1313/authors/justin-reese/</link>
+    </image>
+    
+    <item>
+      <title>Billion-scale Detection of Isomorphic Nodes</title>
+      <link>http://localhost:1313/publications/2023-cfrb/</link>
+      <pubDate>Mon, 15 May 2023 00:00:00 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2023-cfrb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

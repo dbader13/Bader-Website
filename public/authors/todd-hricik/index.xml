@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todd Hricik | David A. Bader</title>
+    <link>http://localhost:1313/authors/todd-hricik/</link>
+      <atom:link href="http://localhost:1313/authors/todd-hricik/index.xml" rel="self" type="application/rss+xml" />
+    <description>Todd Hricik</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Sep 2020 15:29:20 -0400</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Todd Hricik</title>
+      <link>http://localhost:1313/authors/todd-hricik/</link>
+    </image>
+    
+    <item>
+      <title>Using RAPIDS AI to Accelerate Graph Data Science Workflows</title>
+      <link>http://localhost:1313/publications/2020-hbg/</link>
+      <pubDate>Tue, 08 Sep 2020 15:29:20 -0400</pubDate>
+      <guid>http://localhost:1313/publications/2020-hbg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

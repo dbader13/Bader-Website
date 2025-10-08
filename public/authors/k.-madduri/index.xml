@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K. Madduri | David A. Bader</title>
+    <link>http://localhost:1313/authors/k.-madduri/</link>
+      <atom:link href="http://localhost:1313/authors/k.-madduri/index.xml" rel="self" type="application/rss+xml" />
+    <description>K. Madduri</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2007 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>K. Madduri</title>
+      <link>http://localhost:1313/authors/k.-madduri/</link>
+    </image>
+    
+    <item>
+      <title>High-Performance Combinatorial Techniques for Analyzing Massive Dynamic Interaction Networks</title>
+      <link>http://localhost:1313/publications/2007-b-ma/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2007-b-ma/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://dimacs.rutgers.edu/archive/Workshops/Dynamic/program.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://dimacs.rutgers.edu/archive/Workshops/Dynamic/program.html&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Designing Scalable Synthetic Compact Applications for Benchmarking High Productivity Computing Systems</title>
+      <link>http://localhost:1313/publications/2006-bmg/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-bmg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Implementation of Irregular Algorithms on Cell Multi-core Architecture. Poster Session</title>
+      <link>http://localhost:1313/publications/2006-bam/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/2006-bam/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

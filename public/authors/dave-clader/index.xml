@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dave Clader | David A. Bader</title>
+    <link>http://localhost:1313/authors/dave-clader/</link>
+      <atom:link href="http://localhost:1313/authors/dave-clader/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dave Clader</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Nov 2023 13:35:52 -0700</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/sharing.jpg</url>
+      <title>Dave Clader</title>
+      <link>http://localhost:1313/authors/dave-clader/</link>
+    </image>
+    
+    <item>
+      <title>A detailed, end-to-end assessment of a quantum algorithm for portfolio optimization, released by Goldman Sachs and AWS</title>
+      <link>http://localhost:1313/blog/20231113-aws/</link>
+      <pubDate>Mon, 13 Nov 2023 13:35:52 -0700</pubDate>
+      <guid>http://localhost:1313/blog/20231113-aws/</guid>
+      <description>&lt;p&gt;To date, the financial services industry has been a pioneer in quantum technology, owing to its plethora of computationally hard use cases and the potential for significant impact from quantum solutions. Daily operations at financial firms such as banks, insurance companies, and hedge funds require solving well-defined computational problems on underlying data that is constantly changing. If quantum computers can perform the same calculations faster or with better accuracy than existing solutions, these customers stand to reap significant benefit.&lt;/p&gt;
+&lt;p&gt;In this post we’ll walk you through some key takeaways from a body of work by scientists from Goldman Sachs and AWS that was &lt;a href=&#34;https://doi.org/10.1103/PRXQuantum.4.040325&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published today in the journal PRX Quantum&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;p&gt;A commonly studied use case in quantitative finance is the task of portfolio optimization — consequently, customers are eager to learn what impacts quantum computing can have on this task, if any. Several distinct quantum algorithms have been proposed for portfolio optimization, each of which leverage quantum effects to provide a theoretical speedup over comparable classical algorithms.&lt;/p&gt;
+&lt;p&gt;However, it has been difficult to assess whether these theoretical speedups can be realized in practice. Such an assessment requires an &lt;a href=&#34;https://aws.amazon.com/blogs/quantum-computing/constructing-end-to-end-quantum-algorithm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;end-to-end&lt;/em&gt; resource estimation of the quantum algorithm&lt;/a&gt; — that is, a calculation of the total number of qubits and quantum gates (or other relevant metrics) required to solve the actual problem of interest, without sweeping any costs or caveats under the rug.&lt;/p&gt;
+&lt;p&gt;End-to-end assessments are challenging because certain elements of the quantum algorithm are heuristic, and there are caveats related to the way the quantum computer accesses the data. Thus, it can be difficult to make apples-to-apples comparisons with existing methods&lt;/p&gt;
+&lt;p&gt;Despite the challenges, scientists from Goldman Sachs and AWS took on the task of performing an end-to-end resource estimate for a leading quantum approach to portfolio optimization — the quantum interior point method (QIPM), which we will discuss in this post. You can read the full paper in the journal PRX Quantum, but let’s walk through some of the main takeaways of that work &lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-we-determine-if-a-quantum-algorithm-is-practical&#34;&gt;How do we determine if a quantum algorithm is practical?&lt;/h2&gt;
+&lt;p&gt;For quantum computers to provide value over classical algorithms, we need to develop practical, end-to-end quantum algorithms, for which we identify the following criteria:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The quantum algorithm produces a &lt;strong&gt;classical output that allows for benchmarking against classical methods&lt;/strong&gt;.&lt;/em&gt; This requirement rules out some quantum “algorithms” that efficiently produce quantum states as output, but are much less efficient when forced to turn that quantum state into an answer to the original (classical) computational problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The quantum algorithm relies on a &lt;strong&gt;reasonable input model&lt;/strong&gt;.&lt;/em&gt; In particular, it does not utilize any unspecified black-box subroutines (often called “oracles”) for which the costs are not counted, nor does it assume fast data access without accounting for the &lt;a href=&#34;https://aws.amazon.com/blogs/quantum-computing/goldman-sachs-and-aws-examine-efficient-ways-to-load-data-into-quantum-computers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;true cost of quantum access to the classical data&lt;/a&gt;. For example, several quantum algorithms for Machine Learning were thought to offer exponential advantages over classical methods until it was pointed out that this was primarily an artifact of unreasonable assumptions about the input model &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The quantum algorithm has a &lt;strong&gt;plausible case for asymptotic quantum speedup&lt;/strong&gt; —&lt;/em&gt; that is, for sufficiently large instance sizes, the quantum algorithm requires substantially fewer elementary operations than the classical algorithm. Since classical computers can perform elementary operations at a much faster rate than quantum computers, without an asymptotic speedup, the quantum computer will always lose.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;For classically challenging problem sizes, the &lt;strong&gt;quantum algorithm can solve the same end-to-end problem in a reasonable run-time&lt;/strong&gt;.&lt;/em&gt; Asymptotic speedups are of no value if the crossover point where quantum computers outperform classical computers occurs at instance sizes that are too large to be useful to customers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;portfolio-optimization&#34;&gt;Portfolio optimization&lt;/h2&gt;
+&lt;p&gt;Portfolio optimization is a well-defined computational task that appears in many fields, but its utility is particularly clear for financial operations. Suppose you have a fixed budget to invest in the stock market. You’d like your investments to provide predictable growth; in particular, you’d like to construct a portfolio that maximizes the expected return of the portfolio, while minimizing the risk, that is, the amount by which the return might deviate from its expectation.&lt;/p&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The model&lt;/h2&gt;
+&lt;p&gt;Part of the problem is thus determining which stocks are expected to perform well in a given timeframe, based on historical data — we assume this has already been done. If there are &lt;em&gt;n&lt;/em&gt; stocks to invest in, we are provided as input with a length-&lt;em&gt;n&lt;/em&gt; vector containing the expected return for each of the stocks, as well as an &lt;em&gt;n x n&lt;/em&gt; matrix 𝛴 containing the historical volatilities of each stock and the covariance of each pair of stocks — the performance of different stocks is correlated, and the optimal portfolio will exploit these correlations to minimize portfolio risk.&lt;/p&gt;
+&lt;p&gt;Let &lt;em&gt;w&lt;/em&gt; be the length-&lt;em&gt;n&lt;/em&gt; vector representing the fraction of our budget we allocate to each stock. In general, entries of &lt;em&gt;w&lt;/em&gt; can be negative, which represents a short sale. Here, though, we will require that the portfolio contain only “long” assets — i.e., no short sales: &lt;em&gt;w&lt;sub&gt;i&lt;/sub&gt; ≥ 0&lt;/em&gt;. The portfolio optimization problem is then formulated as a convex optimization problem:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.50.28_hu_ccc9281be812bd1d.webp 400w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.50.28_hu_1bd065ee67056492.webp 760w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.50.28_hu_410de18709b6f063.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/CleanShot-2023-11-08-at-08.50.28_hu_ccc9281be812bd1d.webp&#34;
+               width=&#34;272&#34;
+               height=&#34;148&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;The parameter &lt;em&gt;q&lt;/em&gt; is called the “risk-aversion parameter”, and it is set by the user according to how much risk they are willing to take on to gain additional return.&lt;/p&gt;
+&lt;p&gt;The first constraint is a total budget constraint. We’ve normalized w so that the total budget available is just 1, but without normalizing this sum would equal the total amount of money available to invest.&lt;/p&gt;
+&lt;p&gt;The second constraint enforces the “long-only” condition above; if we allow short selling, this can be relaxed. Additional constraints, such as minimum or maximum investments in certain stock sectors, cardinality constraints (i.e., the maximum allowed number of assets), or transaction costs, can also be incorporated into this framework (see &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;).&lt;/p&gt;
+&lt;p&gt;The set of portfolios that obey all the constraints is known as the &lt;em&gt;feasible&lt;/em&gt; region. The feasible region can be divided into the &lt;em&gt;boundary&lt;/em&gt;, where at least one of the inequality constraints holds as an equality (e.g. &lt;em&gt;w&lt;sub&gt;i&lt;/sub&gt; = 0&lt;/em&gt;), and the &lt;em&gt;interior&lt;/em&gt;, where all inequality constraints are strict (&lt;em&gt;w&lt;sub&gt;i&lt;/sub&gt; &amp;gt; 0&lt;/em&gt; for all &lt;em&gt;i&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;One widely used classical approach for solving portfolio optimization is to map the convex optimization problem above to a type of optimization problem known as a &lt;em&gt;second-order cone program&lt;/em&gt; (SOCP), and then solve it with an interior point method (IPM). The basic idea of an IPM is to start at some portfolio in the interior of the feasible region and iteratively update it in a way that is guaranteed to eventually approach the &lt;em&gt;optimal&lt;/em&gt; portfolio, which lies on the boundary of the feasible region, as depicted in Figure 1.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;http://localhost:1313/blog/20231113-aws/IPMnoaxesCompressed.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Figure 1: A toy example depicting how an Interior Point Method (IPM) solves portfolio optimization. The hexagonal region represents the feasible set of portfolios. The IPM generates a sequence of points (known as the central path) that follows a path from the interior of the region to the optimal point, which lies on the boundary. The color represents the value of the objective function, including barrier functions that implement constraints (darker is better). The black dots represent the central path, which is defined to be the optimal point of the objective function, including the barrier. As the barrier functions are relaxed, the objective function approaches the true objective function, and the central path approaches the optimal solution to the problem on the boundary of the feasible space.&lt;/p&gt;
+&lt;p&gt;Performing a single iteration of the IPM requires solving a linear system of equations of size &lt;em&gt;L x L&lt;/em&gt;, where (in our formulation), &lt;em&gt;L ≈ 14n&lt;/em&gt; and &lt;em&gt;n&lt;/em&gt; is the number of stocks in which we could invest. The output of the IPM is a portfolio &lt;em&gt;w&lt;/em&gt; that obeys all the constraints and for which the objective function is within 𝜖 of the optimal value. Many flavors of IPM exist, and developing better classical IPMs is an active area of research.&lt;/p&gt;
+&lt;p&gt;Here we focus on the IPMs that are most comparable with quantum algorithms. These classical IPMs solve the PO problem in time scaling as &lt;em&gt;n&lt;sup&gt;3.5&lt;/sup&gt; log(1/𝜖)&lt;/em&gt;. This runtime is efficient in theory (i.e., it scales polynomially with &lt;em&gt;n&lt;/em&gt;) and also in practice (IPMs are a leading method underlying many open-source and commercial solvers). Using IPM-based, off-the-shelf solvers, one can solve the PO problem on portfolios with thousands of stocks reasonably quickly on standard compute resources. However, the &lt;em&gt;n&lt;sup&gt;3.5&lt;/sup&gt;&lt;/em&gt; scaling is steep, and pushing the number of assets into the tens of thousands presents an opportunity for alternative solutions (such as quantum computing) to provide value. In the next section, we explore a proposal to do exactly that.&lt;/p&gt;
+&lt;h2 id=&#34;quantum-interior-point-methods&#34;&gt;Quantum interior point methods&lt;/h2&gt;
+&lt;p&gt;Quantum interior point methods (QIPMs) aim to accelerate classical IPMs by replacing certain algorithmic steps with quantum subroutines. The fact that IPMs are efficient both in theory and in practice gives hope that, if indeed these subroutines can be completed more quickly, QIPMs could satisfy the four criteria of a practical quantum algorithm and deliver practical utility in customer use cases.&lt;/p&gt;
+&lt;p&gt;QIPMs preserve the main loop of the IPM (which iteratively generates a sequence of better and better portfolios), and replaces a subroutine in the IPM that solves linear systems of equations with a quantum algorithm for completing this task. To do this, QIPMs leverage three quantum ingredients — Quantum Random Access Memory, quantum linear system solvers, and quantum state tomography — in each iteration of the main loop. These ingredients perform the following roles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Quantum Random Access Memory (QRAM)&lt;/strong&gt; allows the quantum algorithm to access the data that defines the instance, namely u and 𝛴, in an efficient and quantum mechanical way. Theoretical analyses of QRAM-based algorithms often merely report the number of queries to the QRAM data structure and assume the query time is very fast. To account for criterion 2 (reasonable input model), a full end-to-end analysis must go further and compute the exact resources required to perform the QRAM queries. Specifically, our resource analysis for the QIPM utilizes the resource estimates for &lt;a href=&#34;https://aws.amazon.com/blogs/quantum-computing/goldman-sachs-and-aws-examine-efficient-ways-to-load-data-into-quantum-computers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;implementing a block-encoding of an arbitrary matrix&lt;/a&gt; — a primitive that is in some sense equivalent to QRAM — that we developed in separate, parallel work &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Quantum linear system solvers (QLSSs)&lt;/strong&gt;, as their name suggests, are quantum subroutines for solving linear systems of the form &lt;em&gt;Ax = b&lt;/em&gt;, where &lt;em&gt;A&lt;/em&gt; is an invertible &lt;em&gt;L x L&lt;/em&gt; matrix, and &lt;em&gt;x&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt; are length-&lt;em&gt;L&lt;/em&gt; vectors. In the PO problem, &lt;em&gt;L ≈ 14n&lt;/em&gt;. The catch is that, unlike classical linear system solvers, QLSSs do not output the vector &lt;em&gt;x&lt;/em&gt;; rather, they output a quantum state &lt;em&gt;|x⟩&lt;/em&gt; whose amplitudes are proportional to the entries of &lt;em&gt;x&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Quantum state tomography&lt;/strong&gt; is precisely the subroutine that turns the quantum state &lt;em&gt;|x⟩&lt;/em&gt; into a classical description of the vector &lt;em&gt;x&lt;/em&gt;, which is then used to iterate the IPM. In essence, tomography is performed just by preparing many copies of &lt;em&gt;|x⟩&lt;/em&gt;, measuring them, and gathering statistics on the frequency of each measurement outcome to estimate the entries of &lt;em&gt;x&lt;/em&gt;. The need for tomography is related to criterion 1, above; the QLSS is efficient, but it outputs a quantum state rather than classical data, and this quantum state is not the object that is immediately useful to the rest of the algorithm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The full end-to-end analysis takes care to account for errors incurred by each of these primitive ingredients. The largest of these errors is incurred by tomography, due to the statistical noise of estimating an entry of &lt;em&gt;x&lt;/em&gt; from measurement outcomes of &lt;em&gt;|x⟩&lt;/em&gt;. An additional caveat is that these small errors prevent the QIPM from &lt;em&gt;exactly&lt;/em&gt; following the same path as the classical IPM, and they also cause the QIPM to leave the feasible region. Luckily, the IPM is designed to be self-correcting, in the sense that it partially fixes any errors it makes in future iterations.&lt;/p&gt;
+&lt;p&gt;Ultimately, through this effect or other workarounds we explore in the full paper, the QIPM will solve the same problem as the classical IPM: it returns an ϵ-optimal solution in an amount of time that essentially scales as:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.13_hu_c43f19cacf678da5.webp 400w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.13_hu_696a2dbef87479c9.webp 760w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.13_hu_186aea02a1796ca7.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/CleanShot-2023-11-08-at-08.52.13_hu_c43f19cacf678da5.webp&#34;
+               width=&#34;223&#34;
+               height=&#34;58&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;The appearance of new parameters &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;ξ&lt;/em&gt; represent additional technical complications, and need to be unpacked. The parameter &lt;em&gt;ⲕF&lt;/em&gt; is the “Frobenius condition number” — it represents the difficulty of inverting the relevant matrices with the QLSS. The parameter &lt;em&gt;ξ&lt;/em&gt; is the maximum error on quantum state tomography that does not break the algorithm (i.e., how poorly we can estimate the state &lt;em&gt;|x⟩&lt;/em&gt;) — small errors are okay as long as subsequent iterations of the IPM find portfolios that are close enough to those of an ideal IPM.&lt;/p&gt;
+&lt;p&gt;These are &lt;em&gt;instance-specific&lt;/em&gt; parameters, meaning that two different instances of the PO problem with stocks will have different values for &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;ξ&lt;/em&gt;, which makes the magnitude and scaling of these parameters difficult to study. This is an issue, because it is clear that the effectiveness of the algorithm critically hinges on how large they are! If &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;1/ξ&lt;/em&gt; are small and constant, one is tempted to declare that the quantum algorithm has a large &lt;em&gt;n&lt;sup&gt;3.5&lt;/sup&gt; → n&lt;sup&gt;1.5&lt;/sup&gt;&lt;/em&gt; speedup over the classical IPM. However, it is expected that these parameters will also have an n dependence, cutting into this speedup. Work by Kerenidis, Prakash, and Szilágyi &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; studied one version of the QIPM for portfolio optimization and gave some preliminary numerical evidence that the QIPM still offers a speedup after accounting for the dependence on &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;ξ&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The expression above omits some additional logarithmic factors: we computed the full expression of the runtime to be proportional to:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.54_hu_a6ac45fd225e2630.webp 400w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.54_hu_f97b1b5c5c2cfce2.webp 760w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.52.54_hu_11b6ed83f2886556.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/CleanShot-2023-11-08-at-08.52.54_hu_a6ac45fd225e2630.webp&#34;
+               width=&#34;359&#34;
+               height=&#34;57&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;These log factors are typically ignored in asymptotic analyses (such as that of Kerenidis, Prakash, and Szilágyi &lt;sup id=&#34;fnref1:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;), where the goal is to judge criterion 3 of a practical end-to-end algorithm, as these factors have a relatively small contribution in the limit where &lt;em&gt;n&lt;/em&gt; and other parameters are large. However, to judge criterion 4, it is essential to keep track of all contributions, as they can make a big difference on the runtime estimate for specific choices of &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;resource-estimate-for-the-qipm&#34;&gt;Resource estimate for the QIPM&lt;/h2&gt;
+&lt;p&gt;To judge criterion 4, we need to know how many quantum resources the QIPM consumes for values of &lt;em&gt;n&lt;/em&gt; relevant to customers. We compute the number of logical qubits, the number of computationally expensive &lt;em&gt;T&lt;/em&gt; gates (i.e., the “&lt;em&gt;T&lt;/em&gt;-count”), and the number of layers of &lt;em&gt;T&lt;/em&gt; gates (i.e., “&lt;em&gt;T&lt;/em&gt;-depth”) required by the algorithm. A &lt;em&gt;T&lt;/em&gt; gate is a commonly studied quantum gate that, when coupled with other easy-to-implement quantum gates, equips quantum computers with their expressive power. We only count the &lt;em&gt;T&lt;/em&gt; gates because they are substantially more expensive than the other gates in popular approaches to fault-tolerant quantum computation, and they dominate the runtime of the algorithm. The number of logical qubits and the total number of &lt;em&gt;T&lt;/em&gt; gates are then used to determine the overall physical footprint of the quantum algorithm — this will also depend on details of the physical hardware, such as the physical error rate.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the &lt;em&gt;T&lt;/em&gt;-depth determines the runtime in an architecture where &lt;em&gt;T&lt;/em&gt;-gates on disjoint qubits can be implemented in parallel. These metrics have been computed for other quantum algorithms, allowing for reasonable comparisons.&lt;/p&gt;
+&lt;p&gt;For a version of the PO problem like the one above, with a couple of additional, common constraints, we find that optimizing an &lt;em&gt;n&lt;/em&gt;-qubit portfolio to tolerance &lt;em&gt;ϵ&lt;/em&gt; requires&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.33_hu_c5c25bd91fc4340b.webp 400w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.33_hu_13160ccd36c57b03.webp 760w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.33_hu_f0363ef12b2978ec.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/CleanShot-2023-11-08-at-08.53.33_hu_c5c25bd91fc4340b.webp&#34;
+               width=&#34;658&#34;
+               height=&#34;102&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;where we omit subleading terms. Notably, the order-&lt;em&gt;n&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt; overhead for the &lt;em&gt;T&lt;/em&gt;-count vs. the &lt;em&gt;T&lt;/em&gt;-depth, and the order-&lt;em&gt;n&lt;sup&gt;2&lt;/sup&gt;&lt;/em&gt; logical qubit dependence reflects the fact that QRAM can be implemented at shallow depth albeit, with large qubit and gate cost.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.51_hu_459b08875ff57a60.webp 400w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.51_hu_b6d9b619a4042c3f.webp 760w,
+               /blog/20231113-aws/CleanShot-2023-11-08-at-08.53.51_hu_4eb47090033258bb.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/CleanShot-2023-11-08-at-08.53.51_hu_459b08875ff57a60.webp&#34;
+               width=&#34;651&#34;
+               height=&#34;322&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Figure 2: Median value of the Frobenius condition number as a function of the number of stocks in the portfolio optimization instance, from numerical simulations. Error bars represent the 16th to 84th percentile of observed instances, and the dashed line is a power-law fit showing that the growth of the Frobenius condition number is nearly linear in &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The above expressions are not particularly illuminating, as they still depend on instance-specific parameters &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;ξ&lt;/em&gt;. To probe these parameters, we simulated random instances of portfolio optimization with &lt;em&gt;n&lt;/em&gt; varying from 10 to 120. For each instance, we chose a random set of &lt;em&gt;n&lt;/em&gt; stocks from the Dow Jones U.S. Total Stock Market Index (DWCF) and constructed the expected daily return vector &lt;em&gt;u&lt;/em&gt; and covariance matrix &lt;em&gt;𝛴&lt;/em&gt; using historical stock data collected over &lt;em&gt;2n&lt;/em&gt; time epochs. We found that both &lt;em&gt;ⲕF&lt;/em&gt; and &lt;em&gt;ξ&lt;sup&gt;-2&lt;/sup&gt;&lt;/em&gt; appear to grow with &lt;em&gt;n&lt;/em&gt;, on average, and were each typically on the order of 104 or 105 for &lt;em&gt;n&lt;/em&gt; = 100. Overall, we evaluated the average cost of the algorithm at &lt;em&gt;n&lt;/em&gt;=100 to be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of logical qubits: 8 million&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;T&lt;/em&gt;-depth: 2 x 1024&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;T&lt;/em&gt;-count: 7 x 1029&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Even if layers of &lt;em&gt;T&lt;/em&gt;-gates are optimistically implemented at the GHz speeds of classical processors (in reality they are likely to be 2–4 orders of magnitude slower than that) these estimates suggest that the runtime of the quantum algorithm would still be millions of years, even for an instance size that is already classically tractable on a laptop.&lt;/p&gt;
+&lt;p&gt;This outcome allows us to confidently say that the QIPM, in its current form, does not satisfy criterion 4 of the end-to-end practical algorithm. The reason this occurred was due to a confluence of several independent factors: a large constant pre-factor coming mainly from the QLSS, a large condition number &lt;em&gt;ⲕF&lt;/em&gt;, a significant number of samples needed for tomography, and even a non-negligible contribution from logarithmic factors (about a factor of 100,000 for the &lt;em&gt;T&lt;/em&gt;-depth) that are traditionally ignored in asymptotic analyses.&lt;/p&gt;
+&lt;p&gt;These estimates also incorporate a few improvements we made to the algorithm, including an adaptive approach to tomography, and preconditioning the linear systems. However, there are several ways one could try to improve the algorithm further, including using newer, more advanced versions of quantum state tomography &lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; with &lt;em&gt;ξ&lt;sup&gt;-1&lt;/sup&gt;&lt;/em&gt; rather than &lt;em&gt;ξ&lt;sup&gt;-2&lt;/sup&gt;&lt;/em&gt; dependence, additional preconditioning, or improvements to the QLSS. Nonetheless, the resource estimate we arrive at is so far from practicality that multiple improvements to various parts of the algorithm would be needed to make the algorithm practical.&lt;/p&gt;
+&lt;p&gt;In retrospect, we can also consider whether the algorithm meets criterion 3, i.e., if it has an asymptotic speedup. The numerical simulations of Kerenidis, Prakash, and Szilágyi &lt;sup id=&#34;fnref2:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; suggested it does, but our numerical simulations fail to corroborate this, since we find that the scaling of the algorithmic runtime in the regime &lt;em&gt;10 ≤ n ≤ 120&lt;/em&gt; is roughly the same as the classical algorithm. However, this scaling does not have a robust trend, and cannot confidently extrapolate to larger industrially relevant choices of &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;conclusion-and-takeaways&#34;&gt;Conclusion and takeaways&lt;/h2&gt;
+&lt;p&gt;Our end-to-end resource analysis of the QIPM for portfolio optimization is a revealing case study on the utility of quantum algorithms. Even when an algorithm presents signals of utility, closer inspection can reveal a drastically different picture when all factors are considered more fairly. This was the case for the QIPM—our analysis strongly suggests it will not be useful to customers, barring significant improvements to the underlying algorithm. However, the insights gleaned go beyond the QIPM; the core subroutines of the QIPM (QRAM, QLSS, tomography) are common to many other quantum algorithms as well. Parts of our detailed cost analysis could thus be re-utilized in those algorithms. Indeed, one specific lesson learned is the great cost of implementing quantum circuits for the data-access component of the quantum algorithm (QRAM).&lt;/p&gt;
+&lt;p&gt;The QRAM accounts for most of the logical qubits in our accounting, and contributes a considerable factor to the gate depth and gate count. To improve the QIPM to the point of practicality, one ingredient which would likely be necessary is a dedicated QRAM hardware element that can leverage the specialized, non-universal nature of the QRAM operation to perform the operation more efficiently than our general analysis accounts for. This hardware element would also improve the practicality of many other quantum algorithms in many domains such as quantum machine learning, quantum chemistry, and quantum optimization.&lt;/p&gt;
+&lt;p&gt;With our analysis revealing that QIPMs face significant challenges toward practicality, where does this leave portfolio optimization in the landscape of quantum computing applications? Fortunately, there are other proposed methods for solving portfolio optimization on quantum computers (e.g., &lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;), and some of these are even amenable to near-term experimentation.&lt;/p&gt;
+&lt;p&gt;These approaches operate by reformulating the convex problem above as a binary optimization problem and attacking them with variational quantum algorithms, such as the &lt;a href=&#34;https://github.com/aws-samples/amazon-braket-algorithm-library/blob/main/notebooks/textbook/Quantum_Approximate_Optimization_Algorithm.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;quantum approximate optimization algorithm&lt;/a&gt; (QAOA), or using specialized hardware such as quantum annealers.&lt;/p&gt;
+&lt;p&gt;The upshot is that some of these variational approaches can already be run on near-term quantum devices through Amazon Braket, but one loses the theoretical asymptotic success guarantees afforded by the QIPM. As such, it is unclear whether these near-term solutions satisfy the third criterion above (asymptotic speedup), and determining whether this is the case will require further empirical investigation using current hardware and future generations of devices.&lt;/p&gt;
+&lt;p&gt;Finance remains a rich space for potential quantum algorithms, and perhaps some of the ideas in the QIPM will prove fruitful toward developing practical algorithms in the future. We hope that this example inspires researchers to search for the next generation of innovative, practical quantum algorithms in a systematic, end-to-end way.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;h2 id=&#34;alexander-dalzell&#34;&gt;Alexander Dalzell&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/dalzell_hu_a91676b1ae91e9fe.webp 400w,
+               /blog/20231113-aws/dalzell_hu_f3d2cc0c1ade55d5.webp 760w,
+               /blog/20231113-aws/dalzell_hu_baba73570f379fc7.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/dalzell_hu_a91676b1ae91e9fe.webp&#34;
+               width=&#34;637&#34;
+               height=&#34;658&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Alex Dalzell is a Research Scientist at the AWS Center for Quantum Computing. Alex joined the team in 2021 after completing his PhD in Physics at Caltech, where he studied the complexity theory of quantum advantage experiments using noisy devices. His current research interests lie primarily in quantum algorithms and applications, but also quantum computation and quantum information more broadly.&lt;/p&gt;
+&lt;h2 id=&#34;mario-berta&#34;&gt;Mario Berta&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/berta_hu_920755693375274a.webp 400w,
+               /blog/20231113-aws/berta_hu_eb707dda60a3f249.webp 760w,
+               /blog/20231113-aws/berta_hu_36b2fb90ad9ab6bd.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/berta_hu_920755693375274a.webp&#34;
+               width=&#34;567&#34;
+               height=&#34;718&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Mario Berta is a Professor of Physics at the Institute for Quantum Information RWTH Aachen University and holds a position as a Visiting Reader at the Department of Computing Imperial College London. He is working on the theory of quantum information science.&lt;/p&gt;
+&lt;h2 id=&#34;dave-clader&#34;&gt;Dave Clader&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/clader_hu_dfba03d0ce2e0c5a.webp 400w,
+               /blog/20231113-aws/clader_hu_ef4b6eed2f0551d4.webp 760w,
+               /blog/20231113-aws/clader_hu_a880ec44a28bbbd.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/clader_hu_dfba03d0ce2e0c5a.webp&#34;
+               width=&#34;713&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Dave Clader is the founder of BQP Advisors, LLC providing quantum computing technical consulting services. His expertise includes quantum algorithms, error correction, and noise mitigation. Prior to founding BQP Advisors, he was a Vice President in the Quantum Research team at Goldman Sachs where he focused on financial applications of quantum computing. Prior to this, he was as a Principal Research Scientist at the Johns Hopkins University Applied Physics Lab. He completed his PhD in Physics at the University of Rochester.&lt;/p&gt;
+&lt;h2 id=&#34;david-bader&#34;&gt;David Bader&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/bader_hu_f5d28cffce7ef39.webp 400w,
+               /blog/20231113-aws/bader_hu_779dbabe99574196.webp 760w,
+               /blog/20231113-aws/bader_hu_79e84d411680a49d.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/bader_hu_f5d28cffce7ef39.webp&#34;
+               width=&#34;750&#34;
+               height=&#34;754&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;David A. Bader is a research scientist in Research &amp;amp; Development at Goldman Sachs; and a Distinguished Professor and founder of the Department of Data Science in the Ying Wu College of Computing and Director of the Institute for Data Science at New Jersey Institute of Technology. Prior to this, he served as founding Professor and Chair of the School of Computational Science and Engineering, College of Computing, at Georgia Institute of Technology. He is a Fellow of the IEEE, ACM, AAAS, and SIAM; a recipient of the IEEE Sidney Fernbach Award; and the 2022 Innovation Hall of Fame inductee of the University of Maryland’s A. James School of Engineering. In 1998, Bader built the first Linux supercomputer that led to a high-performance computing (HPC) revolution.&lt;/p&gt;
+&lt;h2 id=&#34;helmut-katzgraber&#34;&gt;Helmut Katzgraber&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/katzgraber_hu_bb53d815ebb12415.webp 400w,
+               /blog/20231113-aws/katzgraber_hu_744b3a6a4206c776.webp 760w,
+               /blog/20231113-aws/katzgraber_hu_68984c4d114dd2df.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/katzgraber_hu_bb53d815ebb12415.webp&#34;
+               width=&#34;507&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Dr. Helmut Katzgraber earned a diploma in physics from ETH Zurich, and his master’s degree and PhD in physics at the University of California Santa Cruz. After postdoc positions at the University of California Davis and ETH Zurich, he was awarded a Swiss National Science Foundation professorship. In 2009, he joined Texas A&amp;amp;M University as an assistant professor, and became a full professor in 2015. Katzgraber joined Microsoft as a principal research manager in 2018 before joining Amazon in 2020. He was elected Fellow of the American Physical Society in 2021 and leads the Quantum Solutions Lab at AWS.&lt;/p&gt;
+&lt;h2 id=&#34;cedric-lin&#34;&gt;Cedric Lin&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/lin_hu_8e784b7fbd9c7f82.webp 400w,
+               /blog/20231113-aws/lin_hu_41ad73a4fa87b01.webp 760w,
+               /blog/20231113-aws/lin_hu_81f3a456d7857e59.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/lin_hu_8e784b7fbd9c7f82.webp&#34;
+               width=&#34;660&#34;
+               height=&#34;660&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Cedric Lin is a Sr. Applied Scientist at Amazon Braket. He previously worked at Google as a software engineer, where he primarily designed and built data pipelines and algorithms for optimization. Cedric has a PhD in Physics from the Massachusetts Institute of Technology; he spent several years developing quantum algorithms, and understanding their limits through the tools of quantum complexity.&lt;/p&gt;
+&lt;h2 id=&#34;martin-schuetz&#34;&gt;Martin Schuetz&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/schuetz_hu_c89d2b666e974394.webp 400w,
+               /blog/20231113-aws/schuetz_hu_9d4384f009a2dda3.webp 760w,
+               /blog/20231113-aws/schuetz_hu_d8e943d07f3d811c.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/schuetz_hu_c89d2b666e974394.webp&#34;
+               width=&#34;430&#34;
+               height=&#34;586&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Martin Schuetz is a Principal Research Scientist at the Amazon Quantum Solutions Lab. Martin has worked several years as an academic researcher with a focus on quantum simulation and computing, at ETH Zurich, the Max-Planck-Institute for Quantum Optics and Harvard University. Today Martin is working with customers to help solve some of their hardest problems, designing and building quantum computing, machine learning and optimization solutions on AWS.&lt;/p&gt;
+&lt;h2 id=&#34;nikitas-stamatopoulos&#34;&gt;Nikitas Stamatopoulos&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/stamatopoulos_hu_e44731a9feaf7dd0.webp 400w,
+               /blog/20231113-aws/stamatopoulos_hu_5ac13e30e98a0d3a.webp 760w,
+               /blog/20231113-aws/stamatopoulos_hu_a0e25dd8e1ddf5cb.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/stamatopoulos_hu_e44731a9feaf7dd0.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;750&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Nikitas Stamatopoulos is the Head of Quantum Computing Research at Goldman Sachs, with the goal of identifying and developing applications of quantum computing in finance. After working for the better part of a decade as a quantitative researcher with focus on classical HPC solutions for quantitative problems in derivative pricing/hedging and portfolio optimization, he began exploring how quantum computers could be harnessed to enhance computationally intensive problems typically encountered in finance. He completed his PhD in Physics (high energy - theory) at Dartmouth College.&lt;/p&gt;
+&lt;h2 id=&#34;grant-salton&#34;&gt;Grant Salton&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/salton_hu_b02b52a4b201aea5.webp 400w,
+               /blog/20231113-aws/salton_hu_ece45d9d1606c07c.webp 760w,
+               /blog/20231113-aws/salton_hu_f49d3cc05d5606a3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/salton_hu_b02b52a4b201aea5.webp&#34;
+               width=&#34;400&#34;
+               height=&#34;400&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Grant Salton is a senior research scientist in the Amazon Quantum Solutions Lab. Grant obtained his PhD from Stanford University, and his research interests include quantum information theory, quantum algorithms, quantum error correction, applications of near-term quantum devices, and the role of quantum information in other areas of fundamental physics (e.g., gravity). Prior to joining Amazon, Grant was a postdoctoral fellow at the IQIM, Caltech.&lt;/p&gt;
+&lt;h2 id=&#34;william-zeng&#34;&gt;William Zeng&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/20231113-aws/zeng_hu_bcfa0618ff6e51d9.webp 400w,
+               /blog/20231113-aws/zeng_hu_bc2d3b971f4800f4.webp 760w,
+               /blog/20231113-aws/zeng_hu_62ea01d9b6f4a5b.webp 1200w&#34;
+               src=&#34;http://localhost:1313/blog/20231113-aws/zeng_hu_bcfa0618ff6e51d9.webp&#34;
+               width=&#34;546&#34;
+               height=&#34;554&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;Dr. William Zeng is a partner at Quantonation, investing in early stage quantum and deep physics technology companies. He is also founder and President of the Unitary Fund, a non-profit dedicated to developing the quantum ecosystem to benefit the most people. His research focuses on quantum computer architecture, algorithms and software. He previously led a quantum computing research group at Goldman Sachs and initial development of Rigetti Computing&amp;rsquo;s quantum cloud platform. He received his PhD in quantum algorithms from Oxford University and his BSc. in Physics from Yale University.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aws.amazon.com/blogs/quantum-computing/a-detailed-end-to-end-assessment-of-a-quantum-algorithm-for-portfolio-optimization-released-by-goldman-sachs-and-aws/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://aws.amazon.com/blogs/quantum-computing/a-detailed-end-to-end-assessment-of-a-quantum-algorithm-for-portfolio-optimization-released-by-goldman-sachs-and-aws/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Alexander M. Dalzell, B. David Clader, Grant Salton, Mario Berta, Cedric Yen-Yu Lin, David A. Bader, Nikitas Stamatopoulos, Martin J. A. Schuetz, Fernando G. S. L. Brandão, Helmut G. Katzgraber, William J. Zeng. “End-to-end resource analysis for quantum interior point methods and portfolio optimization.” PRX Quantum 4, 040325 (2023). &lt;a href=&#34;https://doi.org/10.1103/PRXQuantum.4.040325&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1103/PRXQuantum.4.040325&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Ewin Tang. “Quantum Principal Component Analysis Only Achieves an Exponential Speedup Because of Its State Preparation Assumptions” Phys. Rev. Lett. 127, 06050 (2021). &lt;a href=&#34;https://doi.org/10.1103/PhysRevLett.127.060503&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1103/PhysRevLett.127.060503&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;“MOSEK Portfolio Optimization Cookbook.“ Release 1.3.0 (2023) &lt;a href=&#34;https://docs.mosek.com/MOSEKPortfolioCookbook-a4paper.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.mosek.com/MOSEKPortfolioCookbook-a4paper.pdf&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;Blog: “Goldman Sachs and AWS examine efficient ways to load data into quantum computers“
+Paper: B. David Clader, Alexander M. Dalzell, Nikitas Stamatopoulos, Grant Salton, Mario Berta, William J. Zeng. “Quantum Resources Required to Block-Encode a Matrix of Classical Data.” IEEE Transactions on Quantum Engineering (Volume: 3) (2022) &lt;a href=&#34;https://doi.org/10.1109/TQE.2022.3231194&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1109/TQE.2022.3231194&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;Iordanis Kerenidis, Anupam Prakash, Dániel Szilágyi. “Quantum Algorithms for Portfolio Optimization.” Proceedings of the 1st ACM Conference on Advances in Financial Technologies. (2019) &lt;a href=&#34;https://doi.org/10.1145/3318041.3355465&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1145/3318041.3355465&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref2:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
+&lt;p&gt;Joran van Apeldoorn, Arjan Cornelissen, András Gilyén, and Giacomo Nannicini. “Quantum tomography using state-preparation unitaries.” Proceedings of the 2023 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA). &lt;a href=&#34;https://doi.org/10.1137/1.9781611977554.ch47&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1137/1.9781611977554.ch47&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
+&lt;p&gt;Sebastian Brandhofer, Daniel Braun, Vanessa Dehn, Gerhard Hellstern, Matthias Hüls, Yanjun Ji, Ilia Polian, Amandeep Singh Bhatia, Thomas Wellens. “Benchmarking the performance of portfolio optimization with QAOA.” Quantum Inf. Process 22, 25 (2023) &lt;a href=&#34;https://doi.org/10.1007/s11128-022-03766-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1007/s11128-022-03766-5&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
