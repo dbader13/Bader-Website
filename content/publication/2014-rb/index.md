@@ -13,7 +13,7 @@ publishDate: 2023-11-23T14:59:59-05:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["conference-paper"]
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
 publication: "The 40th International Conference on Performance and Capacity, Computer Measurement Group (CMG), Atlanta, GA"
