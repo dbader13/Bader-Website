@@ -1,10 +1,4 @@
-<!-- <div style="background: lightblue; padding: 10px; margin: 10px 0;">
-  <strong>DEBUG - Full Context:</strong>
-  <pre>{{ . | jsonify (dict "indent" "  ") }}</pre>
-</div>
--->
-
-{{ $block := .wcBlock }}
+{{ $block := .block }}
 {{ $username := $block.content.username | default "admin" }}
 {{ $person_page := site.GetPage (printf "/authors/%s" $username) }}
 
@@ -72,17 +66,6 @@
         {{ $person_page.Content }}
       </div>
 
-  <!-- Add this button code here -->
-  {{ with $block.content.button }}
-  <div class="mt-3">
-    <a class="btn btn-primary" href="{{ .url | relURL }}" target="_blank" rel="noopener">
-      {{ .text }}
-    </a>
-  </div>
-  {{ end }}
-  <!-- End button code -->
-
-    
       <div class="row">
 
         {{ with $person.interests }}

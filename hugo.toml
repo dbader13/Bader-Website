@@ -84,10 +84,10 @@ footnotereturnlinkcontents = "<sup>^</sup>"
   url = "#contact"
   weight = 60
 
-[[menu.main]]
-  name = "CV"
-  url = "files/resume.pdf"
-  weight = 70
+#[[menu.main]]
+#  name = "CV"
+#  url = "files/resume.pdf"
+#  weight = 70
 
 [params]
   # Appearance

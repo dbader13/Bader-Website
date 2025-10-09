@@ -10,6 +10,9 @@ sections:
     content:
       title: Biography
       username: admin
+      button:
+        text: Download CV
+        url: files/resume.pdf
   - block: markdown
     content:
      title: Biography
