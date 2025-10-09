@@ -56,9 +56,9 @@ social:
 #- icon: orcid
 #  icon_pack: ai
 #  link:
-#- icon: researchgate
-#  icon_pack: fab
-#  link: 
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net/scientific-contributions/Xuefei-Wang-2163576185
 # - icon: github
 #  icon_pack: fab
 #  link: https://github.com/gcushen
