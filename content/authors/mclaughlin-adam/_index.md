@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Adam McLaughlin
+last_name: McLaughlin
 
 # Username (this should match the folder name)
 authors:

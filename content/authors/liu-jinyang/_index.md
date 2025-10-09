@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Jinyang Liu
+last_name: Liu
 
 # Username (this should match the folder name)
 authors:

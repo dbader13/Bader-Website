@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Asha Saxena
+last_name: Saxena
 
 # Username (this should match the folder name)
 authors:

@@ -2,6 +2,8 @@
 # Display name
 title: Oliver Alvarado Rodriguez
 
+last_name: Rodriguez
+
 # Username (this should match the folder name)
 authors:
 - alvaradorodriquez-oliver

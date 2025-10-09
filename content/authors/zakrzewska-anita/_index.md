@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Anita Zakrzewska
+last_name: Zakrzewska
 
 # Username (this should match the folder name)
 authors:

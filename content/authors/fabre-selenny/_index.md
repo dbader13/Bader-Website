@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Selenny Fabre
+last_name: Fabre
 
 # Username (this should match the folder name)
 authors:

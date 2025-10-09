@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Matthew Sottile
+last_name: Sottile
 
 # Username (this should match the folder name)
 authors:

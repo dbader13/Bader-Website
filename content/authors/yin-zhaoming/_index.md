@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Zhaoming Yin
+last_name: Yin
 
 # Username (this should match the folder name)
 authors:

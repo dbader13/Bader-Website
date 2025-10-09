@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Mohammad Dindoost
+last_name: Dindoost
 
 # Username (this should match the folder name)
 authors:

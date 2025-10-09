@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Seunghwa Kang
+last_name: Kang
 
 # Username (this should match the folder name)
 authors:

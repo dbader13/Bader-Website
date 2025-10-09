@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Atieh Barati Nia
+last_name: Nia
 
 # Username (this should match the folder name)
 authors:

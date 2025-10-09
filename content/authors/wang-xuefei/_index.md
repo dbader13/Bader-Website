@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Xuefei Wang
+last_name: Wang
 
 # Username (this should match the folder name)
 authors:

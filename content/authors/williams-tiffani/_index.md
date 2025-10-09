@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Tiffani L. Williams
+last_name: Williams
 
 # Username (this should match the folder name)
 authors:

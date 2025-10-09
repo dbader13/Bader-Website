@@ -1,6 +1,7 @@
 ---
 # Display name
 title: David Ediger
+last_name: Ediger
 
 # Username (this should match the folder name)
 authors:

@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Emily Rogers
+last_name: Rogers
 
 # Username (this should match the folder name)
 authors:

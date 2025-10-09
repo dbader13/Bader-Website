@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Guojing Cong
+last_name: Cong
 
 # Username (this should match the folder name)
 authors:
