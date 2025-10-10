@@ -3,7 +3,7 @@
 
 title: "41% of Schools Report AI Cyber Incidents"
 subtitle: ""
-summary: ""
+summary: "Some 41% of schools in the United States and the United Kingdom have experienced AI-related cyber incidents, ranging from phishing campaigns to harmful student-generated content, according to a recently released study from a systems identity and access management firm."
 authors: []
 tags: []
 categories: []
