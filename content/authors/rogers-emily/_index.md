@@ -1,3 +1,4 @@
+
 ---
 # Display name
 title: Emily Rogers
@@ -11,12 +12,12 @@ authors:
 superuser: false
 
 # Role/position
-role: Researcher
+role: Analytics Associate Manager
 
 # Organizations/Affiliations
 organizations:
-- name: Georgia Tech Research Institute (GTRI)
-  url: "https://www.gtri.gatech.edu/"
+- name: Accenture Federal Services
+  url: "https://www.accenture.com/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: 
@@ -81,3 +82,4 @@ user_groups:
 
 ---
 
+Emily Rogers's research and experience is in the application of computational algorithms and machine learning to large, multidimensional data sets for the sake of extracting key patterns and trends. I currently do research in brain and mental health, especially in the early prediction of cognitive decline and/or dementia. In the past I did research in adversarial machine learning, investigating best practices for defense and attacks against deep neural nets. My dissertation centered primarily on computational biology (RNA structure prediction and forensic DNA mixture interpretation). (Co-advised with Prof. Christine Heitsch.) Emily joined Georgia Tech Research Institute as a Research Scientist II, and as of October 2022, is an Analytics Associate Manager at Accenture Federal Services.
