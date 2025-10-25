@@ -11,12 +11,12 @@ authors:
 superuser: false
 
 # Role/position
-role: Affiliate Graduate Faculty
+role: Computer Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: Washington State University
-  url: "http://www.wsu.edu/"
+- name: Lawrence Livermore National Laboratory
+  url: "https://www.llnl.gov/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: 
@@ -81,6 +81,8 @@ user_groups:
 
 ---
 
-Dr. Sottile spent the early part of his career as a Student and Technical Staff Member at the Los Alamos National Laboratory (1999-2007). His research work at LANL focused on high performance computing, verification and validation of multiphysics simulations, and image analysis. After LANL, he was an adjunct faculty member and research associate at the University of Oregon. During that time he taught multiple classes in computer science and data analytics, and worked closely with members of the Institute of Neuroscience on data problems arising in fluorescence microscopy of c. Elegans nematodes. Between 2010 and 2016, he was a lead researcher at Galois, Inc. in Portland, Oregon working in high performance computing, programming languages, and program transformation techniques. Dr. Sottile is co-founder of noddle.io, a private research and development firm specializing in program synthesis methods for data analytics and mathematical modeling problems.
+Dr. Matthew Sottile is a computer scientist at Lawrence Livermore National Laboratory’s Center for Applied Scientific Computing (CASC). He received his Ph.D. in Computer Engineering from the University of New Mexico, an M.S. in Computer Science and a B.S. in Mathematics and Computer Science from the University of Oregon. His technical expertise spans high-performance computing (HPC), programming languages and compilers, performance analysis, and parallel computing models for scientific applications.
 
-He has been a member of the WSU Math Dept. Analysis+Data group since 2015, studying problems related to network analysis and social systems from a dynamical systems and probabilistic perspective.
+At LLNL he works on several projects in formal verification for scientific and engineering applications, and compiler-based tools for program analysis and transformation. Prior to joining CASC he spent 10 years in industry working in program synthesis (Noddle LLC), data science (Sailfan Research), and R&D for correctness in scientific and high-performance computing (Galois, Inc.). From 2001 to 2008, he was a Technical Staff Member at Los Alamos National Laboratory (LANL) in both the Continuum Dynamics and Advanced Computing Laboratory groups. He helped lead the Data Driven Modeling and Analysis team performing research related to image and data analysis for multi-physics simulation validation.  As part of the Cluster Research team, he performed research related to HPC system software and performance analysis.  
+
+He has also worked in academic settings teaching computer science (U. Oregon) and mathematics (Washington State), and has co-advised three Ph.D. students and two M.S. students. His work has earned multiple awards (including an R&D 100 Award and DOE/NNSA honors) for contributions to high performance computing and national security science.
