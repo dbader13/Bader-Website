@@ -57,6 +57,55 @@
       {{ end }}
     </table>
 
+    {{/* Action Buttons (PDF, Slides, Video, Code, etc.) */}}
+    <div class="btn-links" style="margin: 2rem 0;">
+      {{/* PDF link - check for url_pdf parameter or auto-detect PDF file */}}
+      {{ $pdf := "" }}
+      {{ if .Params.url_pdf }}
+        {{ $pdf = .Params.url_pdf }}
+      {{ else }}
+        {{/* Try to find PDF with same name as folder */}}
+        {{ $pdf_resource := .Resources.GetMatch (printf "%s.pdf" .File.ContentBaseName) }}
+        {{ with $pdf_resource }}
+          {{ $pdf = .RelPermalink }}
+        {{ end }}
+      {{ end }}
+      {{ with $pdf }}
+      <a class="btn btn-outline-primary btn-page-header" href="{{ . }}" target="_blank" rel="noopener">
+        <i class="fas fa-file-pdf"></i> PDF
+      </a>
+      {{ end }}
+
+      {{/* Slides link */}}
+      {{ with .Params.url_slides }}
+      <a class="btn btn-outline-primary btn-page-header" href="{{ . }}" target="_blank" rel="noopener">
+        <i class="fas fa-presentation"></i> Slides
+      </a>
+      {{ end }}
+
+      {{/* Video link */}}
+      {{ with .Params.url_video }}
+      <a class="btn btn-outline-primary btn-page-header" href="{{ . }}" target="_blank" rel="noopener">
+        <i class="fas fa-video"></i> Video
+      </a>
+      {{ end }}
+
+      {{/* Code link */}}
+      {{ with .Params.url_code }}
+      <a class="btn btn-outline-primary btn-page-header" href="{{ . }}" target="_blank" rel="noopener">
+        <i class="fas fa-code"></i> Code
+      </a>
+      {{ end }}
+
+      {{/* Custom links from front matter */}}
+      {{ range .Params.links }}
+      <a class="btn btn-outline-primary btn-page-header" href="{{ .url }}" target="_blank" rel="noopener">
+        {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+        {{ .name }}
+      </a>
+      {{ end }}
+    </div>
+
     {{/* Content / Biography */}}
     <div class="article-style">
       {{ .Content }}
