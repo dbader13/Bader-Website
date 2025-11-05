@@ -67,3 +67,5 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+{{<figure src="award.jpg">}}
