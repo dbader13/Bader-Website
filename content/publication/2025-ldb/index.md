@@ -4,7 +4,7 @@
 title: "Designing Parallel Algorithms for Community Detection using Arachne"
 authors: [li-fuhuan, du-zhihui, admin]
 date: 2025-08-31T10:27:03-04:00
-doi: ""
+doi: "10.1109/HPEC67600.2025.11196647"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-08-31T10:27:03-04:00

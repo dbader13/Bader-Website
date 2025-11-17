@@ -4,7 +4,7 @@
 title: "Evaluating Efficiency and Novelty of LLM-Generated Code for Graph Analysis (Outstanding Student Paper Award)"
 authors: [nia-atieh-barati, dindoost-mohammad, admin]
 date: 2025-09-01T10:27:03-04:00
-doi: ""
+doi: "10.1109/HPEC67600.2025.11196094"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-09-01T10:27:03-04:00

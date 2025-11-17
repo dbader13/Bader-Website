@@ -4,7 +4,7 @@
 title: "HiPerMotif: Novel Parallel Subgraph Isomorphism in Large-Scale Property Graphs"
 authors: [dindoost-mohammad, alvaradorodriguez-oliver, "Bartosz Bryg", "Ioannis Koutis", admin]
 date: 2025-09-01T10:27:03-04:00
-doi: ""
+doi: "10.1109/HPEC67600.2025.11196090"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-09-01T10:27:03-04:00
