@@ -27,6 +27,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+
+{{<figure src="plaque.jpg">}}
+
 The High Performance Computing (HPC) market is distinguished by the close collaboration among scientific researchers, end users, and technology vendors, all working in concert to advance the field. Our Legends are the pioneering researchers, visionary inventors, and influential executives who have translated innovative concepts into both technological breakthroughs and commercial successes.
 
 Thirty-five honorees are announced each year, selected by HPCwire editors and advisors based on their contributions to the HPC community over the past 35 years, and celebrated for the different ways they have helped move HPC forward. The HPCwire 35 Legends Class of 2024 can be found [here](https://www.hpcwire.com/35-hpc-legends-class-of-2024/).
