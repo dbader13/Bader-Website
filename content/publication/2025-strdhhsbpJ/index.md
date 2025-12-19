@@ -4,7 +4,7 @@
 title: "MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Connectomes"
 authors: ["Michael Shewarega", "Jakob Troidl", alvaradorodriguez-oliver, dindoost-mohammad, "Philipp Harth", "Hannah Haberkern", "Johannes Stegmaier", admin, "Hanspeter Pfister"]
 date: 2025-06-28T15:59:00-04:00
-doi: ""
+doi: "10.1109/TVCG.2025.3634808"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-06-28T15:59:00-04:00
