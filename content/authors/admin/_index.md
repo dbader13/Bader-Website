@@ -70,7 +70,7 @@ social:
   link: https://dl.acm.org/profile/81100165442
 - icon: google-scholar
   icon_pack: ai
-  link: http://scholar.google.com/citations?user=uXUA1pgAAAAJ  
+  link: https://scholar.google.com/citations?user=uXUA1pgAAAAJ  
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-7380-5876
