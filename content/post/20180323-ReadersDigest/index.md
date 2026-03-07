@@ -47,4 +47,4 @@ Since purchasing the Fitbit, Bader has lost 53 pounds and life is better than ev
 
 *Jen Babakhan is a freelance writer who loves to help others through the written word. She writes about faith and motherhood at her site www.jenbabakhan.com, and loves to inspire others through Instagram, where she can be found @jenbabakhan. You can also find her on Facebook @JenBabakhan, Writer.*
 
-https://www.rd.com/health/fitness/i-lost-50-pounds-making-one-simple-change/
+[https://www.rd.com/health/fitness/i-lost-50-pounds-making-one-simple-change/](https://web.archive.org/web/20170713152857/https://www.rd.com/health/fitness/i-lost-50-pounds-making-one-simple-change/)
