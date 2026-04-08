@@ -117,3 +117,5 @@ AI Exploration Day was, on its surface, a single event. Underneath, it was an in
 Between the living lab stations, breakout sessions, student presenters, five of the world's most influential technology companies, and a university in Newark, New Jersey, that has been preparing students for the future of technology for more than 140 years, the work of figuring out what comes next is already underway.
 
 https://news.njit.edu/ai-exploration-day-njit-university-wide-reckoning-age-artificial-intelligence
+
+https://www.eurekalert.org/news-releases/1122903
