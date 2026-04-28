@@ -96,3 +96,5 @@ Guariglia pointed out the House overwhelmingly [passed](https://thehill.com/home
 Anthropic [filed two lawsuits](https://thehill.com/policy/technology/5775049-anthropic-sues-trump-administration/) in federal courts Monday over the supply chain risk designation, warning of the “enormous” consequences of the case. The AI firm alleged the federal government “relegated” against the firm for its protected viewpoint.” 
 
 https://thehill.com/policy/technology/5775732-anthropic-pentagon-ai-surveillance-clash/
+
+https://www.msn.com/en-us/news/politics/anthropic-clash-with-pentagon-fuels-government-surveillance-fears/ar-AA1XTydx
