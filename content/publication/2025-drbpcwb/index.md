@@ -4,7 +4,7 @@
 title: "On the Optimization of Methods for Establishing Well-Connected Communities"
 authors: [dindoost-mohammad, alvaradorodriguez-oliver, "Bartosz Bryg", "Minhyuk Park", "George Chacko", "Tandy Warnow", admin]
 date: 2025-10-07T07:54:39-04:00
-doi: ""
+doi: "10.1007/978-3-032-16719-4_4"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2025-10-07T07:54:39-04:00

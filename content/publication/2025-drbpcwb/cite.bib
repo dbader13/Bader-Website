@@ -3,8 +3,14 @@
  booktitle = {The 14th International Conference on Complex Networks and Their Applications, December 9-11, 2025},
  groups = {Edited},
  title = {On the Optimization of Methods for Establishing Well-Connected Communities},
- year = {2025},
  url       = {},
- doi= {},
+ doi= {10.1007/978-3-032-16719-4_4},
+ booktitle= {Complex Networks {\&} Their Applications {XIV}},
+editor= {Cherifi, Hocine and Rocha, Luis M. and Cherifi, Chantal and Ertem, Zeynep},
+year={2026},
+isbn={978-3-032-16719-4},
+publisher={Springer Nature Switzerland},
+address={Cham},
+pages={41--53},
  abstract = {Community detection plays a central role in uncovering meso scale structures in networks. However, existing methods often suffer from disconnected or weakly connected clusters, undermining interpretability and robustness. Well-Connected Clusters (WCC) and Connectivity Modifier (CM) algorithms are post-processing techniques that improve the accuracy of many clustering methods. However, they are computationally prohibitive on massive graphs. In this work, we present optimized parallel implementations of WCC and CM using the HPE Chapel programming language. First, we design fast and efficient parallel algorithms that leverage Chapel's parallel constructs to achieve substantial performance improvements and scalability on modern multicore architectures. Second, we integrate this software into Arkouda/Arachne, an open-source, high-performance framework for large-scale graph analytics. Our implementations uniquely enable well-connected community detection on massive graphs with more than 2 billion edges, providing a practical solution for connectivity-preserving clustering at web scale. For example, our implementations of WCC and CM enable community detection of the over 2-billion edge Open-Alex dataset in minutes using 128 cores, a result infeasible to compute previously.}
 }
