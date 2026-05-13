@@ -34,7 +34,7 @@ National Aeronautics and Space Administration (NASA)
 
 ## Graduate Student Researchers Program (GSRP) ##
 
-Goddard Space Flict Center  
+Goddard Space Flight Center  
 Greenbelt, Maryland
 
 **David A. Bader**, University of Maryland, is awarded a NASA Graduate Student Researchers Program Fellowship in recognition of his outstanding research potential in space science and aerospace technology.

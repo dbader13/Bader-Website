@@ -31,7 +31,7 @@ projects: []
 
 National Aeronautics and Space Administration (NASA)
 
-## Goddard Space Flict Center ##
+## Goddard Space Flight Center ##
 
 ## Graduate Student Researchers Program (GSRP) ##
 
