@@ -1,0 +1,14 @@
+@article{2026-DRUBYPCWB,
+ author = {Mohammed Dindoost and Oliver Alvarado Rodriguez and Asif Uddin and Bartosz Bryg and Haotian Yi and Minhyuk Park and George Chacko and Tandy Warnow and David A. Bader},
+ booktitle = {Applied Network Science},
+ publisher={Springer},
+ groups = {Edited},
+ title = {},
+ year = {2026},
+ volume = {},
+ number = {},
+ pages = {},
+ url       = {},
+ doi={10.1007/s41109-026-00818-y},
+ abstract = {Community detection algorithms such as Louvain frequently produce clusters that are internally disconnected or poorly connected, limiting their utility in downstream network analysis. The Well-Connected Clusters (WCC) and Connectivity Modifier (CM) algorithms address this by post-processing any input clustering to enforce a user-defined edge connectivity criterion through recursive minimum cut bisection. While prior work demonstrated shared-memory parallel implementations of WCC and CM in Chapel on graphs with up to two billion edges, scalability remains constrained by single-node memory capacity and by the separate subgraph-construction preprocessing pass used in the original pipeline. This paper presents distributed-memory parallel implementations of WCC and CM in both C++ with MPI and Chapel with multi-locale execution. The central contribution is an architectural redesign that integrates subgraph generation into the Leiden clustering step, eliminating the separate WCC/CM subgraph preprocessing pass. Each compute node receives only its assigned subgraph files and executes a fully independent pipeline without ever loading the full graph. Connected component computation is parallelized within each node and distributed across nodes via round-robin assignment, and memory-mapped I/O accelerates file loading throughout. Experiments on ten real-world networks spanning up to 2.1 billion edges show that the C++ distributed implementation achieves up to 65× speedup over the original baseline on graphs where both complete successfully. The Chapel distributed implementation is integrated into Arachne, an open-source graph analytics framework built on the Arkouda platform, available at https://github.com/Bears-R-Us/arkouda-njit. It achieves broader graph coverage than the C++ distributed implementations, successfully processing billion-edge configurations including Open-Alex and Open-Citations on which all C++ distributed implementations fail, while Wikipedia-Links remains unsuccessful for both implementations. On successful configurations, Chapel distributed delivers speedups up to 19.7× at CPM 0.001 and up to 55.8× at CPM 0.01 over the Chapel shared-memory reference, with one reported slowdown on Livejournal WCC at CPM 0.001. Failures on a subset of large graphs are associated with memory leaks and data races in VieCut.}
+}
