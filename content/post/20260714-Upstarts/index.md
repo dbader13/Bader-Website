@@ -94,8 +94,6 @@ Erik Nordlander, a general partner at GV who previously backed Ghetti’s last s
 
 {{<video src="video.mp4" controls="yes" >}}
 
-Inés Bustamante, Adapter’s director of strategy and operations, runs much of the logistics of her fine jewelry side business, Magaloni, through a site set up with Adapter’s data, tracking leads and sourcing stones. “I texted Adam last week, ‘Be careful what you build,’” she says, “because it makes me think of all the things you could be running on the side with these tools.”
-
 Adapter’s able to do all of it in large part because its system takes the time to understand the “prime intention” behind any task or query, Ghetti explains. (The company has a patent on its prime directive work.)
 
 When using Adapter directly, or when another tool calls the Adapter API, it can then run as few or as many loops of searches as needed to get the answer it believes you need, at the depth it predicts you want. The more you use it, the better your Adapter Mind gets at balancing that.
