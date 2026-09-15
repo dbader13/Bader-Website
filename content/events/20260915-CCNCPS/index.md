@@ -67,6 +67,8 @@ slides: ""
 projects: []
 ---
 
+{{<figure src="PXL_20260915_084502382.jpg">}}
+
 ## Bio: ##
 
 **Prof. David A. Bader** is a Distinguished Professor and founder of the Department of Data Science and inaugural Director of the Institute for Data Science at New Jersey Institute of Technology. He is a Fellow of IEEE, ACM, AAAS, and SIAM, a recipient of the IEEE Sidney Fernbach Award, and a leading expert in high-performance computing, graph analytics, cybersecurity, and computational genomics. He has co-authored more than 400 scholarly papers and is recognized for pioneering Linux supercomputing and large-scale graph analytics.
