@@ -1,0 +1,10 @@
+@inproceedings{2026-SB,
+ author = {Asha Saxena and David A. Bader},
+ booktitle = {The 30th Annual IEEE High Performance Extreme Computing Conference (HPEC), Virtual, September 14-18, 2026},
+ groups = {Edited},
+ title = {{LOOM}: A Team-of-Agents Architecture for High-Performance Graph Analytics Workflows with {Arkouda} and {Arachne}},
+ year = {2026},
+ url       = {},
+ doi= {},
+ abstract = {Teams of large language model (LLM) agents now plan, code, and verify their own work, yet nearly all agentic frameworks assume a dataset fits in the memory of one machine, excluding the billion-edge graphs that motivate high-performance computing and where a single poor analytical step can waste hours of supercomputer time. We present LOOM, a team-of­agents architecture for large-scale graph analytics on Arkouda and its graph extension Arachne. LOOM organizes role-specialized agents around a shared, typed artifact, and contributes five mechanisms that distinguish it from generic agentic pipelines: a Graph Workflow Intermediate Representation (GW-IR) that is statically checked so ill-typed workflows are rejected before any cluster cycles are spent; telemetry-grounded reflection that feeds per-locale load imbalance, communication volume, and time to solution from the Chapel-based server back to the agents; invariant-based verification against graph-theoretic identities that hold without ground truth; a Security and Access Control Agent that enforces resource quotas and audits data access before any cluster cycles are spent; and a Learning/Adaptation Agent that replaces the hand-crafted cost model with a data-driven predictor trained on accumulated provenance telemetry. LOOM is implemented as an open-source framework that runs end to end, available at https://github.com/Bader-Research/LOOM.}
+}
