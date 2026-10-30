@@ -53,3 +53,5 @@ Bader also explained that NJIT built a Department of Data Science and an Institu
 Malachowsky said of his support, “New Jersey is where my story began, and it means a great deal to give back to the community that raised me. I am grateful to Governor Sherrill and our partners across the state for making this a reality. Through the New Jersey Supercomputer Initiative, we can unlock the talent that exists all around us, transform schools, businesses, and the workforce, and together, tackle our most pressing challenges.”
 
 https://news.njit.edu/njit-partners-new-jersey-supercomputer-initiative-drive-statewide-innovation
+
+https://www.eurekalert.org/news-releases/1148708
