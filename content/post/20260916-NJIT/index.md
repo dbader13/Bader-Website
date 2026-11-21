@@ -49,3 +49,4 @@ A prominent voice in high-performance computing and data science, Bader is frequ
 
 https://www.njit.edu/boards/2026-david-bader
 
+{{<figure src="NJIT-certificate.jpg">}}
