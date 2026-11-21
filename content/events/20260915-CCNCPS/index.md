@@ -67,7 +67,7 @@ slides: ""
 projects: []
 ---
 
-{{<figure src="PXL_20260915_084502382.jpg">}}
+{{<figure src="cert.jpg">}}
 
 ## Bio: ##
 
